@@ -1,9 +1,10 @@
 #figma rule
-DOMAIN-SUFFIX,figma.com,Figma
-DOMAIN-SUFFIX,api.segment.io,Figma
-DOMAIN-SUFFIX,wp.com,Figma
-DOMAIN-SUFFIX,fontawesome.com,Figma
-DOMAIN-SUFFIX,fs3.amazonaws.com,Figma
-DOMAIN-SUFFIX,gravatar.com,Figma
-DOMAIN-SUFFIX,figma.zendesk.com,Figma
-;DOMAIN-SUFFIX,zdassets.com,Figma
+#针对国内figma访问慢，可指定路线
+DOMAIN-SUFFIX,figma.com
+DOMAIN-SUFFIX,api.segment.io
+DOMAIN-SUFFIX,wp.com
+DOMAIN-SUFFIX,fontawesome.com
+DOMAIN-SUFFIX,fs3.amazonaws.com
+DOMAIN-SUFFIX,gravatar.com
+DOMAIN-SUFFIX,figma.zendesk.com
+;DOMAIN-SUFFIX,zdassets.com
