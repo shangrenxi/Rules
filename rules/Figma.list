@@ -1,0 +1,9 @@
+#figma rule
+DOMAIN-SUFFIX,figma.com,Figma
+DOMAIN-SUFFIX,api.segment.io,Figma
+DOMAIN-SUFFIX,wp.com,Figma
+DOMAIN-SUFFIX,fontawesome.com,Figma
+DOMAIN-SUFFIX,fs3.amazonaws.com,Figma
+DOMAIN-SUFFIX,gravatar.com,Figma
+DOMAIN-SUFFIX,figma.zendesk.com,Figma
+;DOMAIN-SUFFIX,zdassets.com,Figma
