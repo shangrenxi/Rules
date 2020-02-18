@@ -1,3 +1,11 @@
+#网易云其他规则
+#为转换api使用，下面注释掉，可自行添加
+#DOMAIN-SUFFIX,p*.music.126.net,Direct
+#DOMAIN-SUFFIX,admusicpic.music.126.net,REJECT
+#DOMAIN-SUFFIX,iadmat.nosdn.127.net,REJECT
+#DOMAIN-SUFFIX,iadmusicmat.music.126.net,REJECT
+#DOMAIN-SUFFIX,iadmusicmatvideo.music.126.net,REJECT
+
 #网易云代理
 DOMAIN-SUFFIX,interface*.music.163.com
 #DOMAIN-SUFFIX,interface1.music.163.com
