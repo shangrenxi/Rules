@@ -6,25 +6,26 @@ DOMAIN-SUFFIX,iadmusicmat.music.126.net,REJECT
 DOMAIN-SUFFIX,iadmusicmatvideo.music.126.net,REJECT
 
 #网易云代理
-DOMAIN-SUFFIX,interface*.music.163.com, NeteaseMusic
-#DOMAIN-SUFFIX,interface1.music.163.com, NeteaseMusic
-#DOMAIN-SUFFIX,interface2.music.163.com, NeteaseMusic
-#DOMAIN-SUFFIX,interface3.music.163.com, NeteaseMusic
-#DOMAIN-SUFFIX,interface4.music.163.com, NeteaseMusic
-#DOMAIN-SUFFIX,interface5.music.163.com, NeteaseMusic
+DOMAIN-SUFFIX,api.iplay.163.com, NeteaseMusic
 DOMAIN-SUFFIX,apm.music.163.com, NeteaseMusic
 DOMAIN-SUFFIX,apm3.music.163.com, NeteaseMusic
-DOMAIN-SUFFIX,man.netease.com, NeteaseMusic
-DOMAIN-SUFFIX,api.iplay.163.com, NeteaseMusic
-DOMAIN-SUFFIX,ac.dun.163yun.com, NeteaseMusic
-DOMAIN-SUFFIX,mr.da.netease.com, NeteaseMusic
-DOMAIN-SUFFIX,crash.163.com, NeteaseMusic
-DOMAIN-SUFFIX,imap.163.com, NeteaseMusic
+DOMAIN-SUFFIX,interface.music.163.com, NeteaseMusic
+DOMAIN-SUFFIX,interface1.music.163.com, NeteaseMusic
+DOMAIN-SUFFIX,interface2.music.163.com, NeteaseMusic
+DOMAIN-SUFFIX,interface3.music.163.com, NeteaseMusic
+DOMAIN-SUFFIX,interface4.music.163.com, NeteaseMusic
+DOMAIN-SUFFIX,interface5.music.163.com, NeteaseMusic
+#DOMAIN-SUFFIX,man.netease.com, NeteaseMusic
+;DOMAIN-SUFFIX,ac.dun.163yun.com, NeteaseMusic
+;DOMAIN-SUFFIX,mr.da.netease.com, NeteaseMusic
+;DOMAIN-SUFFIX,crash.163.com, NeteaseMusic
+;DOMAIN-SUFFIX,imap.163.com, NeteaseMusic
 DOMAIN-SUFFIX,music.126.net, NeteaseMusic
 DOMAIN-SUFFIX,music.163.com, NeteaseMusic
-USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*, NeteaseMusic
-USER-AGENT,NeteaseMusic*, NeteaseMusic
-USER-AGENT,网易云*, NeteaseMusic
+DOMAIN-SUFFIX,tyst.migu.cn, NeteaseMusic
+;USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*, NeteaseMusic
+;USER-AGENT,NeteaseMusic*, NeteaseMusic
+;USER-AGENT,网易云*, NeteaseMusic
 ;DOMAIN-KEYWORD,netease, NeteaseMusic
 IP-CIDR,39.105.63.80/32, NeteaseMusic
 IP-CIDR,45.254.48.1/32, NeteaseMusic
