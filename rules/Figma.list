@@ -8,3 +8,4 @@ DOMAIN-SUFFIX,fs3.amazonaws.com
 DOMAIN-SUFFIX,gravatar.com
 DOMAIN-SUFFIX,figma.zendesk.com
 ;DOMAIN-SUFFIX,zdassets.com
+DOMAIN-KEYWORD,figma
