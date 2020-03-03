@@ -1,0 +1,9 @@
+# 设计网站
+DOMAIN-SUFFIX,dribbble.com
+DOMAIN-SUFFIX,pinterest.com
+DOMAIN-SUFFIX,behance.net
+
+#关键词匹配
+DOMAIN-KEYWORD,dribbble
+DOMAIN-KEYWORD,behance
+DOMAIN-KEYWORD,pinterest
