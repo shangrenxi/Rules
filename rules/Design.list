@@ -2,6 +2,10 @@
 DOMAIN-SUFFIX,dribbble.com
 DOMAIN-SUFFIX,pinterest.com
 DOMAIN-SUFFIX,behance.net
+DOMAIN-SUFFIX,io3000.com
+DOMAIN-SUFFIX,muuuuu.org
+DOMAIN-SUFFIX,naver.com
+DOMAIN-SUFFIX,artstation.com
 
 #关键词匹配
 DOMAIN-KEYWORD,dribbble
@@ -23,4 +27,3 @@ DOMAIN-SUFFIX,fontawesome.com
 #aws
 DOMAIN-SUFFIX,fs3.amazonaws.com
 DOMAIN-KEYWORD,amazonaws
-
