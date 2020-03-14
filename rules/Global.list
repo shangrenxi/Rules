@@ -1,17 +1,17 @@
 # (DNS Cache Pollution Protection)
 # > Google
-# DOMAIN-SUFFIX,ampproject.org
-# DOMAIN-SUFFIX,appspot.com
-# DOMAIN-SUFFIX,blogger.com
-# DOMAIN-SUFFIX,getoutline.org
-# DOMAIN-SUFFIX,gvt0.com
-# DOMAIN-SUFFIX,gvt1.com
-# DOMAIN-SUFFIX,gvt3.com
-# DOMAIN-SUFFIX,xn--ngstr-lra8j.com
-# DOMAIN-KEYWORD,google
-# DOMAIN-KEYWORD,blogspot
+DOMAIN-SUFFIX,ampproject.org
+DOMAIN-SUFFIX,appspot.com
+DOMAIN-SUFFIX,blogger.com
+DOMAIN-SUFFIX,getoutline.org
+DOMAIN-SUFFIX,gvt0.com
+DOMAIN-SUFFIX,gvt1.com
+DOMAIN-SUFFIX,gvt3.com
+DOMAIN-SUFFIX,xn--ngstr-lra8j.com
+DOMAIN-KEYWORD,google
+DOMAIN-KEYWORD,blogspot
 # > Microsoft
-# DOMAIN-SUFFIX,onedrive.live.com
+DOMAIN-SUFFIX,onedrive.live.com
 DOMAIN-SUFFIX,xboxlive.com
 # > Facebook
 DOMAIN-SUFFIX,cdninstagram.com
@@ -49,20 +49,20 @@ DOMAIN-SUFFIX,twitpic.com
 DOMAIN-SUFFIX,vine.co
 DOMAIN-KEYWORD,twitter
 # > Telegram
-# DOMAIN-SUFFIX,t.me
-# DOMAIN-SUFFIX,tdesktop.com
-# DOMAIN-SUFFIX,telegra.ph
-# DOMAIN-SUFFIX,telegram.me
-# DOMAIN-SUFFIX,telegram.org
-# IP-CIDR,91.108.4.0/22,no-resolve
-# IP-CIDR,91.108.8.0/22,no-resolve
-# IP-CIDR,91.108.12.0/22,no-resolve
-# IP-CIDR,91.108.16.0/22,no-resolve
-# IP-CIDR,91.108.56.0/22,no-resolve
-# IP-CIDR,149.154.160.0/20,no-resolve
-# IP-CIDR6,2001:b28:f23d::/48,no-resolve
-# IP-CIDR6,2001:b28:f23f::/48,no-resolve
-# IP-CIDR6,2001:67c:4e8::/48,no-resolve
+DOMAIN-SUFFIX,t.me
+DOMAIN-SUFFIX,tdesktop.com
+DOMAIN-SUFFIX,telegra.ph
+DOMAIN-SUFFIX,telegram.me
+DOMAIN-SUFFIX,telegram.org
+IP-CIDR,91.108.4.0/22,no-resolve
+IP-CIDR,91.108.8.0/22,no-resolve
+IP-CIDR,91.108.12.0/22,no-resolve
+IP-CIDR,91.108.16.0/22,no-resolve
+IP-CIDR,91.108.56.0/22,no-resolve
+IP-CIDR,149.154.160.0/20,no-resolve
+IP-CIDR6,2001:b28:f23d::/48,no-resolve
+IP-CIDR6,2001:b28:f23f::/48,no-resolve
+IP-CIDR6,2001:67c:4e8::/48,no-resolve
 # > Line
 DOMAIN-SUFFIX,line.me
 DOMAIN-SUFFIX,line-apps.com
@@ -349,6 +349,7 @@ DOMAIN-SUFFIX,washingtonpost.com
 DOMAIN-SUFFIX,wattpad.com
 DOMAIN-SUFFIX,whoer.net
 DOMAIN-SUFFIX,wikimapia.org
+DOMAIN-SUFFIX,wikimedia.org
 DOMAIN-SUFFIX,wikipedia.org
 DOMAIN-SUFFIX,wikiquote.org
 DOMAIN-SUFFIX,wikiwand.com
@@ -498,14 +499,14 @@ DOMAIN-SUFFIX,yt.be
 DOMAIN-SUFFIX,ytimg.com
 # > Microsoft
 # >> Microsoft OneDrive
-# DOMAIN-SUFFIX,1drv.com
-# DOMAIN-SUFFIX,1drv.ms
-# DOMAIN-SUFFIX,blob.core.windows.net
-# DOMAIN-SUFFIX,livefilestore.com
-# DOMAIN-SUFFIX,onedrive.com
-# DOMAIN-SUFFIX,storage.live.com
-# DOMAIN-SUFFIX,storage.msn.com
-# DOMAIN,oneclient.sfx.ms
+DOMAIN-SUFFIX,1drv.com
+DOMAIN-SUFFIX,1drv.ms
+DOMAIN-SUFFIX,blob.core.windows.net
+DOMAIN-SUFFIX,livefilestore.com
+DOMAIN-SUFFIX,onedrive.com
+DOMAIN-SUFFIX,storage.live.com
+DOMAIN-SUFFIX,storage.msn.com
+DOMAIN,oneclient.sfx.ms
 # > Other
 DOMAIN-SUFFIX,0rz.tw
 DOMAIN-SUFFIX,4bluestones.biz

@@ -1,5 +1,4 @@
 # > OneDrive
-
 DOMAIN-SUFFIX,docs.live.net
 DOMAIN-SUFFIX,d.docs.live.net
 
@@ -21,6 +20,7 @@ DOMAIN-SUFFIX,pipe.aria.microsoft.com
 DOMAIN-SUFFIX,policies.live.net
 DOMAIN-SUFFIX,svc.ms
 DOMAIN-SUFFIX,sfx.ms
+DOMAIN-KEYWORD,1drv
 
 PROCESS-NAME,OneDrive
 PROCESS-NAME,OneDriveUpdater
