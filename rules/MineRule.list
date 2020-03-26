@@ -5,3 +5,6 @@ DOMAIN-SUFFIX,intercom.io
 DOMAIN-SUFFIX,intercomcdn.com
 DOMAIN-SUFFIX,notion.so,force-remote-dns
 DOMAIN-KEYWORD,notion
+
+#lvv2
+DOMAIN-SUFFIX,lvv2.com
