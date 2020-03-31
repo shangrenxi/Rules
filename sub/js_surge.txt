@@ -1,4 +1,4 @@
-hostname=music.163.com,*.music.163.com,api.m.jd.com,ios.prod.ftl.netflix.com,vipapi.jxedt.com,api.interpreter.caiyunai.com,pocketlists.com,book.haitunwallet.com,mubu.com,app.xunjiepdf.com,api.tophub.today,miaow.yiyongcad.com,api.lennou.com,api.gkocr.com,vira.llsapp.com,commerce-.*api.faceu.mobi,commerce-api.faceu.mobi,pan.baidu.com,api.revenuecat.com,api.rr.tv,editorapi.115.com,api.lakecoloring.com,ctrl.playcvn.com,dict.eudic.net,m.client.10010.com,api.wakamoment.ga,*.bh3.com,api.diyidan.net,api.flexibits.com,api.jiaonizuocai.com,api.sololearn.com,tncj.hortorgames.com,m.pearkin.com,claritywallpaper.com,bookapi.ihuman.com,rest.zhibo.tv,*.smzdm.com,note.youdao.com,billing.peakcloud.org,api.weibo.cn,mapi.weibo.com,*.uve.weibo.com,mp.weixin.qq.com,api.bilibili.com,app.bilibili.com,*.zhihu.com,aweme*.snssdk.com,*.kuwo.cn,*.xiaoxiao*.com,api*.tiktokv.com,*.musical.ly,*.amemv.com,p.du.163.com,getuserinfo.321mh.com,getuserinfo-globalapi.zymk.cn,ios.fuliapps.com,vsco.co,api.vnision.com,*.my10api.com,sp.kaola.com,r.inews.qq.com,apple.fuliapps.com,newdrugs.dxy.cn,app101.avictown.cc,api.hlo.xyz,api.ijo.xyz,www.luqijianggushi.com,account.wps.*,u.kanghuayun.com,api.gyrosco.pe,api1.dobenge.cn,api.mvmtv.com,mitaoapp.yeduapp.com,origin-prod-phoenix.jibjab.com,www.3ivf.com,pay.guoing.com,api.termius.com,api.bjxkhc.com,viva.v21xy.com,.com,biz.caiyunapp.com,api.gotokeep.com,ap*.intsig.net,mp.bybutter.com,api.vuevideo.net,api.picsart.c*,api.meiease.c*,splice.oracle.*.com,api.gamer.com.tw,ios.xiangjiaoapps.com,apple.xiangjiaoapps.com,*.xiangxiangapps.com,avatar-nct.nixcdn.com,spclient.wg.spotify.com,oa.zalo.me,api.unfold.app,viva-asia1.vvbrd.com,graph.nhaccuatui.com,api.memrise.com,api.sync.me,pool.elsanow.io,lambda.us-east-1.amazonaws.com,api.mondlylanguages.com,api.busuu.com,owa.videoshowiosglobalserver.com:0,accounts.elevateapp.net,purchases.ws.pho.to,api-intl.mr.meitu.com,bmall.camera360.com,api.tv.zing.vn,api.calm.com,www.calm.com,api.global.mp3.zing.vn,apimboom2.globaldelight.net,photos.adobe.io,license.pdfexpert.com,subs.platforms.team,apic.musixmatch.com,api.getmimo.com,engbright.com,api.lingokids.com,www.peacefulsoundsapp.com,duolingo-leaderboards-prod.duolingo.com,mobile-api.adguard.com,api.blinkist.com,api-kinemaster-assetstore.*,api.pushover.net,api.overhq.com,receipt-validator.herewetest.com,lcs-mobile-cops.adobe.io,education.github.com,backend.getdrafts.com,ssl-api.itranslateapp.com,sk.ulysses.app,dayone.me,license.enpass.io,*.grammarly.com,api.keepkeep.com,planner5d.com,secure.istreamer.com,www.api.monkeyuni.net,api.kadiantexiao.com,nowapi.navoinfo.cn,apic.yzhiyin.com,api.pixomatic.us,fwq.qmlist.net,*.40sishi.com,*.jizhangapp.com,miniapp.elecredit.com,api.quizlet.com,sapi.beingfine.cn,buy.itunes.apple.com,*.washingtonpost.com,trade-acs.m.taobao.com,account.wps.cn,*.googlevideo.com,pixmagicapp.com,commerce-i18n-api.faceu.mobi,mobi,receipts.cerebralgardens.com,api-cs.intsig.net,api.appsyscode.com,api.freeletics.com,api.shred.app,api.deezer.com,iap.aps-sdk.com,
+hostname=music.163.com,*.music.163.com,api.m.jd.com,ios.prod.ftl.netflix.com,vipapi.jxedt.com,api.interpreter.caiyunai.com,pocketlists.com,book.haitunwallet.com,mubu.com,app.xunjiepdf.com,api.tophub.today,miaow.yiyongcad.com,api.lennou.com,api.gkocr.com,vira.llsapp.com,commerce-.*api.faceu.mobi,commerce-api.faceu.mobi,pan.baidu.com,api.revenuecat.com,api.rr.tv,editorapi.115.com,api.lakecoloring.com,ctrl.playcvn.com,dict.eudic.net,m.client.10010.com,api.wakamoment.ga,*.bh3.com,api.diyidan.net,api.flexibits.com,api.jiaonizuocai.com,api.sololearn.com,tncj.hortorgames.com,m.pearkin.com,claritywallpaper.com,bookapi.ihuman.com,rest.zhibo.tv,*.smzdm.com,note.youdao.com,billing.peakcloud.org,api.weibo.cn,mapi.weibo.com,*.uve.weibo.com,mp.weixin.qq.com,api.bilibili.com,app.bilibili.com,*.zhihu.com,aweme*.snssdk.com,*.kuwo.cn,*.xiaoxiao*.com,api*.tiktokv.com,*.musical.ly,*.amemv.com,p.du.163.com,getuserinfo.321mh.com,getuserinfo-globalapi.zymk.cn,ios.fuliapps.com,vsco.co,api.vnision.com,*.my10api.com,sp.kaola.com,r.inews.qq.com,apple.fuliapps.com,newdrugs.dxy.cn,app101.avictown.cc,api.hlo.xyz,api.ijo.xyz,www.luqijianggushi.com,account.wps.*,u.kanghuayun.com,api.gyrosco.pe,api1.dobenge.cn,api.mvmtv.com,mitaoapp.yeduapp.com,origin-prod-phoenix.jibjab.com,www.3ivf.com,pay.guoing.com,api.termius.com,api.bjxkhc.com,viva.v21xy.com,.com,biz.caiyunapp.com,api.gotokeep.com,ap*.intsig.net,mp.bybutter.com,api.vuevideo.net,api.picsart.c*,api.meiease.c*,splice.oracle.*.com,api.gamer.com.tw,ios.xiangjiaoapps.com,apple.xiangjiaoapps.com,*.xiangxiangapps.com,avatar-nct.nixcdn.com,spclient.wg.spotify.com,oa.zalo.me,api.unfold.app,viva-asia1.vvbrd.com,graph.nhaccuatui.com,api.memrise.com,api.sync.me,pool.elsanow.io,lambda.us-east-1.amazonaws.com,api.mondlylanguages.com,api.busuu.com,owa.videoshowiosglobalserver.com:0,accounts.elevateapp.net,purchases.ws.pho.to,api-intl.mr.meitu.com,bmall.camera360.com,api.tv.zing.vn,api.calm.com,www.calm.com,api.global.mp3.zing.vn,apimboom2.globaldelight.net,photos.adobe.io,license.pdfexpert.com,subs.platforms.team,apic.musixmatch.com,api.getmimo.com,engbright.com,api.lingokids.com,www.peacefulsoundsapp.com,duolingo-leaderboards-prod.duolingo.com,mobile-api.adguard.com,api.blinkist.com,api-kinemaster-assetstore.*,api.pushover.net,api.overhq.com,receipt-validator.herewetest.com,lcs-mobile-cops.adobe.io,education.github.com,backend.getdrafts.com,ssl-api.itranslateapp.com,sk.ulysses.app,dayone.me,license.enpass.io,*.grammarly.com,api.keepkeep.com,planner5d.com,secure.istreamer.com,www.api.monkeyuni.net,api.kadiantexiao.com,nowapi.navoinfo.cn,apic.yzhiyin.com,api.pixomatic.us,fwq.qmlist.net,*.40sishi.com,*.jizhangapp.com,miniapp.elecredit.com,api.quizlet.com,sapi.beingfine.cn,buy.itunes.apple.com,*.washingtonpost.com,trade-acs.m.taobao.com,account.wps.cn,*.googlevideo.com,pixmagicapp.com,commerce-i18n-api.faceu.mobi,mobi,receipts.cerebralgardens.com,api-cs.intsig.net,api.appsyscode.com,api.freeletics.com,api.shred.app,api.deezer.com,iap.aps-sdk.com,uspai.tongbu.com,,usapi.tongbu.com
 
 http-response ^https:\/\/viva-asia1\.vvbrd\.com\/api\/rest\/u\/vip* requires-body=1,script-path=eval_script.js
 
@@ -78,6 +78,20 @@ http-response ^https:\/\/secure\.istreamer\.com\/backend$ requires-body=1,script
 
 http-response ^https:\/\/www\.api\.monkeyuni\.net\/api\/.+\/mobile\/account\/load-update requires-body=1,script-path=eval_script.js
 
+http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig) requires-body=1,script-path=eval_script.js
+
+http-response ^http://amdc\.m\.taobao\.com/amdc/mobileDispatch requires-body=1,script-path=eval_script.js
+
+http-response ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail requires-body=1,script-path=eval_script.js
+
+http-request ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D script-path=eval_script.js
+
+http-response ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D requires-body=1,script-path=eval_script.js
+
+http-response ^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua) requires-body=1,script-path=eval_script.js
+
+http-response ^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)(mix)?timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|!/photos/pic_recommend_status) requires-body=1,script-path=eval_script.js
+
 http-response ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad requires-body=1,script-path=eval_script.js
 
 http-response ^https://api.zhihu.com/moments\?(action|feed_type) requires-body=1,script-path=eval_script.js
@@ -156,20 +170,6 @@ http-response ^https:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json 
 
 http-response ^https:\/\/splice\.oracle\.\w+\.com\/devices\/me requires-body=1,script-path=eval_script.js
 
-http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig) requires-body=1,script-path=eval_script.js
-
-http-response ^http://amdc\.m\.taobao\.com/amdc/mobileDispatch requires-body=1,script-path=eval_script.js
-
-http-response ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail requires-body=1,script-path=eval_script.js
-
-http-request ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D script-path=eval_script.js
-
-http-response ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D requires-body=1,script-path=eval_script.js
-
-http-response ^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua) requires-body=1,script-path=eval_script.js
-
-http-response ^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)(mix)?timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|!/photos/pic_recommend_status) requires-body=1,script-path=eval_script.js
-
 http-response ^https?://i.weread.qq.com/pay requires-body=1,script-path=eval_script.js
 
 http-response ^https:\/\/app\.bilibili\.com\/(search\/resource|x\/(resource\/show\/tab|v2\/(view|rank|feed|reply\/main|account\/mine))) requires-body=1,script-path=eval_script.js
@@ -223,3 +223,5 @@ http-response ^https:\/\/quanzi\.jizhangapp\.com\/(book|profile|vip\/inapp\/inde
 http-response ^https:\/\/api\.quizlet\.com\/.*\/users\/ requires-body=1,script-path=eval_script.js
 
 http-response ^https:\/\/sapi\.beingfine\.cn\/v1\/UserLaunchAppReport requires-body=1,script-path=eval_script.js
+
+http-response ^http:\/\/usapi\.tongbu\.com\/v\.html requires-body=1,script-path=eval_script.js
