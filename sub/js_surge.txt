@@ -1,18 +1,110 @@
 hostname=interface*.music.163.com,p1.music.126.net,music*.163.com,*.music.163.com,music*.126.net,*.music.126.net,api.m.jd.com,ios.prod.ftl.netflix.com,vipapi.jxedt.com,api.interpreter.caiyunai.com,pocketlists.com,book.haitunwallet.com,mubu.com,app.xunjiepdf.com,api.tophub.today,miaow.yiyongcad.com,api.lennou.com,api.gkocr.com,vira.llsapp.com,commerce-.*api.faceu.mobi,commerce-api.faceu.mobi,pan.baidu.com,api.revenuecat.com,api.rr.tv,editorapi.115.com,api.lakecoloring.com,ctrl.playcvn.com,dict.eudic.net,m.client.10010.com,api.wakamoment.ga,*.bh3.com,api.diyidan.net,api.flexibits.com,api.jiaonizuocai.com,api.sololearn.com,tncj.hortorgames.com,m.pearkin.com,claritywallpaper.com,bookapi.ihuman.com,rest.zhibo.tv,*.smzdm.com,note.youdao.com,billing.peakcloud.org,api.weibo.cn,mapi.weibo.com,*.uve.weibo.com,mp.weixin.qq.com,api.bilibili.com,app.bilibili.com,*.zhihu.com,aweme*.snssdk.com,*.kuwo.cn,*.xiaoxiao*.com,api*.tiktokv.com,api*.musical.ly,api*.amemv.com,*tiktokcdn.com,p.du.163.com,getuserinfo.321mh.com,getuserinfo-globalapi.zymk.cn,ios.fuliapps.com,vsco.co,api.vnision.com,*.my10api.com,sp.kaola.com,r.inews.qq.com,apple.fuliapps.com,newdrugs.dxy.cn,app101.avictown.cc,api.hlo.xyz,api.ijo.xyz,www.luqijianggushi.com,account.wps.*,u.kanghuayun.com,api.gyrosco.pe,api1.dobenge.cn,api.mvmtv.com,mitaoapp.yeduapp.com,origin-prod-phoenix.jibjab.com,www.3ivf.com,pay.guoing.com,api.termius.com,api.bjxkhc.com,viva.v21xy.com,.com,biz.caiyunapp.com,api.gotokeep.com,ap*.intsig.net,mp.bybutter.com,api.vuevideo.net,api.picsart.c*,api.meiease.c*,splice.oracle.*.com,api.gamer.com.tw,ios.xiangjiaoapps.com,apple.xiangjiaoapps.com,*.xiangxiangapps.com,avatar-nct.nixcdn.com,spclient.wg.spotify.com,oa.zalo.me,api.unfold.app,viva-asia1.vvbrd.com,graph.nhaccuatui.com,api.memrise.com,api.sync.me,pool.elsanow.io,lambda.us-east-1.amazonaws.com,api.mondlylanguages.com,api.busuu.com,owa.videoshowiosglobalserver.com:0,accounts.elevateapp.net,purchases.ws.pho.to,api-intl.mr.meitu.com,bmall.camera360.com,api.tv.zing.vn,api.calm.com,www.calm.com,api.global.mp3.zing.vn,apimboom2.globaldelight.net,photos.adobe.io,license.pdfexpert.com,subs.platforms.team,apic.musixmatch.com,api.getmimo.com,engbright.com,api.lingokids.com,www.peacefulsoundsapp.com,duolingo-leaderboards-prod.duolingo.com,mobile-api.adguard.com,api.blinkist.com,api-kinemaster-assetstore.*,api.pushover.net,api.overhq.com,receipt-validator.herewetest.com,lcs-mobile-cops.adobe.io,education.github.com,backend.getdrafts.com,ssl-api.itranslateapp.com,sk.ulysses.app,dayone.me,license.enpass.io,*.grammarly.com,api.keepkeep.com,planner5d.com,secure.istreamer.com,www.api.monkeyuni.net,api.kadiantexiao.com,nowapi.navoinfo.cn,apic.yzhiyin.com,api.pixomatic.us,fwq.qmlist.net,*.40sishi.com,*.jizhangapp.com,miniapp.elecredit.com,api.quizlet.com,sapi.beingfine.cn,buy.itunes.apple.com,*.washingtonpost.com,trade-acs.m.taobao.com,*.musical.ly,*.amemv.com,account.wps.cn,*.googlevideo.com,pixmagicapp.com,commerce-i18n-api.faceu.mobi,mobi,receipts.cerebralgardens.com,api-cs.intsig.net,api.appsyscode.com,api.freeletics.com,api.shred.app,api.deezer.com,iap.aps-sdk.com,app.flashdown365.com,api.shimo.im,api.spshenqi.com,,usapi.tongbu.com
 
-http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig) requires-body=1,script-path=eval_script.js
+http-response ^https?://i.weread.qq.com/pay requires-body=1,script-path=eval_script.js
 
-http-request ^http://.+/amdc/mobileDispatch requires-body=1,script-path=eval_script.js
+http-response ^https:\/\/app\.bilibili\.com\/(search\/resource|x\/(resource\/show\/tab|v2\/(view|rank|feed|reply\/main|account\/mine))) requires-body=1,script-path=eval_script.js
 
-http-response ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail requires-body=1,script-path=eval_script.js
+http-response ^https:\/\/app\.bilibili\.com\/x\/v2\/space\?access_key requires-body=1,script-path=eval_script.js
 
-http-request ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D script-path=eval_script.js
+http-response ^https:\/\/api\.bilibili\.com\/pgc\/view\/app\/season requires-body=1,script-path=eval_script.js
 
-http-response ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D requires-body=1,script-path=eval_script.js
+http-response ^https:\/\/api\.bilibili\.com\/pgc\/player\/api\/playurl requires-body=1,script-path=eval_script.js
 
-http-response ^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua) requires-body=1,script-path=eval_script.js
+http-response ^https:\/\/api\.interpreter\.caiyunai\.com\/v1\/user requires-body=1,script-path=eval_script.js
 
-http-response ^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)(mix)?timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|!/photos/pic_recommend_status|video/tiny_stream_video_list) requires-body=1,script-path=eval_script.js
+http-response ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/book\.haitunwallet\.com\/app\/vip\/status requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/mubu\.com\/api\/app\/user\/info requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/app\.xunjiepdf\.com\/api\/v4\/virtualactregister requires-body=1,script-path=eval_script.js
+
+http-response ^https?:\/\/vira\.llsapp\.com\/api\/v2\/readings\/(accessible|limitation) requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail) requires-body=1,script-path=eval_script.js
+
+http-response ^http(s)://mjapp.anlujia.com/index.php/app/ios/(vod/show|(user|vod|topic|type)/index) requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/api\.revenuecat\.com\/v1\/(receipts|\d{1,})$ requires-body=1,script-path=eval_script.js
+
+http-response ^http://ctrl.playcvn.com/app/(init|ads) requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/dict\.eudic\.net\/jingting\/GetThisChapterTaskStatus? requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/api\.wakamoment\.ga\/init\?platform\=ios requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/api\.diyidan\.net\/v0\.3\/(user\/personal_homepage|vip_user\/info|tv_series\/index\?appChanne) requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/api\.flexibits\.com\/v1\/(auth|account)\/(device|details|appstore-receipt)\/$ requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/m\.pearkin\.com\/(api\/Movie\/WatchMovie|api\/Account\/CheckVip|api\/account\/IndexDetail) requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/claritywallpaper\.com\/clarity\/api\/(userInfo|special\/queryByCatalogAll) requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/note\.youdao\.com\/yws\/(mapi/payment|api/self) requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/billing\.peakcloud\.org\/billing\/2\/user\/me? requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/www\.xmind\.cn\/\_res\/devices requires-body=1,script-path=eval_script.js
+
+http-response ^http?:\/\/.*\.arten.cn/login/login requires-body=1,script-path=eval_script.js
+
+http-response ^https://api.weiqire.com/api3/(visitor/|user/unlockCharpter) requires-body=1,script-path=eval_script.js
+
+http-response ^https://api\.shimo\.im\/users\/ requires-body=1,script-path=eval_script.js
+
+http-response ^http\:\/\/jdytv\.cn\/login\/login\/veifys requires-body=1,script-path=eval_script.js
+
+http-response ^https?:\/\/.*\.xunjie.*\.com\/api\/v\d\/* requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/api\.psy-1\.com\/cosleep\/user\/info requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/snailsleep\.net\/snail\/v1\/profile\/get requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/mob2015\.kekenet\.com\/keke\/mobile\/index\.php requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/m\.samh\.xndm\.tech\/userapi\/info\/v1\/getuserinfo requires-body=1,script-path=eval_script.js
+
+http-response ^http\:\/\/app\.flashdown365\.com\/ios\/login requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/avoscloud\.com\/1\.1\/users\/ requires-body=1,script-path=eval_script.js
+
+http-response ^https\:\/\/api\.gao1gps\.cn\/v1\/user\/info requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/api\.meiyan\.com\/iap\/verify\.json requires-body=1,script-path=eval_script.js
+
+http-response ^https?:\/\/homepage-api\.smzdm\.com\/home\?ad requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/sapi\.beingfine\.cn\/v3\/report\/launch\/ requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/www\.instapaper\.com\/api\/subscription_status requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/noted-prod\.herokuapp\.com\/api\/verifyReceipt requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/api\.pixomatic\.us\/authorize requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/fwq\.qmlist\.net\/xzbbserver\/userController\/loginXzbb requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/sapi\.beingfine\.cn\/v1\/UserLaunchAppReport requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/api\.quizlet\.com\/.*\/users\/ requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/quanzi\.jizhangapp\.com\/(book|profile|vip\/inapp\/index).* requires-body=1,script-path=eval_script.js
+
+http-response ^http:\/\/app\.flashdown365\.com\/ios\/login requires-body=1,script-path=eval_script.js
+
+http-response ^http:\/\/api\.tophub\.today\/account\/sync requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/www\.40sishi\.com\/list\/user\/profile requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/shimo\.im\/octopus-api\/users\/subscribe requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/api\.spshenqi\.com\/xsp\.php\/Member\/me_v1 requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/nowapi\.navoinfo\.cn\/my_vip requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/api\.revenuecat\.com\/v1\/subscribers\/B5DEFDFD-AF8B-4E22-9586-3EF85CEE45A0 requires-body=1,script-path=eval_script.js
 
 http-response ^https:\/\/viva-asia1\.vvbrd\.com\/api\/rest\/u\/vip* requires-body=1,script-path=eval_script.js
 
@@ -91,112 +183,6 @@ http-response ^https:\/\/subscription\.grammarly\.com\/api\/v1$ requires-body=1,
 http-response ^https:\/\/secure\.istreamer\.com\/backend$ requires-body=1,script-path=eval_script.js
 
 http-response ^https:\/\/www\.api\.monkeyuni\.net\/api\/.+\/mobile\/account\/load-update requires-body=1,script-path=eval_script.js
-
-http-response ^https?://i.weread.qq.com/pay requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/app\.bilibili\.com\/(search\/resource|x\/(resource\/show\/tab|v2\/(view|rank|feed|reply\/main|account\/mine))) requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/app\.bilibili\.com\/x\/v2\/space\?access_key requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/api\.bilibili\.com\/pgc\/view\/app\/season requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/api\.bilibili\.com\/pgc\/player\/api\/playurl requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/api\.interpreter\.caiyunai\.com\/v1\/user requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt requires-body=1,script-path=eval_script.js
-
-http-response https:\/\/book\.haitunwallet\.com\/app\/vip\/status requires-body=1,script-path=eval_script.js
-
-http-response https:\/\/mubu\.com\/api\/app\/user\/info requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/app\.xunjiepdf\.com\/api\/v4\/virtualactregister requires-body=1,script-path=eval_script.js
-
-http-response ^https?:\/\/vira\.llsapp\.com\/api\/v2\/readings\/(accessible|limitation) requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail) requires-body=1,script-path=eval_script.js
-
-http-response ^http(s)://mjapp.anlujia.com/index.php/app/ios/(vod/show|(user|vod|topic|type)/index) requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/api\.revenuecat\.com\/v1\/(receipts|\d{1,})$ requires-body=1,script-path=eval_script.js
-
-http-response ^http://ctrl.playcvn.com/app/(init|ads) requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/dict\.eudic\.net\/jingting\/GetThisChapterTaskStatus? requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/api\.wakamoment\.ga\/init\?platform\=ios requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/api\.diyidan\.net\/v0\.3\/(user\/personal_homepage|vip_user\/info|tv_series\/index\?appChanne) requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/api\.flexibits\.com\/v1\/(auth|account)\/(device|details|appstore-receipt)\/$ requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/m\.pearkin\.com\/(api\/Movie\/WatchMovie|api\/Account\/CheckVip|api\/account\/IndexDetail) requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/claritywallpaper\.com\/clarity\/api\/(userInfo|special\/queryByCatalogAll) requires-body=1,script-path=eval_script.js
-
-http-response https://note.youdao.com/yws/(mapi/payment|api/self) requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/billing\.peakcloud\.org\/billing\/2\/user\/me? requires-body=1,script-path=eval_script.js
-
-http-response https:\/\/www\.xmind\.cn\/\_res\/devices requires-body=1,script-path=eval_script.js
-
-http-response ^http?:\/\/.*\.arten.cn/login/login requires-body=1,script-path=eval_script.js
-
-http-response ^https://api.weiqire.com/api3/(visitor/|user/unlockCharpter) requires-body=1,script-path=eval_script.js
-
-http-response https://api.shimo.im/users/ requires-body=1,script-path=eval_script.js
-
-http-response ^http\:\/\/jdytv\.cn\/login\/login\/veifys requires-body=1,script-path=eval_script.js
-
-http-response ^https?:\/\/.*\.xunjie.*\.com\/api\/v\d\/* requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/api\.psy-1\.com\/cosleep\/user\/info requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/snailsleep\.net\/snail\/v1\/profile\/get requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/mob2015\.kekenet\.com\/keke\/mobile\/index\.php requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/m\.samh\.xndm\.tech\/userapi\/info\/v1\/getuserinfo requires-body=1,script-path=eval_script.js
-
-http-response ^http\:\/\/app\.flashdown365\.com\/ios\/login requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/avoscloud\.com\/1\.1\/users\/ requires-body=1,script-path=eval_script.js
-
-http-response ^https\:\/\/api\.gao1gps\.cn\/v1\/user\/info requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/api\.meiyan\.com\/iap\/verify\.json requires-body=1,script-path=eval_script.js
-
-http-response ^https?:\/\/homepage-api\.smzdm\.com\/home\?ad requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/sapi\.beingfine\.cn\/v3\/report\/launch\/ requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/www\.instapaper\.com\/api\/subscription_status requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/noted-prod\.herokuapp\.com\/api\/verifyReceipt requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/api\.pixomatic\.us\/authorize requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/fwq\.qmlist\.net\/xzbbserver\/userController\/loginXzbb requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/sapi\.beingfine\.cn\/v1\/UserLaunchAppReport requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/api\.quizlet\.com\/.*\/users\/ requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/quanzi\.jizhangapp\.com\/(book|profile|vip\/inapp\/index).* requires-body=1,script-path=eval_script.js
-
-http-response ^http:\/\/app\.flashdown365\.com\/ios\/login requires-body=1,script-path=eval_script.js
-
-http-response ^http:\/\/api\.tophub\.today\/account\/sync requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/www\.40sishi\.com\/list\/user\/profile requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/shimo\.im\/octopus-api\/users\/subscribe requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/api\.spshenqi\.com\/xsp\.php\/Member\/me_v1 requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/nowapi\.navoinfo\.cn\/my_vip requires-body=1,script-path=eval_script.js
-
-http-response ^https:\/\/api\.revenuecat\.com\/v1\/subscribers\/B5DEFDFD-AF8B-4E22-9586-3EF85CEE45A0 requires-body=1,script-path=eval_script.js
 
 http-response ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad requires-body=1,script-path=eval_script.js
 
@@ -279,3 +265,17 @@ http-response ^https://aweme-eagle(.*)\.snssdk\.com\/aweme/.+/(feed|aweme/post|f
 http-request ^https:\/\/.*\.amemv\.com\/aweme\/v.*\/(feed|post) script-path=eval_script.js
 
 http-response ^https:\/\/.*\.amemv\.com\/aweme\/v.*\/(feed|post) requires-body=1,script-path=eval_script.js
+
+http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig) requires-body=1,script-path=eval_script.js
+
+http-request ^http://.+/amdc/mobileDispatch requires-body=1,script-path=eval_script.js
+
+http-response ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail requires-body=1,script-path=eval_script.js
+
+http-request ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D script-path=eval_script.js
+
+http-response ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D requires-body=1,script-path=eval_script.js
+
+http-response ^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua) requires-body=1,script-path=eval_script.js
+
+http-response ^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)(mix)?timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|!/photos/pic_recommend_status|video/tiny_stream_video_list) requires-body=1,script-path=eval_script.js
