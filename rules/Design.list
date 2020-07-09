@@ -27,3 +27,7 @@ DOMAIN-SUFFIX,fontawesome.com
 #aws
 DOMAIN-SUFFIX,fs3.amazonaws.com
 DOMAIN-KEYWORD,amazonaws
+
+#UI8
+DOMAIN-SUFFIX,ui8.net
+DOMAIN-SUFFIX,js.stripe.com
