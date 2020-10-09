@@ -1,11 +1,21 @@
 # 设计网站
 DOMAIN-SUFFIX,dribbble.com
 DOMAIN-SUFFIX,pinterest.com
-DOMAIN-SUFFIX,behance.net
+
 DOMAIN-SUFFIX,io3000.com
 DOMAIN-SUFFIX,muuuuu.org
 DOMAIN-SUFFIX,naver.com
 DOMAIN-SUFFIX,artstation.com
+
+#behance
+DOMAIN,wwwwimages2.adobe.com
+DOMAIN,sstats.adobe.com
+DOMAIN,static.adobelogin.com
+DOMAIN,a5.behance.net
+DOMAIN,mir-s3-cdn-cf.behance.net
+DOMAIN,assets.adobedtm.com
+DOMAIN-SUFFIX,behance.com
+DOMAIN-SUFFIX,behance.net
 
 #关键词匹配
 DOMAIN-KEYWORD,dribbble
@@ -31,3 +41,6 @@ DOMAIN-KEYWORD,amazonaws
 #UI8
 DOMAIN-SUFFIX,ui8.net
 DOMAIN-SUFFIX,js.stripe.com
+
+#deck.is 设计转换成ppt
+DOMAIN-SUFFIX,deck.is
