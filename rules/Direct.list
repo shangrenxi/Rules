@@ -1,10 +1,13 @@
 #github加速
 DOMAIN-SUFFIX,cnpmjs.org
+DOMAIN-SUFFIX,fastgit.org
 
 #站酷
 DOMAIN-SUFFIX,huaban.com
 DOMAIN-SUFFIX,zcool.com.cn
+DOMAIN-SUFFIX,hellorf.com
 
+#ui中国
 DOMAIN-SUFFIX,ui.cn
 
 #低端影视
