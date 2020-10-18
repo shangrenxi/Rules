@@ -1,4 +1,5 @@
 #notion
+DOMAIN-KEYWORD,notion
 DOMAIN-SUFFIX,amplitude.com
 DOMAIN-SUFFIX,intercom.com
 DOMAIN-SUFFIX,intercom.io
@@ -6,7 +7,6 @@ DOMAIN-SUFFIX,intercomcdn.com
 DOMAIN-SUFFIX,notion.so,force-remote-dns
 DOMAIN-SUFFIX,segment.com
 DOMAIN-SUFFIX,amazonaws.com
-DOMAIN-KEYWORD,notion
 
 #lvv2
 DOMAIN-SUFFIX,lvv2.com
@@ -24,30 +24,33 @@ DOMAIN-SUFFIX,haikudeck.com
 
 #airport
 DOMAIN-SUFFIX,miaona.xyz
-DOMAIN-SUFFIX,lei-su.me
 DOMAIN-SUFFIX,qianglie.xyz
 DOMAIN-SUFFIX,joysaid.com
-DOMAIN-SUFFIX,v2tun.com
-DOMAIN-KEYWORD,cordcloud
-#DOMAIN-SUFFIX,cordcloud.site
-#DOMAIN-SUFFIX,cordcloud.pro
 DOMAIN-SUFFIX,losadhwselfff2332dasd.xyz
-DOMAIN-KEYWORD,cccat.io
+DOMAIN-SUFFIX,cnix-gov-cn.com
+DOMAIN-SUFFIX,xn--d4ty0ojsqzfd
+#DOMAIN-SUFFIX,cccat.io
 DOMAIN-SUFFIX,touhou.plus
+DOMAIN-SUFFIX,touhou.tel
 #DOMAIN-SUFFIX,llsmall.com
 DOMAIN-SUFFIX,ovocloud.cc
+#DOMAIN-SUFFIX,v2.qovoq.ml
 #DOMAIN-SUFFIX,prprc.xyz
 #DOMAIN-SUFFIX,pay.pm
-DOMAIN-KEYWORD,suying666
 DOMAIN-SUFFIX,yjc-a.xyz
 DOMAIN-SUFFIX,getelement.cc
 #DOMAIN-SUFFIX,freemycloud.site
 #DOMAIN-SUFFIX,glados-subscribe.com
 DOMAIN-SUFFIX,aco.monster
 DOMAIN-SUFFIX,ncuc.xyz
+DOMAIN-KEYWORD,suying666
+DOMAIN-KEYWORD,lei-su
 DOMAIN-KEYWORD,nexitally
 DOMAIN-KEYWORD,duyaoss
 DOMAIN-KEYWORD,n3ro
+DOMAIN-KEYWORD,v2tun
+DOMAIN-KEYWORD,cordcloud
 DOMAIN-KEYWORD,ytoo
 DOMAIN-KEYWORD,yoyu
 DOMAIN-SUFFIX,bywave.io
+DOMAIN-KEYWORD,cccat
