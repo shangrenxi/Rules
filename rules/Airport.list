@@ -130,4 +130,4 @@ DOMAIN-SUFFIX,izclass
 DOMAIN-KEYWORD,izclass
 
 # Google Analytics
-HOST,analyticsmobile-pa.googleapis.com
+DOMAIN,analyticsmobile-pa.googleapis.com
