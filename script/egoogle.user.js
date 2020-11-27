@@ -1,13 +1,13 @@
 /**
- * 名称：Endless_Google.user.js
- * 地址：https://openuserjs.org/install/tumpio/Endless_Google.user.js
+ * 名称：egoogle.user.js
+ * 地址：https://raw.fastgit.org/tumpio/gmscripts/master/Endless_Google/egoogle.user.js
  *
  ******** 以下为 tamperJS 自动生成的 rewrite 相关信息，可能需要根据情况适当调整 ********
 
 [rewrite]
-http:\/\/www\.google\..* url script-response-body Endless_Google.user.js
-https:\/\/www\.google\..* url script-response-body Endless_Google.user.js
-https:\/\/encrypted\.google\..* url script-response-body Endless_Google.user.js
+https?:\/\/www\.google\..* url script-response-body https://raw.fastgit.org/shangrenxi/Rules/master/script/egoogle.user.js
+// https:\/\/www\.google\..* url script-response-body https://raw.fastgit.org/shangrenxi/Rules/master/script/egoogle.user.js
+https:\/\/encrypted\.google\..* url script-response-body https://raw.fastgit.org/shangrenxi/Rules/master/script/egoogle.user.js
 
 [mitm]
 , www.google.*, encrypted.google.*
@@ -23,8 +23,9 @@ let body = $response.body
 if (/<\/html>|<\/body>/.test(body)) {
   body = body.replace('</body>', `
 
-<script>
-const elecJSPack = function(){// ==UserScript==
+<script>const elecJSPack = function(elecV2){
+
+// ==UserScript==
 // @name            Endless Google
 // @description     Load more results automatically and endlessly.
 // @author          tumpio
@@ -165,9 +166,10 @@ function init() {
 }
 
 document.addEventListener("DOMContentLoaded", init);
-}()</script></body>`)
 
-  console.log('添加 tamperJS：Endless_Google.user.js')
+}(console)</script></body>`)
+
+  console.log('添加 tamperJS：egoogle.user.js')
 }
 
 $done({ body })
