@@ -38,6 +38,9 @@ DOMAIN-SUFFIX,fontawesome.com
 DOMAIN-SUFFIX,fs3.amazonaws.com
 DOMAIN-KEYWORD,amazonaws
 
+#figma插件
+DOMAIN-SUFFIX,code.jquery.com
+
 #UI8
 DOMAIN-SUFFIX,ui8.net
 DOMAIN-SUFFIX,js.stripe.com
