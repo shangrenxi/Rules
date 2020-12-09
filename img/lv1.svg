@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="20" height="20" fill="#EFF8FF" rx="4"/>
+    <text fill="#327AFF" font-family="Fontquan-XinYiGuanHeiTi-Regular, Fontquan-XinYiGuanHeiTi" font-size="12">
+      <tspan x="5" y="12">01</tspan>
+    </text>
+    <text fill="#45659F" font-family="YouSheBiaoTiHei" font-size="6">
+      <tspan x="2" y="20">level</tspan>
+    </text>
+  </g>
+</svg>
