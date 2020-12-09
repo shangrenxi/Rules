@@ -1,11 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
   <g fill="none" fill-rule="evenodd">
-    <rect width="20" height="20" fill="#FFF3E7" rx="4"/>
-    <text fill="#FF9632" font-family="Fontquan-XinYiGuanHeiTi-Regular, Fontquan-XinYiGuanHeiTi" font-size="12">
-      <tspan x="2.5" y="12">00</tspan>
-    </text>
-    <text fill="#A15D1C" font-family="YouSheBiaoTiHei" font-size="6">
-      <tspan x="1.5" y="20">FREE</tspan>
+    <rect width="20" height="20" fill="#F5FFFC" rx="10"/>
+    <text fill="#37AD8D" font-family="YouSheBiaoTiHei" font-size="7" letter-spacing="-.304">
+      <tspan x="0" y="7">FREE</tspan>
     </text>
   </g>
 </svg>
