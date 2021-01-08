@@ -1,6 +1,6 @@
 # 设计网站
 DOMAIN-SUFFIX,dribbble.com
-DOMAIN-SUFFIX,pinterest.com
+
 
 DOMAIN-SUFFIX,io3000.com
 DOMAIN-SUFFIX,muuuuu.org
@@ -16,6 +16,10 @@ DOMAIN,mir-s3-cdn-cf.behance.net
 DOMAIN,assets.adobedtm.com
 DOMAIN-SUFFIX,behance.com
 DOMAIN-SUFFIX,behance.net
+
+#pinterest
+DOMAIN-SUFFIX,pinimg.com
+DOMAIN-SUFFIX,pinterest.com
 
 #关键词匹配
 DOMAIN-KEYWORD,dribbble
