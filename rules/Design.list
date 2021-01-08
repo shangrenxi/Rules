@@ -18,7 +18,7 @@ DOMAIN-SUFFIX,behance.com
 DOMAIN-SUFFIX,behance.net
 
 #pinterest
-DOMAIN-SUFFIX,pinimg.com
+#DOMAIN-SUFFIX,pinimg.com
 DOMAIN-SUFFIX,pinterest.com
 
 #关键词匹配
