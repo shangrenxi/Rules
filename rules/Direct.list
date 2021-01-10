@@ -2,6 +2,7 @@
 DOMAIN-SUFFIX,cnpmjs.org
 DOMAIN-SUFFIX,fastgit.org
 DOMAIN-SUFFIX,jsdelivr.net
+DOMAIN,github.shangrenxi.workers.dev
 
 #站酷
 DOMAIN-SUFFIX,huaban.com
