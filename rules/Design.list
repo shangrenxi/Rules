@@ -51,3 +51,6 @@ DOMAIN-SUFFIX,js.stripe.com
 
 #deck.is 设计转换成ppt
 DOMAIN-SUFFIX,deck.is
+
+#artstation
+DOMAIN-SUFFIX,artstation.com
