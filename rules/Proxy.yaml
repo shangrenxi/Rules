@@ -1,0 +1,29 @@
+payload:
+
+#notion
+  - DOMAIN-KEYWORD,notion
+  - DOMAIN-SUFFIX,amplitude.com
+  - DOMAIN-SUFFIX,intercom.com
+  - DOMAIN-SUFFIX,intercom.io
+  - DOMAIN-SUFFIX,intercomcdn.com
+  - DOMAIN-SUFFIX,notion.so,force-remote-dns
+  - DOMAIN-SUFFIX,segment.com
+  - DOMAIN-SUFFIX,amazonaws.com
+
+#lvv2
+  - DOMAIN-SUFFIX,lvv2.com
+
+#medium
+  - DOMAIN-SUFFIX,medium.com
+
+#producthunt
+  - DOMAIN-SUFFIX,imgix.net
+  - DOMAIN-SUFFIX,producthunt.com
+
+#ppt
+  - DOMAIN-SUFFIX,premast.com
+  - DOMAIN-SUFFIX,haikudeck.com
+
+#mac
+  - DOMAIN-SUFFIX,macenjoy.co
+  - DOMAIN-SUFFIX,strikinglycdn.com

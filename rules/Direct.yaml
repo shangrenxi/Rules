@@ -1,0 +1,32 @@
+payload:
+
+#github加速
+  - DOMAIN-SUFFIX,cnpmjs.org
+  - DOMAIN-SUFFIX,fastgit.org
+  - DOMAIN-SUFFIX,jsdelivr.net
+  - DOMAIN,github.shangrenxi.workers.dev
+
+#站酷
+  - DOMAIN-SUFFIX,huaban.com
+  - DOMAIN-SUFFIX,zcool.com.cn
+  - DOMAIN-SUFFIX,hellorf.com
+
+#tuyiyi
+  - DOMAIN-SUFFIX,tuyiyi.com
+  - DOMAIN-SUFFIX,sheui.com
+
+#ui中国
+  - DOMAIN-SUFFIX,ui.cn
+
+#美叶
+  - DOMAIN-SUFFIX,meiye.art
+  - DOMAIN-SUFFIX,psketch.com
+
+#低端影视
+  - DOMAIN-SUFFIX,ddrk.me
+
+#南瓜电影
+  - DOMAIN-SUFFIX,vcinema.cn
+
+#蓝湖
+  - DOMAIN-SUFFIX,lanhuapp.com
