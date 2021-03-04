@@ -4,7 +4,7 @@ DOMAIN-SUFFIX,amplitude.com
 DOMAIN-SUFFIX,intercom.com
 DOMAIN-SUFFIX,intercom.io
 DOMAIN-SUFFIX,intercomcdn.com
-DOMAIN-SUFFIX,notion.so,force-remote-dns
+DOMAIN-SUFFIX,notion.so
 DOMAIN-SUFFIX,segment.com
 DOMAIN-SUFFIX,amazonaws.com
 
