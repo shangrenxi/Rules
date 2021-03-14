@@ -28,9 +28,14 @@ DOMAIN-KEYWORD,pinterest
 
 #figma
 DOMAIN-SUFFIX,figma.com
-DOMAIN-SUFFIX,figma.zendesk.com
-DOMAIN-SUFFIX,zdassets.com
+DOMAIN-SUFFIX,clearbit.com
+DOMAIN-SUFFIX,clearbitjs.com
 DOMAIN-KEYWORD,figma
+
+# zendesk
+DOMAIN-SUFFIX,zdassets.com
+DOMAIN-SUFFIX,zendesk.com
+
 #第三方服务
 DOMAIN-SUFFIX,api.segment.io
 DOMAIN-SUFFIX,segment.com
