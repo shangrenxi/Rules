@@ -30,7 +30,11 @@ DOMAIN-KEYWORD,pinterest
 DOMAIN-SUFFIX,figma.com
 DOMAIN-SUFFIX,clearbit.com
 DOMAIN-SUFFIX,clearbitjs.com
+DOMAIN,static.figma.com
 DOMAIN-KEYWORD,figma
+
+#figma插件
+DOMAIN-SUFFIX,code.jquery.com
 
 # zendesk
 DOMAIN-SUFFIX,zdassets.com
@@ -46,9 +50,6 @@ DOMAIN-SUFFIX,fontawesome.com
 #aws
 DOMAIN-SUFFIX,fs3.amazonaws.com
 DOMAIN-KEYWORD,amazonaws
-
-#figma插件
-DOMAIN-SUFFIX,code.jquery.com
 
 #UI8
 DOMAIN-SUFFIX,ui8.net
