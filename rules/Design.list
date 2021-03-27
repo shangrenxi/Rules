@@ -27,11 +27,11 @@ DOMAIN-KEYWORD,behance
 DOMAIN-KEYWORD,pinterest
 
 #figma
-DOMAIN-SUFFIX,figma.com
 DOMAIN-SUFFIX,clearbit.com
 DOMAIN-SUFFIX,clearbitjs.com
 DOMAIN,static.figma.com
-DOMAIN-KEYWORD,figma
+#DOMAIN-KEYWORD,figma
+DOMAIN-SUFFIX,figma.com
 
 #figma插件
 DOMAIN-SUFFIX,code.jquery.com
