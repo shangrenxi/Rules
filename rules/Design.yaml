@@ -34,8 +34,8 @@ payload:
   - DOMAIN-SUFFIX,clearbit.com
   - DOMAIN-SUFFIX,clearbitjs.com
   - DOMAIN,static.figma.com
-  - DOMAIN-KEYWORD,figma
-  
+  #- DOMAIN-KEYWORD,figma
+   
 #figma插件
   - DOMAIN-SUFFIX,code.jquery.com
 
