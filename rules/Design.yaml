@@ -2,8 +2,6 @@ payload:
 
 # 设计网站
   - DOMAIN-SUFFIX,dribbble.com
-
-
   - DOMAIN-SUFFIX,io3000.com
   - DOMAIN-SUFFIX,muuuuu.org
   - DOMAIN-SUFFIX,naver.com
@@ -63,3 +61,6 @@ payload:
 
 #artstation
   - DOMAIN-SUFFIX,artstation.com
+  
+#xd2sketch
+  - DOMAIN-SUFFIX,xd2sketch.com
