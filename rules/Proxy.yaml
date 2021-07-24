@@ -27,3 +27,6 @@ payload:
 #mac
   - DOMAIN-SUFFIX,macenjoy.co
   - DOMAIN-SUFFIX,strikinglycdn.com
+
+#istio
+  - DOMAIN-SUFFIX,istio.io
