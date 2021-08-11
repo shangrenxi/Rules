@@ -26,6 +26,3 @@ payload:
   #AWS服务
   - DOMAIN-SUFFIX,fs3.amazonaws.com
   - DOMAIN-KEYWORD,amazonaws
-
-  #头像服务,直连会有问题,建议走梯子
-  - DOMAIN-SUFFIX,gravatar.com
