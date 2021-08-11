@@ -25,29 +25,32 @@ DOMAIN-KEYWORD,behance
 DOMAIN-KEYWORD,pinterest
 
 #figma
-DOMAIN-SUFFIX,clearbit.com
-DOMAIN-SUFFIX,clearbitjs.com
 DOMAIN,static.figma.com
-#DOMAIN-KEYWORD,figma
 DOMAIN-SUFFIX,figma.com
 
 #figma插件
 DOMAIN-SUFFIX,code.jquery.com
 
-# zendesk
+#zendesk
 DOMAIN-SUFFIX,zdassets.com
 DOMAIN-SUFFIX,zendesk.com
 
 #第三方服务
+DOMAIN-SUFFIX,clearbit.com
+DOMAIN-SUFFIX,clearbitjs.com
 DOMAIN-SUFFIX,api.segment.io
 DOMAIN-SUFFIX,segment.com
 DOMAIN-SUFFIX,segment.io
 DOMAIN-SUFFIX,wp.com
 DOMAIN-SUFFIX,gravatar.com
 DOMAIN-SUFFIX,fontawesome.com
-#aws
+
+#AWS服务
 DOMAIN-SUFFIX,fs3.amazonaws.com
 DOMAIN-KEYWORD,amazonaws
+
+#头像服务,直连会有问题,建议走梯子
+DOMAIN-SUFFIX,gravatar.com
 
 #UI8
 DOMAIN-SUFFIX,ui8.net
