@@ -25,16 +25,19 @@ payload:
   - DOMAIN-KEYWORD,dribbble
   - DOMAIN-KEYWORD,behance
   - DOMAIN-KEYWORD,pinterest
-
   
+#figma
+  - DOMAIN,static.figma.com
+  - DOMAIN-SUFFIX,figma.com
+
 #figma插件
   - DOMAIN-SUFFIX,code.jquery.com
 
-  # zendesk
-  - DOMAIN-SUFFIX,figma.zendesk.com
+#zendesk
   - DOMAIN-SUFFIX,zdassets.com
   - DOMAIN-SUFFIX,zendesk.com
-  
+  - DOMAIN-SUFFIX,figma.zendesk.com
+
 #第三方服务
   - DOMAIN-SUFFIX,clearbit.com
   - DOMAIN-SUFFIX,clearbitjs.com
@@ -49,9 +52,8 @@ payload:
   - DOMAIN-SUFFIX,fs3.amazonaws.com
   - DOMAIN-KEYWORD,amazonaws
 
-#figma官方
-  - DOMAIN-SUFFIX,figma.com
-  - DOMAIN,static.figma.com
+#头像服务,直连会有问题,建议走梯子
+  - DOMAIN-SUFFIX,gravatar.com
 
 #UI8
   - DOMAIN-SUFFIX,ui8.net
