@@ -38,7 +38,7 @@ payload:
   - DOMAIN-SUFFIX,zendesk.com
   - DOMAIN-SUFFIX,figma.zendesk.com
 
-#第三方服务
+#figma第三方服务
   - DOMAIN-SUFFIX,clearbit.com
   - DOMAIN-SUFFIX,clearbitjs.com
   - DOMAIN-SUFFIX,api.segment.io
@@ -51,9 +51,6 @@ payload:
 #AWS服务
   - DOMAIN-SUFFIX,fs3.amazonaws.com
   - DOMAIN-KEYWORD,amazonaws
-
-#头像服务,直连会有问题,建议走梯子
-  - DOMAIN-SUFFIX,gravatar.com
 
 #UI8
   - DOMAIN-SUFFIX,ui8.net
