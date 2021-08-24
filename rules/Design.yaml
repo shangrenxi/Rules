@@ -26,31 +26,6 @@ payload:
   - DOMAIN-KEYWORD,behance
   - DOMAIN-KEYWORD,pinterest
   
-#figma
-  - DOMAIN,static.figma.com
-  - DOMAIN-SUFFIX,figma.com
-
-#figma插件
-  - DOMAIN-SUFFIX,code.jquery.com
-
-#zendesk
-  - DOMAIN-SUFFIX,zdassets.com
-  - DOMAIN-SUFFIX,zendesk.com
-  - DOMAIN-SUFFIX,figma.zendesk.com
-
-#figma第三方服务
-  - DOMAIN-SUFFIX,clearbit.com
-  - DOMAIN-SUFFIX,clearbitjs.com
-  - DOMAIN-SUFFIX,api.segment.io
-  - DOMAIN-SUFFIX,segment.com
-  - DOMAIN-SUFFIX,segment.io
-  - DOMAIN-SUFFIX,wp.com
-  - DOMAIN-SUFFIX,gravatar.com
-  - DOMAIN-SUFFIX,fontawesome.com
-
-#AWS服务
-  - DOMAIN-SUFFIX,fs3.amazonaws.com
-  - DOMAIN-KEYWORD,amazonaws
 
 #UI8
   - DOMAIN-SUFFIX,ui8.net
