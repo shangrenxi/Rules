@@ -1,0 +1,1278 @@
+---
+#---------------------------------------------------#
+# 配置文件需要放置在 $HOME/.config/clash/config.yml
+# 或者运行目录下的config.yml
+#---------------------------------------------------#
+# 混合端口 HTTP和SOCKS5用一个端口
+mixed-port: 7890
+
+# HTTP 代理端口
+# port: 7890
+
+# SOCKS5 代理端口
+socks-port: 7891
+
+# Linux 和 macOS 的 redir 代理端口 (如需使用此功能，请取消注释)
+# redir-port: 7892
+
+# 允许局域网的连接（可用来共享代理）
+allow-lan: true
+
+# 仅在将allow-lan设置为true时适用
+# #"*": 绑定所有IP地址
+# #192.168.122.11: 绑定单个IPv4地址
+# #"[aaaa::a8aa:ff:fe09:57d8]": 绑定单个IPv6地址
+bind-address: "*"
+ipv6: true
+
+# 规则模式：rule（规则） / global（全局代理）/ direct（全局直连）/ script (脚本)
+mode: rule
+
+# 设置日志输出级别 (默认级别：silent，即不输出任何内容，以避免因日志内容过大而导致程序内存溢出）。
+# 5 个级别：silent / error / warning / info / debug。级别越高日志输出量越大，越倾向于调试，若需要请自行开启。
+log-level: info
+
+# Clash 的 RESTful API
+external-controller: "127.0.0.1:9090"
+
+# 您可以将静态网页资源（如 clash-dashboard）放置在一个目录中，clash 将会服务于 `RESTful API/ui`
+# 参数应填写配置目录的相对路径或绝对路径。
+# http://127.0.0.1:9090/ui/#/
+# external-ui: folder
+# yacd面板：  https://github.com/haishanh/yacd
+# Razord面板：http://clash.razord.top/#/proxies
+# external-ui: dashboard
+
+# RESTful API 的口令 (可选)
+# secret: ""
+
+# 实验性功能
+experimental:
+  ignore-resolve-fail: true # 忽略 DNS 解析失败，默认值为 true
+  # interface-name: en0 # outbound interface name
+
+# 本地 SOCKS5 / HTTP(S) 服务认证
+# authentication:
+#  - "user1:pass1"
+#  - "user2:pass2"
+
+# 实验性功能 hosts, 支持通配符 (例如 *.clash.dev 甚至 *.foo.*.example.com)
+# 静态的域名 比 通配域名 具有更高的优先级 (foo.example.com 优先于 *.example.com)
+# 注意: hosts 在 fake-ip 模式下不生效
+#hosts:
+#   '*.clash.dev': 127.0.0.1
+#   'alpha.clash.dev': '::1'
+
+# DNS 服务器配置(可选；若不配置，程序内置的 DNS 服务会被关闭)
+dns:
+  enable: true
+  listen: 0.0.0.0:53
+  ipv6: true # 当此选项为 false 时, AAAA 请求将返回空
+
+  # 以下填写的 DNS 服务器将会被用来解析 DNS 服务的域名
+  # 仅填写 DNS 服务器的 IP 地址
+  default-nameserver:
+    - 223.5.5.5
+    - 114.114.114.114
+  enhanced-mode: fake-ip # 或 redir-host
+  fake-ip-range: 198.18.0.1/16 # Fake IP 地址池 (CIDR 形式)
+  # use-hosts: true # 查询 hosts 并返回 IP 记录
+
+  # 在以下列表的域名将不会被解析为 fake ip，这些域名相关的解析请求将会返回它们真实的 IP 地址
+  fake-ip-filter:
+    # 以下域名列表参考自 vernesong/OpenClash 项目，并由 Hackl0us 整理补充
+    # === LAN ===
+    - "*.lan"
+    # === Linksys Wireless Router ===
+    - "*.linksys.com"
+    - "*.linksyssmartwifi.com"
+    # === Apple Software Update Service ===
+    - "swscan.apple.com"
+    - "mesu.apple.com"
+    # === Windows 10 Connnect Detection ===
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
+    # === NTP Service ===
+    - "time.*.com"
+    - "time.*.gov"
+    - "time.*.edu.cn"
+    - "time.*.apple.com"
+
+    - "time1.*.com"
+    - "time2.*.com"
+    - "time3.*.com"
+    - "time4.*.com"
+    - "time5.*.com"
+    - "time6.*.com"
+    - "time7.*.com"
+
+    - "ntp.*.com"
+    - "ntp.*.com"
+    - "ntp1.*.com"
+    - "ntp2.*.com"
+    - "ntp3.*.com"
+    - "ntp4.*.com"
+    - "ntp5.*.com"
+    - "ntp6.*.com"
+    - "ntp7.*.com"
+
+    - "*.time.edu.cn"
+    - "*.ntp.org.cn"
+    - "+.pool.ntp.org"
+
+    - "time1.cloud.tencent.com"
+    # === Music Service ===
+    ## NetEase
+    - "+.music.163.com"
+    - "*.126.net"
+    ## Baidu
+    - "musicapi.taihe.com"
+    - "music.taihe.com"
+    ## Kugou
+    - "songsearch.kugou.com"
+    - "trackercdn.kugou.com"
+    ## Kuwo
+    - "*.kuwo.cn"
+    ## JOOX
+    - "api-jooxtt.sanook.com"
+    - "api.joox.com"
+    - "joox.com"
+    ## QQ
+    - "+.y.qq.com"
+    - "+.music.tc.qq.com"
+    - "aqqmusic.tc.qq.com"
+    - "+.stream.qqmusic.qq.com"
+    ## Xiami
+    - "*.xiami.com"
+    ## Migu
+    - "+.music.migu.cn"
+    # === Game Service ===
+    ## Nintendo Switch
+    - "+.srv.nintendo.net"
+    ## Sony PlayStation
+    - "+.stun.playstation.net"
+    ## Microsoft Xbox
+    - "xbox.*.microsoft.com"
+    - "+.xboxlive.com"
+    # === Other ===
+    ## QQ Quick Login
+    - "localhost.ptlogin2.qq.com"
+    ## Golang
+    - "proxy.golang.org"
+    ## STUN Server
+    - "stun.*.*"
+    - "stun.*.*.*"
+
+  # 支持 UDP / TCP / DoT / DoH 协议的 DNS 服务，可以指明具体的连接端口号。
+  # 所有 DNS 请求将会直接发送到服务器，不经过任何代理。
+  # Clash 会使用最先获得的解析记录回复 DNS 请求
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+
+  # 当 fallback 参数被配置时, DNS 请求将同时发送至上方 nameserver 列表和下方 fallback 列表中配置的所有 DNS 服务器.
+  # 当解析得到的 IP 地址的地理位置不是 CN 时，clash 将会选用 fallback 中 DNS 服务器的解析结果。
+  # fallback:
+  #   - https://dns.google/dns-query
+
+  # 如果使用 nameserver 列表中的服务器解析的 IP 地址在下方列表中的子网中，则它们被认为是无效的，
+  # Clash 会选用 fallback 列表中配置 DNS 服务器解析得到的结果。
+  #
+  # 当 fallback-filter.geoip 为 true 且 IP 地址的地理位置为 CN 时，
+  # Clash 会选用 nameserver 列表中配置 DNS 服务器解析得到的结果。
+  #
+  # 当 fallback-filter.geoip 为 false, 如果解析结果不在 fallback-filter.ipcidr 范围内，
+  # Clash 总会选用 nameserver 列表中配置 DNS 服务器解析得到的结果。
+  #
+  # 采取以上逻辑进行域名解析是为了对抗 DNS 投毒攻击。
+  fallback-filter:
+    geoip: false
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
+    # domain:
+    #   - '+.google.com'
+    #   - '+.facebook.com'
+    #   - '+.youtube.com'
+
+# 1. clash DNS 请求逻辑：
+#   (1) 当访问一个域名时， nameserver 与 fallback 列表内的所有服务器并发请求，得到域名对应的 IP 地址。
+#   (2) clash 将选取 nameserver 列表内，解析最快的结果。
+#   (3) 若解析结果中，IP 地址属于 国外，那么 clash 将选择 fallback 列表内，解析最快的结果。
+#
+#   因此，我在 nameserver 和 fallback 内都放置了无污染、解析速度较快的国内 DNS 服务器，以达到最快的解析速度。
+#   但是 fallback 列表内服务器会用在解析境外网站，为了结果绝对无污染，我仅保留了支持 DoT/DoH 的两个服务器。
+#
+# 2. clash DNS 配置注意事项：
+#   (1) 如果您为了确保 DNS 解析结果无污染，请仅保留列表内以 tls:// 或 https:// 开头的 DNS 服务器，但是通常对于国内域名没有必要。
+#   (2) 如果您不在乎可能解析到污染的结果，更加追求速度。请将 nameserver 列表的服务器插入至 fallback 列表内，并移除重复项。
+#
+# 3. 关于 DNS over HTTPS (DoH) 和 DNS over TLS (DoT) 的选择：
+#   对于两项技术双方各执一词，而且会无休止的争论，各有利弊。各位请根据具体需求自行选择，但是配置文件内默认启用 DoT，因为目前国内没有封锁或管制。
+#   DoH: 以 https:// 开头的 DNS 服务器。拥有更好的伪装性，且几乎不可能被运营商或网络管理封锁，但查询效率和安全性可能略低。
+#   DoT: 以 tls:// 开头的 DNS 服务器。拥有更高的安全性和查询效率，但端口有可能被管制或封锁。
+#   若要了解更多关于 DoH/DoT 相关技术，请自行查阅规范文档。
+
+# 代理组
+# 下面这3个不要引到订阅里去 要不会出错
+# Will be ignored after profile selection
+#proxies:
+#  - name: Shadowsocks
+#    type: socks5
+#    server: 127.0.0.1
+#    port: 1080
+#proxy-groups:
+#  - name: Proxy
+#    type: select
+#    proxies:
+#      - Shadowsocks
+#rules:
+#  - 'MATCH,DIRECT'
+
+# Clash for Windows
+# Proxies module latency test settings
+cfw-latency-timeout: 3000
+cfw-latency-url: http://www.gstatic.com/generate_204
+
+# 混合配置（mixin）
+# 支持向所有配置文件中注入公共属性设置
+#cfw-profile-mixin:
+#dns:
+#enable: true
+#listen: :53
+#enhanced-mode: fake-ip
+#nameserver:
+#- 223.5.5.5 # 阿里DNS
+#- 180.76.76.76 # 百度DNS
+#- 119.29.29.29 # 腾讯DNS
+#- 117.50.11.11 # ONE DNS拦截版 恶意网站拦截、广告过滤
+#- 117.50.10.10 # ONE DNS纯净版 直接返回其真实的响应结果
+#- 114.114.114.114 # 114DNS
+#experimental:
+#interface-name: WLAN
+
+#自定义配置目录
+#cfw-profiles-path: 'C:\Users\Administrator\.config\clash\profiles'
+
+# 打断连接
+# Identify strategy of breaking connections after switching to a new proxy/profile/mode
+# Options for proxy: none, chain(proxy group in connection chains), all
+# Options for profile: true, false
+# Options for mode: true, false
+cfw-conn-break-strategy:
+  proxy: none # none/chain/all
+  profile: true # true/false
+  mode: false # true/false
+
+# 自定义状态栏图标
+#cfw-tray-icon:
+#default: .\resources\static\imgs\logo_64.png        # 默认图标
+#system-proxy-on: .\resources\static\imgs\custom.ico   # 开启系统代理后图标
+
+# 自定义字体
+#cfw-font-family: "Noto Sans TC"   # 系统中存在的字体
+
+# 自定义请求头
+#cfw-http-headers:
+#token: "123456"
+#cfw-version: "0.9.11"
+
+# 自定义节点排序
+# 可选参数：
+#  default：按配置文件定义节点顺序
+#  latency：按节点延迟升序排列
+#  alphabet：按节点名称字母表排列
+# Sort proxies in Proxies module by default/latency/alphabet
+cfw-proxies-order: default
+
+# 子进程 启动其他应用
+# Run child process after CFW started
+# Refer: https://docs.cfw.lbyczf.com/contents/childprocess.html
+#cfw-child-process:
+# 启动订阅转换程序，端口号7893
+#- command: "subconverter.exe" # run.cmd 程序名称 subconverter.exe -cfw >>logs/run.log 2>&1
+#args:
+#- "-cfw" # 运行参数1
+#- "-f" # 运行参数2
+#- "pref-acl4ssr.yml" # 运行参数3
+#options:
+#cwd: subconverter # 子进程工作目录
+#detached: true # 子进程独立于其父进程运行
+#shell: true # 则在 shell 中运行 command
+#windowsHide: true # 隐藏子进程的控制台窗口
+# 启动网易云，端口号3333
+#- command: "unblockneteasemusic.exe" # 启动网易云
+#args:
+#- "-p" # 运行参数1
+#- "3333" # 运行参数2
+#options:
+#cwd: unblockNeteaseMusic # 子进程工作目录
+#detached: true # 子进程独立于其父进程运行
+#shell: true # 则在 shell 中运行 command
+#windowsHide: true # 隐藏子进程的控制台窗口
+
+# 系统代理跳过列表 cfw-bypass
+# System proxy will ignore these domains(or ipnet)
+# 系统代理跳过列表-备份的，不起作用，
+# 使用时可以将cfw-bypass-bak与cfw-bypass内容互换
+cfw-bypass-bak:
+  # 原有字段不用删除
+  - qq.com
+  - "music.163.com" # 网易云域名1
+  - "*.music.126.net" # 网易云域名2
+  - localhost
+  - 127.*
+  - 10.*
+  - 172.16.*
+  - 172.17.*
+  - 172.18.*
+  - 172.19.*
+  - 172.20.*
+  - 172.21.*
+  - 172.22.*
+  - 172.23.*
+  - 172.24.*
+  - 172.25.*
+  - 172.26.*
+  - 172.27.*
+  - 172.28.*
+  - 172.29.*
+  - 172.30.*
+  - 172.31.*
+  - 192.168.*
+  - <local>
+# 系统代理跳过列表 起作用的
+cfw-bypass:
+  # 直连列表
+  # MyList
+  - "*.13th.tech"
+  - "*.423down.com"
+  - "*.bokecc.com"
+  - "*.chaipip.com"
+  - "*.chinaplay.store"
+  - "*.hrtsea.com"
+  - "*.kaikeba.com"
+  - "*.laomo.me"
+  - "*.mpyit.com"
+  - "*.qupu123.com"
+  # CN域名直连
+  - "*.cn"
+  - "*.中国"
+  - "*.公司"
+  - "*.网络"
+  # 中国国内常见域名关键词直连
+  - "*-cn*"
+  - "*360buy*"
+  - "*alicdn*"
+  - "*alimama*"
+  - "*alipay*"
+  - "*appzapp*"
+  - "*baidupcs*"
+  - "*bilibili*"
+  - "*ccgslb*"
+  - "*chinacache*"
+  - "*duobao*"
+  - "*duolingo*"
+  - "*jdpay*"
+  - "*moke*"
+  - "*qhimg*"
+  - "*vpimg*"
+  - "*xiami*"
+  - "*xiaomi*"
+  # 360
+  - "*.360.com"
+  - "*.360kuai.com"
+  - "*.360safe.com"
+  - "*.dhrest.com"
+  - "*.qhres.com"
+  - "*.qhstatic.com"
+  - "*.qhupdate.com"
+  - "*.so.com"
+  # 4399
+  - "*.4399.com"
+  - "*.4399pk.com"
+  - "*.5054399.com"
+  - "*.img4399.com"
+  # 58
+  - "*.58.com"
+  # Alibaba
+  - "*.1688.com"
+  - "*.aliapp.org"
+  - "*.alibaba.com"
+  - "*.alibabacloud.com"
+  - "*.alibabausercontent.com"
+  - "*.alicdn.com"
+  - "*.alicloudccp.com"
+  - "*.aliexpress.com"
+  - "*.aliimg.com"
+  - "*.alikunlun.com"
+  - "*.alipay.com"
+  - "*.alipayobjects.com"
+  - "*.alisoft.com"
+  - "*.aliyun.com"
+  - "*.aliyuncdn.com"
+  - "*.aliyuncs.com"
+  - "*.aliyundrive.com"
+  - "*.amap.com"
+  - "*.autonavi.com"
+  - "*.dingtalk.com"
+  - "*.ele.me"
+  - "*.hichina.com"
+  - "*.mmstat.com"
+  - "*.mxhichina.com"
+  - "*.soku.com"
+  - "*.taobao.com"
+  - "*.taobaocdn.com"
+  - "*.tbcache.com"
+  - "*.tbcdn.com"
+  - "*.tmall.com"
+  - "*.tmall.hk"
+  - "*.ucweb.com"
+  - "*.xiami.com"
+  - "*.xiami.net"
+  - "*.ykimg.com"
+  - "*.youku.com"
+  # Baidu
+  - "*.baidu.com"
+  - "*.baidubcr.com"
+  - "*.baidupcs.com"
+  - "*.baidustatic.com"
+  - "*.bcebos.com"
+  - "*.bdimg.com"
+  - "*.bdstatic.com"
+  - "*.bdurl.net"
+  - "*.hao123.com"
+  - "*.hao123img.com"
+  - "*.jomodns.com"
+  - "*.yunjiasu-cdn.net"
+  # Bilibili
+  - "*.acg.tv"
+  - "*.acgvideo.com"
+  - "*.b23.tv"
+  - "*.bigfun.cn"
+  - "*.bigfunapp.cn"
+  - "*.biliapi.com"
+  - "*.biliapi.net"
+  - "*.bilibili.com"
+  - "*.bilibili.tv"
+  - "*.biligame.com"
+  - "*.biligame.net"
+  - "*.bilivideo.com"
+  - "*.bilivideo.cn"
+  - "*.hdslb.com"
+  - "*.im9.com"
+  - "*.smtcdns.net"
+  # Blizzard
+  - "*.battle.net"
+  - "*.battlenet.com"
+  - "*.blizzard.com"
+  # ByteDance
+  - "*.bytedance.com"
+  - "*.bytedance.net"
+  - "*.bytedns.net"
+  - "*.byteimg.com"
+  - "*.feiliao.com"
+  - "*.gifshow.com"
+  - "*.huoshan.com"
+  - "*.iesdouyin.com"
+  - "*.ixigua.com"
+  - "*.kspkg.com"
+  - "*.pstatp.com"
+  - "*.snssdk.com"
+  - "*.toutiao.com"
+  - "*.toutiao13.com"
+  - "*.toutiaocdn.com"
+  - "*.toutiaocdn.net"
+  - "*.toutiaocloud.com"
+  - "*.toutiaohao.com"
+  - "*.toutiaohao.net"
+  - "*.toutiaoimg.com"
+  - "*.toutiaopage.com"
+  - "*.wukong.com"
+  - "*.zijieimg.com"
+  - "*.zjbyte.com"
+  - "*.zjcdn.com"
+  # CCTV
+  - "*.cctv.com"
+  - "*.cctvpic.com"
+  - "*.livechina.com"
+  # ChinaNet
+  - "*.21cn.com"
+  # DiDi
+  - "*.didialift.com"
+  - "*.didiglobal.com"
+  - "*.udache.com"
+  # Douyu 斗鱼
+  - "*.douyu.com"
+  - "*.douyu.tv"
+  - "*.douyuscdn.com"
+  - "*.douyutv.com"
+  # Epic
+  - "*.epicgames.com"
+  - "*.helpshift.com"
+  - "*.paragon.com"
+  - "*.unrealengine.com"
+  # HuaWei
+  - "*.dbankcdn.com"
+  - "*.hc-cdn.com"
+  - "*.hicloud.com"
+  - "*.huawei.com"
+  - "*.huaweicloud.com"
+  - "*.huaweishop.net"
+  - "*.hwccpc.com"
+  - "*.vmall.com"
+  - "*.vmallres.com"
+  # Iflytek 科大讯飞
+  - "*.iflyink.com"
+  - "*.iflyrec.com"
+  - "*.iflytek.com"
+  # Iqiyi
+  - "*.71.am"
+  - "*.71edge.com"
+  - "*.iqiyi.com"
+  - "*.iqiyipic.com"
+  - "*.ppsimg.com"
+  - "*.qiyi.com"
+  - "*.qiyipic.com"
+  - "*.qy.net"
+  # JD
+  - "*.360buy.com"
+  - "*.360buyimg.com"
+  - "*.jcloudcs.com"
+  - "*.jd.com"
+  - "*.jd.hk"
+  - "*.jdcloud.com"
+  - "*.jdpay.com"
+  - "*.paipai.com"
+  # Kingsoft
+  - "*.iciba.com"
+  - "*.ksosoft.com"
+  - "*.ksyun.com"
+  # Kuaishou 快手
+  - "*.kuaishou.com"
+  - "*.yximgs.com"
+  # Meitu
+  - "*.meitu.com"
+  - "*.meitudata.com"
+  - "*.meitustat.com"
+  - "*.meipai.com"
+  # LeTV 乐视
+  - "*.le.com"
+  - "*.lecloud.com"
+  - "*.letv.com"
+  - "*.letvcloud.com"
+  - "*.letvimg.com"
+  - "*.letvlive.com"
+  - "*.letvstore.com"
+  # MGTV 芒果TV
+  - "*.hitv.com"
+  - "*.hunantv.com"
+  - "*.mgtv.com"
+  # MI
+  - "*.duokan.com"
+  - "*.mi-img.com"
+  - "*.mi.com"
+  - "*.miui.com"
+  - "*.xiaomi.com"
+  - "*.xiaomi.net"
+  - "*.xiaomicp.com"
+  # NetEase
+  - "*.126.com"
+  - "*.126.net"
+  - "*.127.net"
+  - "*.163.com"
+  - "*.163yun.com"
+  - "*.lofter.com"
+  - "*.netease.com"
+  - "*.ydstatic.com"
+  - "*.youdao.com"
+  # PPTV、PPLive
+  - "*.pplive.com"
+  - "*.pptv.com"
+  # PDD 拼多多
+  - "*.pinduoduo.com"
+  - "*.yangkeduo.com"
+  # Sina
+  - "*.leju.com"
+  - "*.miaopai.com"
+  - "*.sina.com"
+  - "*.sinaapp.com"
+  - "*.sinaimg.com"
+  - "*.weibo.com"
+  - "*.weibocdn.com"
+  - "*.xiaoka.tv"
+  # Sohu Sogo
+  - "*.go2map.com"
+  - "*.sogo.com"
+  - "*.sogou.com"
+  - "*.sogoucdn.com"
+  - "*.sohu-inc.com"
+  - "*.sohu.com"
+  - "*.sohucs.com"
+  - "*.sohuno.com"
+  - "*.sohurdc.com"
+  - "*.v-56.com"
+  # Sony
+  - "*.playstation.com"
+  - "*.playstation.net"
+  - "*.playstationnetwork.com"
+  - "*.sony.com"
+  - "*.sonyentertainmentnetwork.com"
+  # SteamCN
+  - "*.csgo.wmsj.cn"
+  - "*.dl.steam.ksyna.com"
+  - "*.dota2.wmsj.cn"
+  - "*.st.dl.bscstorage.net"
+  - "*.st.dl.eccdnx.com"
+  - "*.st.dl.pinyuncloud.com"
+  - "*.steamcommunity-a.akamaihd.net"
+  - "*.steamcontent.com"
+  - "*.steamgames.com"
+  - "*.steampowered.com.8686c.com"
+  - "*.steamstat.us"
+  - "*.steamstatic.com"
+  - "*.steamusercontent.com"
+  - "*.steamuserimages-a.akamaihd.net"
+  # Tencent
+  - "*.foxmail.com"
+  - "*.gtimg.com"
+  - "*.idqqimg.com"
+  - "*.igamecj.com"
+  - "*.myapp.com"
+  - "*.myqcloud.com"
+  - "*.qq.com"
+  - "*.qqmail.com"
+  - "*.qqurl.com"
+  - "*.smtcdns.com"
+  - "*.smtcdns.net"
+  - "*.soso.com"
+  - "*.tencent-cloud.net"
+  - "*.tencent.com"
+  - "*.tencentmind.com"
+  - "*.tenpay.com"
+  - "*.wechat.com"
+  - "*.weixin.com"
+  - "*.weiyun.com"
+  # Vip 唯品会
+  - "*.appsimg.com"
+  - "*.appvipshop.com"
+  - "*.vip.com"
+  - "*.vipstatic.com"
+  # Ximalaya 喜马拉雅
+  - "*.ximalaya.com"
+  - "*.xmcdn.com"
+  # Xunlei 迅雷
+  - "*.00cdn.com"
+  - "*.88cdn.com"
+  - "*.kanimg.com"
+  - "*.kankan.com"
+  - "*.p2cdn.com"
+  - "*.sandai.net"
+  - "*.thundercdn.com"
+  - "*.xunlei.com"
+  # YYeTs 人人影视
+  - "*.got001.com"
+  - "*.p4pfile.com"
+  - "*.rrys.tv"
+  - "*.rrys2020.com"
+  - "*.yyets.com"
+  - "*.zimuzu.io"
+  - "*.zimuzu.tv"
+  - "*.zmz001.com"
+  - "*.zmz002.com"
+  - "*.zmz003.com"
+  - "*.zmz004.com"
+  - "*.zmz2019.com"
+  - "*.zmzapi.com"
+  - "*.zmzapi.net"
+  - "*.zmzfile.com"
+  # Private Tracker
+  - "*announce*"
+  - "*torrent*"
+  - "*tracker*"
+  - "*.animebytes.tv"
+  - "*.animetorrents.me"
+  - "*.awesome-hd.me"
+  - "*.beitai.pt"
+  - "*.bittorrent.com"
+  - "*.broadcasthe.net"
+  - "*.chdbits.co"
+  - "*.classix-unlimited.co.uk"
+  - "*.empornium.me"
+  - "*.gazellegames.net"
+  - "*.hd4fans.org"
+  - "*.hdchina.org"
+  - "*.hdhome.org"
+  - "*.hdsky.me"
+  - "*.hdtime.org"
+  - "*.hdzone.me"
+  - "*.icetorrent.org"
+  - "*.jpopsuki.eu"
+  - "*.keepfrds.com"
+  - "*.leaguehd.com"
+  - "*.m-team.cc"
+  - "*.madsrevolution.net"
+  - "*.msg.vg"
+  - "*.nanyangpt.com"
+  - "*.ncore.cc"
+  - "*.open.cd"
+  - "*.ourbits.club"
+  - "*.passthepopcorn.me"
+  - "*.privatehd.to"
+  - "*.pthome.net"
+  - "*.redacted.ch"
+  - "*.springsunday.net"
+  - "*.tjupt.org"
+  - "*.totheglory.im"
+  - "*.trontv.com"
+  # TeamViewer
+  - "*.teamviewer.com"
+  # Public Direct CDN 公共直连
+  - "*.baomitu.com"
+  - "*.bootcss.com"
+  - "*.jiasule.com"
+  - "*.jsdelivr.net"
+  - "*.staticfile.org"
+  - "*.upaiyun.com"
+  # AccelerateDirectSites
+  - "*.10010.com"
+  - "*.115.com"
+  - "*.12306.com"
+  - "*.17173.com"
+  - "*.178.com"
+  - "*.17k.com"
+  - "*.360doc.com"
+  - "*.36kr.com"
+  - "*.3dmgame.com"
+  - "*.51cto.com"
+  - "*.51job.com"
+  - "*.51jobcdn.com"
+  - "*.56.com"
+  - "*.8686c.com"
+  - "*.abchina.com"
+  - "*.abercrombie.com"
+  - "*.acfun.tv"
+  - "*.air-matters.com"
+  - "*.air-matters.io"
+  - "*.aixifan.com"
+  - "*.algocasts.io"
+  - "*.babytree.com"
+  - "*.babytreeimg.com"
+  - "*.baicizhan.com"
+  - "*.baidupan.com"
+  - "*.baike.com"
+  - "*.biqudu.com"
+  - "*.biquge.com"
+  - "*.bitauto.com"
+  - "*.c-ctrip.com"
+  - "*.camera360.com"
+  - "*.cdnmama.com"
+  - "*.chaoxing.com"
+  - "*.che168.com"
+  - "*.chinacache.net"
+  - "*.chinaso.com"
+  - "*.chinaz.com"
+  - "*.chinaz.net"
+  - "*.chuimg.com"
+  - "*.cibntv.net"
+  - "*.clouddn.com"
+  - "*.cloudxns.net"
+  - "*.cn163.net"
+  - "*.cnbeta.com"
+  - "*.cnbetacdn.com"
+  - "*.cnblogs.com"
+  - "*.cnki.net"
+  - "*.cnmstl.net"
+  - "*.coolapk.com"
+  - "*.coolapkmarket.com"
+  - "*.csdn.net"
+  - "*.ctrip.com"
+  - "*.dangdang.com"
+  - "*.dfcfw.com"
+  - "*.dianping.com"
+  - "*.dilidili.wang"
+  - "*.douban.com"
+  - "*.doubanio.com"
+  - "*.dpfile.com"
+  - "*.duowan.com"
+  - "*.dxycdn.com"
+  - "*.dytt8.net"
+  - "*.easou.com"
+  - "*.eastday.com"
+  - "*.eastmoney.com"
+  - "*.ecitic.com"
+  - "*.ewqcxz.com"
+  - "*.fang.com"
+  - "*.fantasy.tv"
+  - "*.feng.com"
+  - "*.fengkongcloud.com"
+  - "*.fir.im"
+  - "*.frdic.com"
+  - "*.fresh-ideas.cc"
+  - "*.ganji.com"
+  - "*.ganjistatic1.com"
+  - "*.geetest.com"
+  - "*.geilicdn.com"
+  - "*.ghpym.com"
+  - "*.godic.net"
+  - "*.guazi.com"
+  - "*.gwdang.com"
+  - "*.gzlzfm.com"
+  - "*.haibian.com"
+  - "*.haosou.com"
+  - "*.hollisterco.com"
+  - "*.hongxiu.com"
+  - "*.huajiao.com"
+  - "*.hupu.com"
+  - "*.huxiucdn.com"
+  - "*.huya.com"
+  - "*.ifeng.com"
+  - "*.ifengimg.com"
+  - "*.images-amazon.com"
+  - "*.infzm.com"
+  - "*.ipip.net"
+  - "*.it168.com"
+  - "*.ithome.com"
+  - "*.ixdzs.com"
+  - "*.jianguoyun.com"
+  - "*.jianshu.com"
+  - "*.jianshu.io"
+  - "*.jianshuapi.com"
+  - "*.jiathis.com"
+  - "*.jmstatic.com"
+  - "*.jumei.com"
+  - "*.kaola.com"
+  - "*.knewone.com"
+  - "*.koowo.com"
+  - "*.ksyungslb.com"
+  - "*.kuaidi100.com"
+  - "*.kugou.com"
+  - "*.lancdns.com"
+  - "*.landiannews.com"
+  - "*.lanzou.com"
+  - "*.lemicp.com"
+  - "*.letitfly.me"
+  - "*.linkedin.com"
+  - "*.lizhi.fm"
+  - "*.lizhi.io"
+  - "*.lizhifm.com"
+  - "*.loli.net"
+  - "*.luoo.net"
+  - "*.lvmama.com"
+  - "*.lxdns.com"
+  - "*.maoyan.com"
+  - "*.meilishuo.com"
+  - "*.meituan.com"
+  - "*.meituan.net"
+  - "*.meizu.com"
+  - "*.migucloud.com"
+  - "*.miguvideo.com"
+  - "*.mobike.com"
+  - "*.mogu.com"
+  - "*.mogucdn.com"
+  - "*.mogujie.com"
+  - "*.moji.com"
+  - "*.moke.com"
+  - "*.msstatic.com"
+  - "*.mubu.com"
+  - "*.myunlu.com"
+  - "*.nruan.com"
+  - "*.nuomi.com"
+  - "*.onedns.net"
+  - "*.onlinedown.net"
+  - "*.oracle.com"
+  - "*.oschina.net"
+  - "*.ourdvs.com"
+  - "*.paypal.com"
+  - "*.polyv.net"
+  - "*.qbox.me"
+  - "*.qcloud.com"
+  - "*.qcloudcdn.com"
+  - "*.qdaily.com"
+  - "*.qdmm.com"
+  - "*.qhimg.com"
+  - "*.qianqian.com"
+  - "*.qidian.com"
+  - "*.qihucdn.com"
+  - "*.qin.io"
+  - "*.qiniu.com"
+  - "*.qiniucdn.com"
+  - "*.qiniudn.com"
+  - "*.qiushibaike.com"
+  - "*.quanmin.tv"
+  - "*.qunar.com"
+  - "*.qunarzz.com"
+  - "*.rarbg.to"
+  - "*.repaik.com"
+  - "*.rrmj.tv"
+  - "*.ruguoapp.com"
+  - "*.runoob.com"
+  - "*.sankuai.com"
+  - "*.segmentfault.com"
+  - "*.sf-express.com"
+  - "*.shumilou.net"
+  - "*.simplecd.me"
+  - "*.sm.ms"
+  - "*.smzdm.com"
+  - "*.snwx.com"
+  - "*.soufunimg.com"
+  - "*.sspai.com"
+  - "*.startssl.com"
+  - "*.suning.com"
+  - "*.taihe.com"
+  - "*.th-sjy.com"
+  - "*.tianqi.com"
+  - "*.tianqistatic.com"
+  - "*.tianyancha.com"
+  - "*.tianyaui.com"
+  - "*.tietuku.com"
+  - "*.tiexue.net"
+  - "*.tmiaoo.com"
+  - "*.trip.com"
+  - "*.ttmeiju.com"
+  - "*.tudou.com"
+  - "*.tuniu.com"
+  - "*.tuniucdn.com"
+  - "*.umengcloud.com"
+  - "*.upyun.com"
+  - "*.uxengine.net"
+  - "*.videocc.net"
+  - "*.wandoujia.com"
+  - "*.weather.com"
+  - "*.weico.cc"
+  - "*.weidian.com"
+  - "*.weiphone.com"
+  - "*.weiphone.net"
+  - "*.womai.com"
+  - "*.wscdns.com"
+  - "*.xdrig.com"
+  - "*.xhscdn.com"
+  - "*.xiachufang.com"
+  - "*.xiaohongshu.com"
+  - "*.xiaojukeji.com"
+  - "*.xinhuanet.com"
+  - "*.xip.io"
+  - "*.xitek.com"
+  - "*.xiumi.us"
+  - "*.xslb.net"
+  - "*.xueqiu.com"
+  - "*.yach.me"
+  - "*.yeepay.com"
+  - "*.yhd.com"
+  - "*.yihaodianimg.com"
+  - "*.yinxiang.com"
+  - "*.yinyuetai.com"
+  - "*.yixia.com"
+  - "*.ys168.com"
+  - "*.yuewen.com"
+  - "*.yy.com"
+  - "*.yystatic.com"
+  - "*.zealer.com"
+  - "*.zhangzishi.cc"
+  - "*.zhanqi.tv"
+  - "*.zhaopin.com"
+  - "*.zhihu.com"
+  - "*.zhimg.com"
+  - "*.zhongsou.com"
+  - "*.zhuihd.com"
+  - "localhost"
+  - 127.*
+  - 10.*
+  - 172.16.*
+  - 172.17.*
+  - 172.18.*
+  - 172.19.*
+  - 172.20.*
+  - 172.21.*
+  - 172.22.*
+  - 172.23.*
+  - 172.24.*
+  - 172.25.*
+  - 172.26.*
+  - 172.27.*
+  - 172.28.*
+  - 172.29.*
+  - 172.30.*
+  - 172.31.*
+  - 192.168.*
+  - <local>
+
+proxy-groups:
+  - name: "sProxy"
+    type: select
+    proxies:
+      - 🇭🇰-香港节点
+      - ⚡️-香港专线
+      - 🇨🇳-台湾节点
+      - 🇯🇵-日本节点
+      - 🇸🇬-狮城节点
+      - 🇰🇷-韩国节点
+      - 🇺🇲-美国节点
+      # - 🌎-其他节点
+      - DIRECT
+  - name: "Figma"
+    type: select
+    proxies:
+      - sProxy
+      - DIRECT
+  - name: "Apple"
+    type: select
+    proxies:
+      - DIRECT
+      - sProxy
+      - 🇭🇰-香港节点
+      - ⚡️-香港专线
+      - 🇨🇳-台湾节点
+      - 🇯🇵-日本节点
+      - 🇸🇬-狮城节点
+      - 🇰🇷-韩国节点
+      - 🇺🇲-美国节点
+      # - 🌎-其他节点
+  - name: "Netflix"
+    type: select
+    proxies:
+      - sProxy
+      - 🇭🇰-香港节点
+      - 🇨🇳-台湾节点
+      - 🇯🇵-日本节点
+      - 🇸🇬-狮城节点
+      - 🇰🇷-韩国节点
+      - 🇺🇲-美国节点
+      # - 🌎-其他节点
+  - name: "Spotify"
+    type: select
+    proxies:
+      - DIRECT
+      - sProxy
+      - 🇭🇰-香港节点
+      - ⚡️-香港专线
+      - 🇨🇳-台湾节点
+      - 🇯🇵-日本节点
+      - 🇸🇬-狮城节点
+      - 🇰🇷-韩国节点
+      - 🇺🇲-美国节点
+      # - 🌎-其他节点
+  - name: "Final"
+    type: select
+    proxies:
+      - sProxy
+      - DIRECT
+  # 手动选择订阅节点
+  - name: "⚡️-香港专线"
+    type: url-test # 亦可使用 fallback 或 load-balance
+    use: # 注意此处是「use」
+      - Fast # 这是上面「proxy-providers」的名称
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+  - name: "🇭🇰-香港节点"
+    type: url-test # 亦可使用 fallback 或 load-balance
+    use: # 注意此处是「use」
+      - HK # 这是上面「proxy-providers」的名称
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+  - name: "🇨🇳-台湾节点"
+    type: url-test
+    use:
+      - TW
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+  - name: "🇯🇵-日本节点"
+    type: url-test
+    use:
+      - JP
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+  - name: "🇸🇬-狮城节点"
+    type: url-test
+    use:
+      - SG
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+  - name: "🇰🇷-韩国节点"
+    type: url-test
+    use:
+      - KR
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+  - name: "🇺🇲-美国节点"
+    type: url-test
+    use:
+      - USA
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+  # - name: "🌎-其他节点"
+  #   type: url-test
+  #   use:
+  #     - Others
+  #   url: 'http://www.gstatic.com/generate_204'
+  #   interval: 300
+
+proxy-providers:
+  Fast:
+    type: http
+    url: "https://api.v1.mk/sub?target=clash&url=https%3A%2F%2Fdler.cloud%2Fsubscribe%2FyChW6T9d1K99Y3f4%3Fclash%3Dss&include=(%E6%B8%AF((%3F%3D.*AGA))%7C%E6%B8%AF((%3F%3D.*IEPL))%7C%E6%B8%AF((%3F%3D.*IPLC))%7C%E6%B8%AF((%3F%3D.*AIA))%7C%E6%B8%AF((%3F%3D.*GIA))%7C%E6%B8%AF((%3F%3D.*BGP)))&emoji=true&list=true&new_name=true"
+    interval: 259200
+    path: ./Proxy/fast.yaml # 不同机场不同命名
+    health-check:
+      enable: true
+      interval: 1200
+
+  HK:
+    type: http
+    url: "https://api.v1.mk/sub?target=clash&url=https%3A%2F%2Fdler.cloud%2Fsubscribe%2FyChW6T9d1K99Y3f4%3Fclash%3Dss&include=(%E6%B8%AF%7CHK%7CHong%20Kong)&emoji=true&list=true&new_name=true"
+    interval: 259200
+    path: ./Proxy/HK.yaml # 不同机场不同命名
+    health-check:
+      enable: true
+      interval: 1200
+      url: http://www.gstatic.com/generate_204
+  TW:
+    type: http
+    url: "https://api.v1.mk/sub?target=clash&url=https%3A%2F%2Fdler.cloud%2Fsubscribe%2FyChW6T9d1K99Y3f4%3Fclash%3Dss&include=(%E5%8F%B0%7C%E6%96%B0%E5%8C%97%7C%E5%BD%B0%E5%8C%96%7CTW%7CTaiwan)&emoji=true&list=true&new_name=true"
+    interval: 259200
+    path: ./Proxy/TW.yaml # 不同机场不同命名
+    health-check:
+      enable: true
+      interval: 1200
+      url: http://www.gstatic.com/generate_204
+  JP:
+    type: http
+    url: "https://api.v1.mk/sub?target=clash&url=https%3A%2F%2Fdler.cloud%2Fsubscribe%2FyChW6T9d1K99Y3f4%3Fclash%3Dss&include=(%E6%97%A5%E6%9C%AC%7C%E5%B7%9D%E6%97%A5%7C%E4%B8%9C%E4%BA%AC%7C%E5%A4%A7%E9%98%AA%7C%E6%B3%89%E6%97%A5%7C%E5%9F%BC%E7%8E%89%7C%E6%B2%AA%E6%97%A5%7C%E6%B7%B1%E6%97%A5%7C%5B%5E-%5D%E6%97%A5%7CJP%7CJapan)&emoji=true&list=true&new_name=truehttps://api.v1.mk/sub?target=clash&url=https%3A%2F%2Fdler.cloud%2Fsubscribe%2FyChW6T9d1K99Y3f4%3Fclash%3Dss&emoji=true&list=true&new_name=true"
+    interval: 259200
+    path: ./Proxy/JP.yaml # 不同机场不同命名
+    health-check:
+      enable: true
+      interval: 1200
+      url: http://www.gstatic.com/generate_204
+  SG:
+    type: http
+    url: "https://api.v1.mk/sub?target=clash&url=https%3A%2F%2Fdler.cloud%2Fsubscribe%2FyChW6T9d1K99Y3f4%3Fclash%3Dss&include=(%E6%96%B0%E5%8A%A0%E5%9D%A1%7C%E5%9D%A1%7C%E7%8B%AE%E5%9F%8E%7CSG%7CSingapore)&emoji=true&list=true&new_name=truehttps://api.v1.mk/sub?target=clash&url=https%3A%2F%2Fdler.cloud%2Fsubscribe%2FyChW6T9d1K99Y3f4%3Fclash%3Dss&emoji=true&list=true&new_name=true"
+    interval: 259200
+    path: ./Proxy/SG.yaml # 不同机场不同命名
+    health-check:
+      enable: true
+      interval: 1200
+      url: http://www.gstatic.com/generate_204
+  KR:
+    type: http
+    url: "https://api.v1.mk/sub?target=clash&url=https%3A%2F%2Fdler.cloud%2Fsubscribe%2FyChW6T9d1K99Y3f4%3Fclash%3Dss&include=(KR%7CKorea%7CKOR%7C%E9%A6%96%E5%B0%94%7C%E9%9F%A9%7C%E9%9F%93)&emoji=true&list=true&new_name=true"
+    interval: 259200
+    path: ./Proxy/KR.yaml # 不同机场不同命名
+    health-check:
+      enable: true
+      interval: 1200
+      url: http://www.gstatic.com/generate_204
+  USA:
+    type: http
+    url: "https://api.v1.mk/sub?target=clash&url=https%3A%2F%2Fdler.cloud%2Fsubscribe%2FyChW6T9d1K99Y3f4%3Fclash%3Dss&include=(%E7%BE%8E%7C%E6%B3%A2%E7%89%B9%E5%85%B0%7C%E8%BE%BE%E6%8B%89%E6%96%AF%7C%E4%BF%84%E5%8B%92%E5%86%88%7C%E5%87%A4%E5%87%B0%E5%9F%8E%7C%E8%B4%B9%E5%88%A9%E8%92%99%7C%E7%A1%85%E8%B0%B7%7C%E6%8B%89%E6%96%AF%E7%BB%B4%E5%8A%A0%E6%96%AF%7C%E6%B4%9B%E6%9D%89%E7%9F%B6%7C%E5%9C%A3%E4%BD%95%E5%A1%9E%7C%E5%9C%A3%E5%85%8B%E6%8B%89%E6%8B%89%7C%E8%A5%BF%E9%9B%85%E5%9B%BE%7C%E8%8A%9D%E5%8A%A0%E5%93%A5%7CUS%7CUnited%20States)&emoji=true&list=true&new_name=true"
+    interval: 259200
+    path: ./Proxy/USA.yaml # 不同机场不同命名
+    health-check:
+      enable: true
+      interval: 1200
+      url: http://www.gstatic.com/generate_204
+  # Others:
+  #   type: http
+  #   url: "https://api.v1.mk/sub?target=clash&url=https%3A%2F%2Fdler.cloud%2Fsubscribe%2FyChW6T9d1K99Y3f4%3Fclash%3Dss&exclude=%E6%B8%AF%7CHK%7CHong%20Kong%7C%E5%8F%B0%7C%E6%96%B0%E5%8C%97%7C%E5%BD%B0%E5%8C%96%7CTW%7CTaiwan%7C%E6%97%A5%E6%9C%AC%7C%E5%B7%9D%E6%97%A5%7C%E4%B8%9C%E4%BA%AC%7C%E5%A4%A7%E9%98%AA%7C%E6%B3%89%E6%97%A5%7C%E5%9F%BC%E7%8E%89%7C%E6%B2%AA%E6%97%A5%7C%E6%B7%B1%E6%97%A5%7C%5B%5E-%5D%E6%97%A5%7CJP%7CJapan%7C%E6%96%B0%E5%8A%A0%E5%9D%A1%7C%E5%9D%A1%7C%E7%8B%AE%E5%9F%8E%7CSG%7CSingapore%7CKR%7CKorea%7CKOR%7C%E9%A6%96%E5%B0%94%7C%E9%9F%A9%7C%E9%9F%93%7C%E7%BE%8E%7C%E6%B3%A2%E7%89%B9%E5%85%B0%7C%E8%BE%BE%E6%8B%89%E6%96%AF%7C%E4%BF%84%E5%8B%92%E5%86%88%7C%E5%87%A4%E5%87%B0%E5%9F%8E%7C%E8%B4%B9%E5%88%A9%E8%92%99%7C%E7%A1%85%E8%B0%B7%7C%E6%8B%89%E6%96%AF%E7%BB%B4%E5%8A%A0%E6%96%AF%7C%E6%B4%9B%E6%9D%89%E7%9F%B6%7C%E5%9C%A3%E4%BD%95%E5%A1%9E%7C%E5%9C%A3%E5%85%8B%E6%8B%89%E6%8B%89%7C%E8%A5%BF%E9%9B%85%E5%9B%BE%7C%E8%8A%9D%E5%8A%A0%E5%93%A5%7CUS%7CUnited%20States&emoji=true&list=true&new_name=true"
+  #   interval: 259200
+  #   path: ./Proxy/Others.yaml # 不同机场不同命名
+  #   health-check:
+  #     enable: true
+  #     interval: 1200
+  #     url: http://www.gstatic.com/generate_204
+
+rule-providers:
+  WhiteList:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/WhiteList/WhiteList.yaml
+    path: ./providers/WhiteList.yaml
+  Download:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Download/Download.yaml
+    path: ./providers/Download.yaml
+  Lan:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Lan/Lan.yaml
+    path: ./providers/Lan.yaml
+  Design:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/shangrenxi/Rules@master/rules/Design.yaml
+    path: ./providers/Design.yaml
+  Figma:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/shangrenxi/Rules@master/rules/Figma.yaml
+    path: ./providers/Figma.yaml
+  # Apple-direct:
+  #   type: http
+  #   behavior: classical
+  #   url: https://cdn.jsdelivr.net/gh/Hackl0us/SS-Rule-Snippet@master/Rulesets/Clash/Basic/Apple-direct.yaml
+  #   path: ./providers/Apple-direct.yaml
+  Apple:
+    type: http
+    behavior: classical
+    url: hhttps://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Apple.yaml
+    path: ./providers/AppleProxy.yaml
+  # Apple-proxy:
+  #   type: http
+  #   behavior: classical
+  #   url: https://cdn.jsdelivr.net/gh/Hackl0us/SS-Rule-Snippet@master/Rulesets/Clash/Basic/Apple-proxy.yaml
+  #   path: ./providers/Apple-proxy.yaml
+  Netflix:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Netflix/Netflix.yaml
+    path: ./providers/Netflix.yaml
+  Spotify:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Spotify/Spotify.yaml
+    path: ./providers/Spotify.yaml
+  GlobalMedia:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/GlobalMedia/GlobalMedia.yaml
+    path: ./providers/GlobalMedia.yaml
+  ChinaMedia:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/ChinaMedia/ChinaMedia.yaml
+    path: ./providers/ChinaMedia.yaml
+  Proxy:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Proxy/Proxy_Classical.yaml
+    path: ./providers/Proxy.yaml
+  China:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/China/China.yaml
+    path: ./providers/China.yaml
+  ChinaIPsBGP:
+    type: http
+    behavior: ipcidr
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/ChinaIPsBGP/ChinaIPsBGP_Classical.yaml
+    # url: https://cdn.jsdelivr.net/gh/soffchen/GeoIP2-CN@release/clash-rule-provider.yml
+    path: ./providers/ChinaIPsBGP.yaml
+rules:
+  - RULE-SET,WhiteList,DIRECT
+  - RULE-SET,Download,DIRECT
+  - RULE-SET,Lan,DIRECT
+  - RULE-SET,Design,sProxy
+  - RULE-SET,Figma,Figma
+  # - RULE-SET,Apple-direct,DIRECT
+  - RULE-SET,Apple,Apple
+  # - RULE-SET,Apple-proxy,Apple-API
+  - RULE-SET,Netflix,Netflix
+  - RULE-SET,Spotify,Spotify
+  - RULE-SET,GlobalMedia,sProxy
+  - RULE-SET,ChinaMedia,DIRECT
+  - RULE-SET,Proxy,sProxy
+  - RULE-SET,China,DIRECT
+  - RULE-SET,ChinaIPsBGP,DIRECT
+  # - GEOIP,CN,DIRECT
+  - MATCH,Final
