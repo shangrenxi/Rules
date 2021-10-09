@@ -8,3 +8,8 @@ DOMAIN,admusicpic.music.126.net
 DOMAIN,iadmat.nosdn.127.net
 DOMAIN,iadmusicmat.music.126.net
 DOMAIN,iadmusicmatvideo.music.126.net
+
+#BetterTouchTool
+DOMAIN,updates.folivora.ai
+DOMAIN,updates.boastr.net
+DOMAIN-SUFFIX,folivora.ai
