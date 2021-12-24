@@ -1,0 +1,51 @@
+#示例
+#host, api.applovefrom.com, reject
+#host, app-measurement.com, reject
+#host, logger.suibyuming.com, reject
+;user-agent, ?abc*, sProxy
+;host, www.google.com, sProxy
+;host-keyword, adsite, reject
+;host-suffix, googleapis.com, sProxy
+
+############### Proxy ###############
+
+#机场
+host, osk2.com, sProxy
+host, limi-ads1.cyou, sProxy
+host, coolti.me, sProxy
+host, anycast.gay, sProxy
+host, sublink.online, sProxy
+
+#新加坡wechat
+#host, sgminorshort.wechat.com, sProxy
+#host, sgshort.wechat.com, sProxy
+
+############### Proxy ###############
+############### Reject ###############
+
+#苹果证书认证
+host, ocsp.apple.com, reject
+#host-suffix,p14-buy.itunes.apple.com, Direct
+
+#bilibili切换港台
+ip-cidr, 203.107.1.1/24, reject
+
+#百度
+host, feed-image.baidu.com, reject
+
+############### Reject ###############
+############### Direct ###############
+
+#腾讯
+#ip-cidr, 182.254.116.0/24, direct
+#ip-cidr, 119.28.28.28/32, direct
+#ip6-cidr,2408::/16,DIRECT
+#ip6-cidr,2402::/16,DIRECT
+#ip6-cidr,2409::/16,DIRECT
+
+#网易云音乐
+host-suffix, music.126.net, direct
+
+#geoip, cn, Direct
+
+############### Direct ###############
