@@ -1,3 +1,15 @@
+#示例
+#DOMAIN-KEYWORD,abc
+#USER-AGENT,?abc*
+#DOMAIN,www.exp.com
+#DOMAIN-SUFFIX,exp.com
+#IP-CIDR,1.1.1.1
+
+############ 正式内容 ############
+
+#解决adobe Lightroom Classic闪退问题
+DOMAIN,lcs1-cops.adobe.io
+
 #cleanshotX
 DOMAIN-SUFFIX,updates.getcleanshot.com
 DOMAIN-SUFFIX,prod.legit.maketheweb.pl
@@ -7,3 +19,16 @@ DOMAIN-SUFFIX,sentry.io
 DOMAIN,updates.folivora.ai
 DOMAIN,updates.boastr.net
 DOMAIN-SUFFIX,folivora.ai
+
+#迅雷版权问题
+DOMAIN,hub5idx.v6.shub.sandai.net
+DOMAIN,hub5emu.v6.shub.sandai.net
+DOMAIN,hub5btmain.v6.shub.sandai.net
+
+#七猫小说
+DOMAIN-SUFFIX,pglstatp-toutiao.com
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
+DOMAIN-SUFFIX,wtzw.com
+
+#屏蔽alook弹窗
+DOMAIN,alookbrowser.com
