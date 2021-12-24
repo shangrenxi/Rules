@@ -3,12 +3,6 @@ DOMAIN-SUFFIX,updates.getcleanshot.com
 DOMAIN-SUFFIX,prod.legit.maketheweb.pl
 DOMAIN-SUFFIX,sentry.io
 
-#网易云
-DOMAIN,admusicpic.music.126.net
-DOMAIN,iadmat.nosdn.127.net
-DOMAIN,iadmusicmat.music.126.net
-DOMAIN,iadmusicmatvideo.music.126.net
-
 #BetterTouchTool
 DOMAIN,updates.folivora.ai
 DOMAIN,updates.boastr.net
