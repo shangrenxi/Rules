@@ -1,3 +1,13 @@
+#示例
+#DOMAIN-KEYWORD,abc
+#USER-AGENT,?abc*
+#DOMAIN,www.exp.com
+#DOMAIN-SUFFIX,exp.com
+#IP-CIDR,1.1.1.1,no-resolve
+#IP-CIDR6,2a0b:b580::/48,no-resolve
+
+############ 正式内容 ############
+
 #github加速
 DOMAIN-SUFFIX,cnpmjs.org
 DOMAIN-SUFFIX,fastgit.org
@@ -7,6 +17,13 @@ DOMAIN,github.shangrenxi.workers.dev
 #DOMAIN-SUFFIX,workers.dev
 DOMAIN-SUFFIX,github.bajins.com
 DOMAIN,github.bajins.com
+
+#腾讯
+IP-CIDR, 182.254.116.0/24,no-resolve
+IP-CIDR, 119.28.28.28/32,no-resolve
+IP-CIDR6,2408::/16,no-resolve
+IP-CIDR6,2402::/16,no-resolve
+IP-CIDR6,2409::/16,no-resolve
 
 #站酷
 DOMAIN-SUFFIX,huaban.com
