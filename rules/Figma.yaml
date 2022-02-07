@@ -4,6 +4,7 @@ payload:
   #figma
   - DOMAIN,static.figma.com
   - DOMAIN-SUFFIX,figma.com
+  - IP-CIDR,13.226.228.47
 
   #figma插件
   - DOMAIN-SUFFIX,code.jquery.com
