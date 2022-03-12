@@ -33,3 +33,8 @@ DOMAIN-SUFFIX,wtzw.com
 
 #屏蔽alook弹窗
 DOMAIN,alookbrowser.com
+
+#hdo player
+DOMAIN,applovin.com
+DOMAIN-SUFFIX,applvn.com
+
