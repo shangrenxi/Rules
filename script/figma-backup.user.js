@@ -8,15 +8,15 @@
  
 #quanx
 [rewrite]
-.*:\/\/codesign\.qq\.com\/.* url script-response-body https://raw.iqiq.io/shangrenxi/Rules/master/script/figma-backup.user.js
-.*:\/\/codesign\.woa\.com\/.* url script-response-body https://raw.iqiq.io/shangrenxi/Rules/master/script/figma-backup.user.js
-.*:\/\/.*\.figma\.com\/.* url script-response-body https://raw.iqiq.io/shangrenxi/Rules/master/script/figma-backup.user.js
+^https:\/\/codesign\.qq\.com\/.* url script-response-body https://raw.iqiq.io/shangrenxi/Rules/master/script/figma-backup.user.js
+^https:\/\/codesign\.woa\.com\/.* url script-response-body https://raw.iqiq.io/shangrenxi/Rules/master/script/figma-backup.user.js
+^https:\/\/.*\.figma\.com\/.* url script-response-body https://raw.iqiq.io/shangrenxi/Rules/master/script/figma-backup.user.js
 
 #surge
 [Script]
-codesign = type=http-response,requires-body=1,pattern=https://raw.iqiq.io/shangrenxi/Rules/master/script/figma-backup.user.js
-codesign2 =  type=http-response,requires-body=1,pattern=https://raw.iqiq.io/shangrenxi/Rules/master/script/figma-backup.user.js
-figma =  type=http-response,requires-body=1,pattern=https://raw.iqiq.io/shangrenxi/Rules/master/script/figma-backup.user.js
+http-response ^https:\/\/codesign\.qq\.com\/.* requires-body=1,max-size=0,script-path=ttps://raw.iqiq.io/shangrenxi/Rules/master/script/figma-backup.user.js
+http-response ^https:\/\/codesign\.woa\.com\/.* requires-body=1,max-size=0,script-path=ttps://raw.iqiq.io/shangrenxi/Rules/master/script/figma-backup.user.js
+http-response ^https:\/\/.*\.figma\.com\/.* requires-body=1,max-size=0,script-path=ttps://raw.iqiq.io/shangrenxi/Rules/master/script/figma-backup.user.js
 
 [mitm]
 codesign.qq.com, codesign.woa.com, *.figma.com
