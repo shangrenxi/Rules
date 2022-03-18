@@ -5,14 +5,21 @@
  * 制作：https://luke.gd/figma-backup/
  *
  ******** 以下为 tamperJS 自动生成的 rewrite 相关信息，可能需要根据情况适当调整 ********
-
+ 
+#quanx
 [rewrite]
-.*:\/\/codesign\.qq\.com\/.* url script-response-body figma-backup.user.js
-.*:\/\/codesign\.woa\.com\/.* url script-response-body figma-backup.user.js
-.*:\/\/.*\.figma\.com\/.* url script-response-body figma-backup.user.js
+.*:\/\/codesign\.qq\.com\/.* url script-response-body https://raw.iqiq.io/shangrenxi/Rules/master/script/figma-backup.user.js
+.*:\/\/codesign\.woa\.com\/.* url script-response-body https://raw.iqiq.io/shangrenxi/Rules/master/script/figma-backup.user.js
+.*:\/\/.*\.figma\.com\/.* url script-response-body https://raw.iqiq.io/shangrenxi/Rules/master/script/figma-backup.user.js
+
+#surge
+[Script]
+codesign = type=http-request,pattern=^https:\/\/codesign\.qq\.com\/.*,script-path=https://raw.iqiq.io/shangrenxi/Rules/master/script/figma-backup.user.js
+codesign = type=http-request,pattern=^https:\/\/codesign\.woa\.com\/.*,script-path=https://raw.iqiq.io/shangrenxi/Rules/master/script/figma-backup.user.js
+figma = type=http-request,pattern=.*\.figma\.com\/.*,script-path=https://raw.iqiq.io/shangrenxi/Rules/master/script/figma-backup.user.js
 
 [mitm]
-, codesign.qq.com, codesign.woa.com, *.figma.com
+codesign.qq.com, codesign.woa.com, *.figma.com
 
  ********
  * 工具: tamperJS BY @elecV2
