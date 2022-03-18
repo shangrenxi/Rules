@@ -12,14 +12,9 @@
 ^https:\/\/codesign\.woa\.com\/.* url script-response-body https://raw.iqiq.io/shangrenxi/Rules/master/script/figma-backup.user.js
 ^https:\/\/.*\.figma\.com\/.* url script-response-body https://raw.iqiq.io/shangrenxi/Rules/master/script/figma-backup.user.js
 
-#surge
-[Script]
-http-response ^https:\/\/codesign\.qq\.com\/.* requires-body=1,max-size=0,script-path=ttps://raw.iqiq.io/shangrenxi/Rules/master/script/figma-backup.user.js
-http-response ^https:\/\/codesign\.woa\.com\/.* requires-body=1,max-size=0,script-path=ttps://raw.iqiq.io/shangrenxi/Rules/master/script/figma-backup.user.js
-http-response ^https:\/\/.*\.figma\.com\/.* requires-body=1,max-size=0,script-path=ttps://raw.iqiq.io/shangrenxi/Rules/master/script/figma-backup.user.js
 
 [mitm]
-codesign.qq.com, codesign.woa.com, *.figma.com
+hostname = codesign.qq.com, codesign.woa.com, *.figma.com
 
  ********
  * 工具: tamperJS BY @elecV2
