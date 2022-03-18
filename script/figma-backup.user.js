@@ -14,9 +14,9 @@
 
 #surge
 [Script]
-codesign = type=http-request,pattern=^https:\/\/codesign\.qq\.com\/.*,script-path=https://raw.iqiq.io/shangrenxi/Rules/master/script/figma-backup.user.js
-codesign = type=http-request,pattern=^https:\/\/codesign\.woa\.com\/.*,script-path=https://raw.iqiq.io/shangrenxi/Rules/master/script/figma-backup.user.js
-figma = type=http-request,pattern=.*\.figma\.com\/.*,script-path=https://raw.iqiq.io/shangrenxi/Rules/master/script/figma-backup.user.js
+codesign = type=http-response,requires-body=1,pattern=https://raw.iqiq.io/shangrenxi/Rules/master/script/figma-backup.user.js
+codesign2 =  type=http-response,requires-body=1,pattern=https://raw.iqiq.io/shangrenxi/Rules/master/script/figma-backup.user.js
+figma =  type=http-response,requires-body=1,pattern=https://raw.iqiq.io/shangrenxi/Rules/master/script/figma-backup.user.js
 
 [mitm]
 codesign.qq.com, codesign.woa.com, *.figma.com
