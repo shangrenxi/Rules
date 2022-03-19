@@ -6,16 +6,12 @@
 ;host, www.google.com, sProxy
 ;host-keyword, adsite, reject
 ;host-suffix, googleapis.com, sProxy
+############### Emby ###############
+host, space.emby.si, Emby
+host, play.charontv.com, Emby
+############### Emby ###############
 
 ############### Proxy ###############
-
-#机场
-host, osk2.com, sProxy
-host, limi-ads1.cyou, sProxy
-host, coolti.me, sProxy
-host, anycast.gay, sProxy
-host, sublink.online, sProxy
-
 #新加坡wechat
 #host, sgminorshort.wechat.com, sProxy
 #host, sgshort.wechat.com, sProxy
