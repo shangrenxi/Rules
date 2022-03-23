@@ -14,8 +14,9 @@ DOMAIN-SUFFIX,ddrk.me
 #南瓜电影
 DOMAIN-SUFFIX,vcinema.cn
 
-#真不卡
-DOMAIN-SUFFIX,zhenbuka*.com
+#真不卡影视
+DOMAIN-SUFFIX,zhenbuka3.com
+DOMAIN-SUFFIX,zhenbuka5.com
 
 #github加速
 DOMAIN-SUFFIX,cnpmjs.org
