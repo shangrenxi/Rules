@@ -8,6 +8,15 @@
 
 ############ 正式内容 ############
 
+#低端影视
+DOMAIN-SUFFIX,ddrk.me
+
+#南瓜电影
+DOMAIN-SUFFIX,vcinema.cn
+
+#真不卡
+DOMAIN-SUFFIX,zhenbuka*.com
+
 #github加速
 DOMAIN-SUFFIX,cnpmjs.org
 DOMAIN-SUFFIX,fastgit.org
@@ -17,6 +26,8 @@ DOMAIN,github.shangrenxi.workers.dev
 #DOMAIN-SUFFIX,workers.dev
 DOMAIN-SUFFIX,github.bajins.com
 DOMAIN,github.bajins.com
+DOMAIN-SUFFIX,raw.iqiq.io
+DOMAIN-SUFFIX,raw.sevencdn.com
 
 #腾讯
 IP-CIDR, 182.254.116.0/24,no-resolve
@@ -40,12 +51,6 @@ DOMAIN-SUFFIX,ui.cn
 #美叶
 DOMAIN-SUFFIX,meiye.art
 DOMAIN-SUFFIX,psketch.com
-
-#低端影视
-DOMAIN-SUFFIX,ddrk.me
-
-#南瓜电影
-DOMAIN-SUFFIX,vcinema.cn
 
 #蓝湖
 DOMAIN-SUFFIX,lanhuapp.com
