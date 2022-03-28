@@ -83,3 +83,6 @@ DOMAIN-SUFFIX,strikinglycdn.com
 
 #istio
 DOMAIN-SUFFIX,istio.io
+
+#mtcgame gift card
+DOMAIN-SUFFIX,mtcgame.com
