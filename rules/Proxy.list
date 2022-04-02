@@ -61,7 +61,7 @@ DOMAIN-SUFFIX,intercom.io
 DOMAIN-SUFFIX,intercomcdn.com
 DOMAIN-SUFFIX,notion.so
 DOMAIN-SUFFIX,segment.com
-DOMAIN-SUFFIX,amazonaws.com
+#DOMAIN-SUFFIX,amazonaws.com
 
 #lvv2
 DOMAIN-SUFFIX,lvv2.com
