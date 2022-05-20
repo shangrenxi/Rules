@@ -3,7 +3,7 @@ payload:
 #github加速
   - DOMAIN-SUFFIX,cnpmjs.org
   - DOMAIN-SUFFIX,fastgit.org
-  - DOMAIN-SUFFIX,jsdelivr.net
+  #- DOMAIN-SUFFIX,jsdelivr.net
   - DOMAIN,github.shangrenxi.workers.dev
   - DOMAIN-SUFFIX,github.bajins.com
   - DOMAIN,github.bajins.com
