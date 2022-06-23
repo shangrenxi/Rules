@@ -73,4 +73,9 @@ payload:
 
 #istio
   - DOMAIN-SUFFIX,istio.io
+  
+#deepl
+  - DOMAIN-SUFFIX,deepl.com
+
+
 ############ 常规内容 ############
