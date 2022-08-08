@@ -1,7 +1,7 @@
 #Figma相关规则,不建议使用关键词匹配,会有很多误杀,自用
 
 #figma
-DOMAIN,static.figma.com
+#DOMAIN,static.figma.com
 DOMAIN-SUFFIX,figma.com
 #IP-CIDR,13.226.228.47,no-resolve
 
