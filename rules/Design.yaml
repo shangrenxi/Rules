@@ -26,7 +26,6 @@ payload:
   - DOMAIN-KEYWORD,behance
   - DOMAIN-KEYWORD,pinterest
   
-
 #UI8
   - DOMAIN-SUFFIX,ui8.net
   - DOMAIN-SUFFIX,js.stripe.com
@@ -37,5 +36,6 @@ payload:
 #artstation
   - DOMAIN-SUFFIX,artstation.com
   
-#xd2sketch
+#magicul.io
   - DOMAIN-SUFFIX,xd2sketch.com
+  - DOMAIN-SUFFIX,magicul.io
