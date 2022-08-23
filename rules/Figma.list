@@ -24,7 +24,7 @@ DOMAIN-SUFFIX,fontawesome.com
 
 #AWS服务
 DOMAIN-SUFFIX,fs3.amazonaws.com
-DOMAIN-KEYWORD,amazonaws
+#DOMAIN-KEYWORD,amazonaws
 
 #语音服务
 DOMAIN-SUFFIX,agora.io
