@@ -25,7 +25,11 @@ payload:
   - DOMAIN-SUFFIX,psketch.com
 
 #低端影视
-  - DOMAIN-SUFFIX,ddrk.me
+ # - DOMAIN-SUFFIX,ddrk.me
+  - DOMAIN-SUFFIX,ddys.tv
+
+#真不卡影视
+  - DOMAIN-SUFFIX,zbkyy.com
 
 #南瓜电影
   - DOMAIN-SUFFIX,vcinema.cn
