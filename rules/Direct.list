@@ -25,12 +25,11 @@ DOMAIN-SUFFIX,cnpmjs.org
 DOMAIN-SUFFIX,fastgit.org
 #DOMAIN-SUFFIX,jsdelivr.net
 DOMAIN,github.shangrenxi.workers.dev
-#DOMAIN-KEYWORD,github.shangrenxi
-#DOMAIN-SUFFIX,workers.dev
 DOMAIN-SUFFIX,github.bajins.com
 DOMAIN,github.bajins.com
 DOMAIN-SUFFIX,raw.iqiq.io
 DOMAIN-SUFFIX,raw.sevencdn.com
+DOMAIN-SUFFIX,ghproxy.com
 
 #腾讯
 IP-CIDR, 182.254.116.0/24,no-resolve
@@ -72,6 +71,3 @@ DOMAIN-SUFFIX,dm5.com
 DOMAIN-SUFFIX,qiximh1.com
 DOMAIN-SUFFIX,dumanhhua.com
 DOMAIN-SUFFIX,kumw5.com
-
-#github加速
-DOMAIN-SUFFIX,ghproxy.com
