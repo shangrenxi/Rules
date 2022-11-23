@@ -72,3 +72,6 @@ DOMAIN-SUFFIX,dm5.com
 DOMAIN-SUFFIX,qiximh1.com
 DOMAIN-SUFFIX,dumanhhua.com
 DOMAIN-SUFFIX,kumw5.com
+
+#github加速
+DOMAIN-SUFFIX,ghproxy.com
