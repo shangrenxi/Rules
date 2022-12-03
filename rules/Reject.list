@@ -26,11 +26,10 @@ DOMAIN,hub5idx.v6.shub.sandai.net
 DOMAIN,hub5emu.v6.shub.sandai.net
 DOMAIN,hub5btmain.v6.shub.sandai.net
 
-
 #屏蔽alook弹窗
 DOMAIN,alookbrowser.com
 
 #hdo player
-DOMAIN,applovin.com
+DOMAIN-SUFFIX,applovin.com
 DOMAIN-SUFFIX,applvn.com
-
+DOMAIN-SUFFIX,doubleclick.net
