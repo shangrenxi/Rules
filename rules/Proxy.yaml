@@ -78,6 +78,9 @@ payload:
   
 #deepl
   - DOMAIN-SUFFIX,deepl.com
+  
+#chatGPT
+  - DOMAIN-SUFFIX,openai.com
 
 
 ############ 常规内容 ############
