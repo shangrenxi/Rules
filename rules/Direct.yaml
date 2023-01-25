@@ -50,3 +50,6 @@ payload:
   - DOMAIN-SUFFIX,qiximh1.com
   - DOMAIN-SUFFIX,dumanhhua.com
   - DOMAIN-SUFFIX,kumw5.com
+  
+#蓝奏
+  - DOMAIN-KEYWORD,lanzou
