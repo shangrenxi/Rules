@@ -89,8 +89,3 @@ DOMAIN-SUFFIX,istio.io
 #mtcgame gift card
 DOMAIN-SUFFIX,mtcgame.com
 
-#deepl
-DOMAIN-SUFFIX,deepl.com
-
-#chatGPT
-DOMAIN-SUFFIX,openai.com
