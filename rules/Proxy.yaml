@@ -77,10 +77,10 @@ payload:
   - DOMAIN-SUFFIX,istio.io
   
 #deepl
-  - DOMAIN-SUFFIX,deepl.com
+#  - DOMAIN-SUFFIX,deepl.com
   
 #chatGPT
-  - DOMAIN-SUFFIX,openai.com
+#  - DOMAIN-SUFFIX,openai.com
 
 
 ############ 常规内容 ############
