@@ -26,6 +26,7 @@ payload:
 
   #AWS服务
   - DOMAIN-SUFFIX,fs3.amazonaws.com
-#  - DOMAIN-KEYWORD,amazonaws
+  - DOMAIN-SUFFIX,r2m01.amazontrust.com
+  #  - DOMAIN-KEYWORD,amazonaws
 
   - DOMAIN-SUFFIX,agora.io
