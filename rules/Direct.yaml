@@ -53,3 +53,6 @@ payload:
   
 #蓝奏
   - DOMAIN-KEYWORD,lanzou
+
+#dyntube流媒体
+  - DOMAIN-SUFFIX,dyntube.net
