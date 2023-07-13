@@ -56,3 +56,6 @@ payload:
 
 #dyntube流媒体
   - DOMAIN-SUFFIX,dyntube.net
+  
+#freeok流媒体  
+  - DOMAIN-SUFFIX,freeok.vip
