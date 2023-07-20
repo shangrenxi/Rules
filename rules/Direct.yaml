@@ -51,11 +51,12 @@ payload:
   - DOMAIN-SUFFIX,dumanhhua.com
   - DOMAIN-SUFFIX,kumw5.com
   
-#蓝奏
-  - DOMAIN-KEYWORD,lanzou
-
 #dyntube流媒体
   - DOMAIN-SUFFIX,dyntube.net
   
 #freeok流媒体  
   - DOMAIN-SUFFIX,freeok.vip
+
+#ghproxy
+  - DOMAIN-SUFFIX,ghproxy.net
+  - DOMAIN-SUFFIX,ghproxy.com
