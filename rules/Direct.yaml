@@ -57,3 +57,6 @@ payload:
   
 #freeok流媒体  
   - DOMAIN-SUFFIX,freeok.vip
+
+#Macapp 资源
+  - DOMAIN-SUFFIX,macapp.org.cn
