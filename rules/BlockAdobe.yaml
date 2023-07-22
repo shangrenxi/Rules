@@ -1,28 +1,98 @@
 payload:
-  #数据来自https://www.seying123.com/100.html
   #adobe失效，你懂得
-  
-  #常用的
-  - DOMAIN-SUFFIX,ic.adobe.io
-  - DOMAIN-SUFFIX,p13n.adobe.io
-  - DOMAIN-SUFFIX,7sj9n87sls.adobe.io
-  - DOMAIN-SUFFIX,b5kbg2ggog.adobe.io
-  
-  #补全
-  - DOMAIN-SUFFIX,p13n-mr.adobe.io
-  - DOMAIN-SUFFIX,cai-identity.adobe.io
-  - DOMAIN-SUFFIX,dyzt55url8.adobe.io
-  - DOMAIN-SUFFIX,gw8gfjbs05.adobe.io
-  - DOMAIN-SUFFIX,2ftem87osk.adobe.io
-  - DOMAIN-SUFFIX,ph0f2h2csf.adobe.io
-  - DOMAIN-SUFFIX,crs.cr.adobe.com
-  - DOMAIN-SUFFIX,photos.adobe.io
-  - DOMAIN-SUFFIX,lcs-cops.adobe.io
-  - DOMAIN-SUFFIX,cc-cdn.adobe.com
-  - DOMAIN-SUFFIX,cc-api-data.adobe.io
-  - DOMAIN-SUFFIX,cai-splunk-proxy.adobe.io
+  - DOMAIN, cai-identity.adobe.io
+  - DOMAIN, cai-splunk-proxy.adobe.io
+  - DOMAIN, cc-cdn.adobe.com
+  - DOMAIN, crs.cr.adobe.com
+  - DOMAIN, dyzt55url8.adobe.io
+  - DOMAIN, gw8gfjbs05.adobe.io
+  - DOMAIN, lcs-cops.adobe.io
+  - DOMAIN, p13n-mr.adobe.io
+  - DOMAIN, photos.adobe.io
 
-  #2023.07.05 更新
-  - DOMAIN-SUFFIX,p7uxzbht8h.adobe.io
-  - DOMAIN-SUFFIX,guzg78logz.adobe.io
-  - DOMAIN-SUFFIX,p13n.adobe.io
+#2023.07.05 更新
+  - DOMAIN, p7uxzbht8h.adobe.io
+  - DOMAIN, p13n.adobe.io
+
+#2023.07.22 更新
+# https://www.reddit.com/r/GenP/comments/ue47y6/possible_solution_to_unlicensed_app_popup_no/?utm_medium=android_app&utm_source=share
+# BLOCK ADOBE COMPLETE #
+  - DOMAIN, 3dns-1.adobe.com
+  - DOMAIN, 3dns-2.adobe.com
+  - DOMAIN, 3dns-3.adobe.com
+  - DOMAIN, 3dns-4.adobe.com
+  - DOMAIN, 3dns.adobe.com
+  - DOMAIN, activate-sea.adobe.com
+  - DOMAIN, activate-sjc0.adobe.com
+  - DOMAIN, activate.adobe.com
+  - DOMAIN, activate.wip.adobe.com
+  - DOMAIN, activate.wip1.adobe.com
+  - DOMAIN, activate.wip2.adobe.com
+  - DOMAIN, activate.wip3.adobe.com
+  - DOMAIN, activate.wip4.adobe.com
+  - DOMAIN, adobe-dns-1.adobe.com
+  - DOMAIN, adobe-dns-2.adobe.com
+  - DOMAIN, adobe-dns-3.adobe.com
+  - DOMAIN, adobe-dns-4.adobe.com
+  - DOMAIN, adobe-dns.adobe.com
+  - DOMAIN, adobeereg.com
+  - DOMAIN, bam.nr-data.net
+  - DOMAIN, crl.verisign.net
+  - DOMAIN, ereg.adobe.com
+  - DOMAIN, ereg.wip.adobe.com
+  - DOMAIN, ereg.wip1.adobe.com
+  - DOMAIN, ereg.wip2.adobe.com
+  - DOMAIN, ereg.wip3.adobe.com
+  - DOMAIN, ereg.wip4.adobe.com
+  - DOMAIN, genuine.adobe.com
+  - DOMAIN, hl2rcv.adobe.com
+  - DOMAIN, hlrcv.stage.adobe.com
+  - DOMAIN, ic.adobe.io
+  - DOMAIN, k.sni.global.fastly.net
+  - DOMAIN, lm.licenses.adobe.com
+  - DOMAIN, lmlicenses.wip4.adobe.com
+  - DOMAIN, na1r.services.adobe.com
+  - DOMAIN, na2m-pr.licenses.adobe.com
+  - DOMAIN, ood.opsource.net
+  - DOMAIN, practivate.adobe
+  - DOMAIN, practivate.adobe.com
+  - DOMAIN, practivate.adobe.ipp
+  - DOMAIN, practivate.adobe.newoa
+  - DOMAIN, practivate.adobe.ntp
+  - DOMAIN, prod.adobegenuine.com
+  - DOMAIN, uds.licenses.adobe.com
+  - DOMAIN, wip.adobe.com
+  - DOMAIN, wip1.adobe.com
+  - DOMAIN, wip2.adobe.com
+  - DOMAIN, wip3.adobe.com
+  - DOMAIN, wip4.adobe.com
+  - DOMAIN, workflow-ui-prod.licensingstack.com
+  - DOMAIN, wwis-dubc1-vip60.adobe.com
+  - DOMAIN, www.adobeereg.com
+  - DOMAIN, www.wip.adobe.com
+  - DOMAIN, www.wip1.adobe.com
+  - DOMAIN, www.wip2.adobe.com
+  - DOMAIN, www.wip3.adobe.com
+  - DOMAIN, www.wip4.adobe.com
+
+# THIS SHORTLIST PROBABLY ENOUGH TO BLOCK ADOBE WITHOUT ISSUES HOPEFULLY #
+  - DOMAIN, 0mo5a70cqa.adobe.io
+  - DOMAIN, 1b9khekel6.adobe.io
+  - DOMAIN, 23ynjitwt5.adobe.io
+  - DOMAIN, 2ftem87osk.adobe.io
+  - DOMAIN, 3ca52znvmj.adobe.io
+  - DOMAIN, 3d3wqt96ht.adobe.io
+  - DOMAIN, 4vzokhpsbs.adobe.io
+  - DOMAIN, 5zgzzv92gn.adobe.io
+  - DOMAIN, 69tu0xswvq.adobe.io
+  - DOMAIN, 7g2gzgk9g1.adobe.io
+  - DOMAIN, 7m31guub0q.adobe.io
+  - DOMAIN, 7sj9n87sls.adobe.io
+  - DOMAIN, 8ncdzpmmrg.adobe.io
+
+# HIT OR MISS BELOW BUT HAVE BEEN MENTIONED A LOT RECENTLY
+  - DOMAIN, b5kbg2ggog.adobe.io
+  - DOMAIN, cc-api-data.adobe.io
+  - DOMAIN, guzg78logz.adobe.io
+  - DOMAIN, jc95y2v12r.adobe.io
+  - DOMAIN, ph0f2h2csf.adobe.io
