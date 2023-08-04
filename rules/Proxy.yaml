@@ -82,5 +82,8 @@ payload:
 #chatGPT
 #  - DOMAIN-SUFFIX,openai.com
 
+#vercel.app
+  - DOMAIN-SUFFIX,vercel.app
+
 
 ############ 常规内容 ############
