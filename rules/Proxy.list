@@ -89,3 +89,5 @@ DOMAIN-SUFFIX,istio.io
 #mtcgame gift card
 DOMAIN-SUFFIX,mtcgame.com
 
+#vercel.app
+DOMAIN-SUFFIX,vercel.app
