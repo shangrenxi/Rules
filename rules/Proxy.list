@@ -79,7 +79,7 @@ DOMAIN-SUFFIX,producthunt.com
 DOMAIN-SUFFIX,premast.com
 DOMAIN-SUFFIX,haikudeck.com
 
-#mac
+#mac app
 DOMAIN-SUFFIX,macenjoy.co
 DOMAIN-SUFFIX,strikinglycdn.com
 
@@ -91,3 +91,7 @@ DOMAIN-SUFFIX,mtcgame.com
 
 #vercel.app
 DOMAIN-SUFFIX,vercel.app
+
+#青鸟阅读 语音朗读
+DOMAIN-SUFFIX,genshinvoice.top
+IP-CIDR,152.136.205.53/32,no-resolve
