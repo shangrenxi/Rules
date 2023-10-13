@@ -85,5 +85,9 @@ payload:
 #vercel.app
   - DOMAIN-SUFFIX,vercel.app
 
+#青鸟阅读 语音朗读
+  - DOMAIN-SUFFIX,genshinvoice.top
+  - IP-CIDR,152.136.205.53/32,no-resolve
+
 
 ############ 常规内容 ############
