@@ -60,3 +60,6 @@ payload:
 
 #Macapp 资源
   - DOMAIN-SUFFIX,macapp.org.cn
+  
+#adobe放行
+  - DOMAIN,lcs-cops.adobe.io
