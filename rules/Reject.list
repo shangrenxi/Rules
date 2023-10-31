@@ -10,6 +10,7 @@
 
 #解决adobe Lightroom Classic闪退问题
 DOMAIN,lcs1-cops.adobe.io
+DOMAIN-SUFFIX,adobe.io
 
 #cleanshotX
 #DOMAIN-SUFFIX,updates.getcleanshot.com
