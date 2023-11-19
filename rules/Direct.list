@@ -98,18 +98,6 @@ DOMAIN-SUFFIX,cz01.cc
 DOMAIN,cz01.me
 DOMAIN,cz01.fun
 
-#github加速
-DOMAIN-SUFFIX,cnpmjs.org
-DOMAIN-SUFFIX,fastgit.org
-#DOMAIN-SUFFIX,jsdelivr.net
-#DOMAIN,github.shangrenxi.workers.dev
-DOMAIN-SUFFIX,github.bajins.com
-DOMAIN,github.bajins.com
-DOMAIN-SUFFIX,raw.iqiq.io
-DOMAIN-SUFFIX,raw.sevencdn.com
-DOMAIN-SUFFIX,ghproxy.com
-DOMAIN-SUFFIX,ghproxy.net
-
 #腾讯
 IP-CIDR, 182.254.116.0/24,no-resolve
 IP-CIDR, 119.28.28.28/32,no-resolve
