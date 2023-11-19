@@ -1,15 +1,5 @@
 payload:
 
-#github加速
-  - DOMAIN-SUFFIX,cnpmjs.org
-  - DOMAIN-SUFFIX,fastgit.org
-  #- DOMAIN-SUFFIX,jsdelivr.net
-  #- DOMAIN,github.shangrenxi.workers.dev
-  - DOMAIN-SUFFIX,github.bajins.com
-  - DOMAIN,github.bajins.com
-  - DOMAIN-SUFFIX,ghproxy.com
-  - DOMAIN-SUFFIX,ghproxy.net
-
 #站酷
   - DOMAIN-SUFFIX,huaban.com
   - DOMAIN-SUFFIX,zcool.com.cn
