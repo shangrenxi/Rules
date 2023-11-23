@@ -53,3 +53,6 @@ payload:
   
 #adobe放行
   - DOMAIN,lcs-cops.adobe.io
+  
+#songtaste
+  - DOMAIN-SUFFIX,songtaste.co
