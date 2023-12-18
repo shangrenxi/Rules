@@ -1,8 +1,8 @@
 payload:
 
 #解决adobe Lightroom Classic闪退问题
-  - DOMAIN,DOMAIN,lcs1-cops.adobe.io
-  - DOMAIN,DOMAIN-SUFFIX,adobe.io
+  #- DOMAIN,DOMAIN,lcs1-cops.adobe.io
+  #- DOMAIN,DOMAIN-SUFFIX,adobe.io
 
 #cleanshotX
   - DOMAIN,#DOMAIN-SUFFIX,updates.getcleanshot.com
