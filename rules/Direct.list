@@ -98,13 +98,6 @@ DOMAIN-SUFFIX,cz01.cc
 DOMAIN,cz01.me
 DOMAIN,cz01.fun
 
-#腾讯
-IP-CIDR, 182.254.116.0/24,no-resolve
-IP-CIDR, 119.28.28.28/32,no-resolve
-IP-CIDR6,2408::/16,no-resolve
-IP-CIDR6,2402::/16,no-resolve
-IP-CIDR6,2409::/16,no-resolve
-
 #站酷
 DOMAIN-SUFFIX,huaban.com
 DOMAIN-SUFFIX,zcool.com.cn
