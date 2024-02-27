@@ -1,3 +1,5 @@
+#--> 邮箱 <--#
+
 #示例
 #DOMAIN-KEYWORD,abc
 #USER-AGENT,?abc*
@@ -6,19 +8,25 @@
 #IP-CIDR,1.1.1.1,no-resolve
 #IP-CIDR6,2a0b:b580::/48,no-resolve
 
-#--> 邮箱 <--#
 #mail.ru
 DOMAIN,imap.mail.ru
 DOMAIN,smtp.mail.ru
+DOMAIN,pop.mail.ru
+
+#rambler
+DOMAIN,mail.rambler.ru
 DOMAIN,imap.rambler.ru
 DOMAIN,smtp.rambler.ru
+DOMAIN,pop.rambler.ru
 
 #gmail
+DOMAIN,mail.gmail.com
+#DOMAIN-SUFFIX,gmail.com
 DOMAIN,imap.gmail.com
 DOMAIN,pop.gmail.com
 DOMAIN,smtp.gmail.com
 
 #outlook
 DOMAIN,imap-mail.outlook.com
-DOMAIN,outlook.office365.com
 DOMAIN,smtp-mail.outlook.com
+DOMAIN,outlook.office365.com
