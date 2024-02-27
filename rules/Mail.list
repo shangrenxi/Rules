@@ -1,0 +1,24 @@
+#示例
+#DOMAIN-KEYWORD,abc
+#USER-AGENT,?abc*
+#DOMAIN,www.exp.com
+#DOMAIN-SUFFIX,exp.com
+#IP-CIDR,1.1.1.1,no-resolve
+#IP-CIDR6,2a0b:b580::/48,no-resolve
+
+#--> 邮箱 <--#
+#mail.ru
+DOMAIN,imap.mail.ru
+DOMAIN,smtp.mail.ru
+DOMAIN,imap.rambler.ru
+DOMAIN,smtp.rambler.ru
+
+#gmail
+DOMAIN,imap.gmail.com
+DOMAIN,pop.gmail.com
+DOMAIN,smtp.gmail.com
+
+#outlook
+DOMAIN,imap-mail.outlook.com
+DOMAIN,outlook.office365.com
+DOMAIN,smtp-mail.outlook.com
