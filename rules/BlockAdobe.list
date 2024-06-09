@@ -1,7 +1,7 @@
-# 2024.5.23 更新
+# 2024.6.9 更新
 # https://a.dove.isdumb.one/list.txt
  
-DOMAIN,ic.adobe.io
+#DOMAIN,ic.adobe.io
 #DOMAIN,cc-api-data.adobe.io
 #DOMAIN,prod.adobegenuine.com
 DOMAIN,gocart-web-prod-ue1-alb-1461435473.us-east-1.elb.amazonaws.com
@@ -9,3 +9,10 @@ DOMAIN-WILDCARD, *.adobe.io
 DOMAIN-WILDCARD, *.prod.cloud.adobe.io
 DOMAIN-WILDCARD, *.adobestats.io
 DOMAIN-WILDCARD, *.adobegenuine.com
+
+PROCESS-NAME,adobe*
+PROCESS-NAME,adobe *
+PROCESS-NAME,photoshop *
+PROCESS-NAME,illustrator *
+PROCESS-NAME,indesign *
+PROCESS-NAME,afterfx *
