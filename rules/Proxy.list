@@ -95,3 +95,7 @@ DOMAIN-SUFFIX,vercel.app
 #青鸟阅读 语音朗读
 DOMAIN-SUFFIX,genshinvoice.top
 IP-CIDR,152.136.205.53/32,no-resolve
+
+#ideogram.ai
+DOMAIN,ideogram.ai
+DOMAIN-SUFFIX,ideogram.ai
