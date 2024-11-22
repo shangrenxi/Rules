@@ -89,5 +89,9 @@ payload:
   - DOMAIN-SUFFIX,genshinvoice.top
   - IP-CIDR,152.136.205.53/32,no-resolve
 
+#ideogram.ai
+  - DOMAIN,ideogram.ai
+  - DOMAIN-SUFFIX,ideogram.ai
+
 
 ############ 常规内容 ############
