@@ -1,5 +1,6 @@
 #rule for dia browser
 #update 20250520
+#建议用US地区
 
 payload:
   - DOMAIN,api.segment.io
