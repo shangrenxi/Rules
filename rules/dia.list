@@ -1,0 +1,10 @@
+#rule for dia browser
+#update 20250520
+
+DOMAIN,api.segment.io
+DOMAIN-SUFFIX,launchdarkly.com
+DOMAIN-SUFFIX,diabrowser.engineering
+
+# DOMAIN-SUFFIX,ingest.us.sentry.io
+# DOMAIN,cdn-settings.segment.com
+# DOMAIN-SUFFIX,browser-intake-datadoghq.com
