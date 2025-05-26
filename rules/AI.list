@@ -1,4 +1,11 @@
-#update 20250526
+# Update: 20250526
+# Use USA IP to enjoy it.
+# The list from
+# sources1: https://kelee.one/Tool/Loon/Rule/AI.list
+# sources2: https://github.com/ConnersHua/RuleGo/blob/master/Surge/Ruleset/Extra/AI.list
+# sources3: https://ruleset.skk.moe/List/non_ip/ai.conf
+# sources4: https://github.com//blackmatrix7/ios_rule_script/blob/master/rule/Surge/OpenAI/OpenAI.list and like Gemini.list\Claude.list\Copilot.list
+# sources5: github@ddgksf2013
 
 # > Ai general rules
 DOMAIN,api.statsig.com
@@ -22,7 +29,6 @@ DOMAIN-SUFFIX,wp.com
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,stripe.com
 
-
 # > Apple Intelligence
 DOMAIN-SUFFIX,smoot.apple.com
 DOMAIN,apple-relay.apple.com
@@ -30,7 +36,6 @@ DOMAIN,apple-relay.cloudflare.com
 DOMAIN,apple-relay.fastly-edge.com
 DOMAIN,cp4.cloudflare.com
 DOMAIN,guzzoni.apple.com
-
 
 # > Anthropic Claude
 DOMAIN,cdn.usefathom.com
@@ -40,11 +45,7 @@ DOMAIN-SUFFIX,claudeusercontent.com
 IP-CIDR,160.79.104.0/23,no-resolve
 IP-CIDR6,2607:6bc0::/48,no-resolve
 
-
-# OpenAI
 # > ChatGPT
-AND,((DOMAIN-KEYWORD,chatgpt-async-webps-prod-),(DOMAIN-SUFFIX,webpubsub.azure.com))
-AND,((DOMAIN-KEYWORD,openaicom-api-),(DOMAIN-SUFFIX,azurefd.net))
 DOMAIN,chatgpt.livekit.cloud
 DOMAIN,host.livekit.cloud
 DOMAIN,openai.com.cdn.cloudflare.net
@@ -62,6 +63,7 @@ DOMAIN,api.statsig.com
 DOMAIN,api-iam.intercom.io
 DOMAIN,o33249.ingest.sentry.io
 DOMAIN,openaiapi-site.azureedge.net
+DOMAIN-WILDCARD, chatgpt-async-webps-prod-*.webpubsub.azure.com
 DOMAIN-WILDCARD, openaicom-api-*.azurefd.net
 DOMAIN-KEYWORD,openaiapi
 DOMAIN-KEYWORD,openaicom
@@ -71,11 +73,8 @@ DOMAIN-SUFFIX,coze.com
 DOMAIN-SUFFIX,ciciai.com
 DOMAIN-SUFFIX,byteoversea.com
 
-
-# Cloudflare
-# > AI Gateway
+# > Cloudflare AI Gateway
 DOMAIN,gateway.ai.cloudflare.com
-
 
 # > Cursor
 DOMAIN-SUFFIX,cursor-cdn.com
@@ -83,14 +82,11 @@ DOMAIN-SUFFIX,cursor.com
 DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,cursorapi.com
 
-
 # > DIA
 DOMAIN-SUFFIX,diabrowser.engineering
 
-
 # > Dify AI
 DOMAIN-SUFFIX,dify.ai
-
 
 # Google
 # > AI Studio
@@ -138,7 +134,6 @@ DOMAIN-SUFFIX,notebooklm.google.com
 DOMAIN-SUFFIX,labs.google
 DOMAIN-KEYWORD,labs.google
 
-
 # JetBrains AI
 DOMAIN-SUFFIX,grazie.ai
 DOMAIN-SUFFIX,grazie.aws.intellij.net
@@ -147,7 +142,6 @@ DOMAIN-SUFFIX,jetbrains.ai
 # Meta
 DOMAIN,imagine.meta.com
 DOMAIN-SUFFIX,meta.ai
-
 
 # Microsoft
 # > Copilot
@@ -171,20 +165,16 @@ DOMAIN-SUFFIX,edgeservices.bing.com
 # > GitHub Copilot
 DOMAIN-SUFFIX,githubcopilot.com
 
-
 # > Midjourney
 DOMAIN-SUFFIX,midjourney.com
-
 
 # > Mistral AI
 DOMAIN,chat.mistral.ai
 DOMAIN,console.mistral.ai
 DOMAIN-SUFFIX,mistral.a
 
-
 # > openrouter
 DOMAIN-SUFFIX.openrouter.ai
-
 
 # > Perplexity
 DOMAIN,pplx-res.cloudinary.com
@@ -192,23 +182,18 @@ DOMAIN-SUFFIX,perplexity.com
 DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,pplx.ai
 
-
 # > Poe
 DOMAIN-SUFFIX,poe.com
 DOMAIN-SUFFIX,poecdn.net
 
-
-# xAI
-# > Grok
+# > xAI Grok
 DOMAIN,api.x.ai
 DOMAIN-SUFFIX,grok.com
 DOMAIN-SUFFIX,x.ai
 
-
 # Trae AI
 DOMAIN,trae-api-sg.mchost.guru
 DOMAIN-SUFFIX,trae.ai
-
 
 # others
 DOMAIN-SUFFIX,ai.com
