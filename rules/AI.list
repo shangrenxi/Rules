@@ -67,6 +67,11 @@ DOMAIN-WILDCARD, openaicom-api-*.azurefd.net
 DOMAIN-KEYWORD,openaiapi
 DOMAIN-KEYWORD,openaicom
 
+# -> Coze
+DOMAIN-SUFFIX,coze.com
+DOMAIN-SUFFIX,ciciai.com
+DOMAIN-SUFFIX,byteoversea.com
+
 
 # Cloudflare
 # > AI Gateway
