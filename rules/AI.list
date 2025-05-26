@@ -1,4 +1,5 @@
 #update 20250526
+##整理ConnersHua
 
 # > Ai general rules
 DOMAIN,api.statsig.com
@@ -14,6 +15,8 @@ DOMAIN-SUFFIX,identrust.com
 DOMAIN-SUFFIX,intercom.io
 DOMAIN-SUFFIX,intercomcdn.com
 DOMAIN-SUFFIX,launchdarkly.com
+DOMAIN,cdn-settings.segment.com
+DOMAIN,api.segment.io
 DOMAIN-SUFFIX,segment.io
 # DOMAIN-SUFFIX,amazonaws.com
 DOMAIN-SUFFIX,wp.com
@@ -77,6 +80,10 @@ DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,cursorapi.com
 
 
+# > DIA
+DOMAIN-SUFFIX,diabrowser.engineering
+
+
 # > Dify AI
 DOMAIN-SUFFIX,dify.ai
 
@@ -94,7 +101,6 @@ DOMAIN-SUFFIX,deepmind.com
 DOMAIN-SUFFIX,deepmind.google
 
 # > Gemini
-
 DOMAIN,ai.google.dev
 DOMAIN,bard.google.com
 DOMAIN,gemini.google.com
@@ -161,16 +167,22 @@ DOMAIN-SUFFIX,edgeservices.bing.com
 # > GitHub Copilot
 DOMAIN-SUFFIX,githubcopilot.com
 
+
 # > Midjourney
 DOMAIN-SUFFIX,midjourney.com
 
-# Mistral AI
+
+# > Mistral AI
 DOMAIN,chat.mistral.ai
 DOMAIN,console.mistral.ai
 DOMAIN-SUFFIX,mistral.a
 
 
-# Perplexity
+# > openrouter
+DOMAIN-SUFFIX.openrouter.ai
+
+
+# > Perplexity
 DOMAIN,pplx-res.cloudinary.com
 DOMAIN-SUFFIX,perplexity.com
 DOMAIN-SUFFIX,perplexity.ai
