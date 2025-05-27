@@ -10,6 +10,8 @@
 
 payload:
 
+# ##### 主流AI应用 ######
+
 # > Ai general rules
   - DOMAIN,api.statsig.com
   - DOMAIN,browser-intake-datadoghq.com
@@ -36,7 +38,6 @@ payload:
   - DOMAIN,dc-genai-content-platform.adobe.io
   - DOMAIN,mds-cdn.infra.adobesensei.io
   - DOMAIN,senseimds.adobe.io
-  - DOMAIN-SUFFIX,senseicore.adobe.io
   - DOMAIN-SUFFIX,sensei.adobe.io
   - DOMAIN-SUFFIX,senseicore.adobe.io
 # # Adobe Firefly & Generative AI
@@ -65,52 +66,6 @@ payload:
   - IP-CIDR,160.79.104.0/23,no-resolve
   - IP-CIDR6,2607:6bc0::/48,no-resolve
   - SRC-IP-ASN,AS399358
-
-# AIVA (Media Generation)
-  - DOMAIN-SUFFIX,aiva.ai
-
-# Any.do (AI task)
-  - DOMAIN-SUFFIX,any.do
-
-# Anyword (Content creation)
-  - DOMAIN-SUFFIX,anyword.com
-
-# Arc Search (Research)
-  - DOMAIN-SUFFIX,arc.net
-
-# Asana (AI task)
-  - DOMAIN-SUFFIX,asana.com
-  - DOMAIN-SUFFIX,asana.biz
-
-# Avoma (AI transcription)
-  - DOMAIN-SUFFIX,avoma.com
-
-# BeeDone (AI task)
-  - DOMAIN-SUFFIX,beedone.co
-
-# Beautiful.ai (Presentations)
-  - DOMAIN-SUFFIX,beautiful.ai
-
-# Buffer (Social media)
-  - DOMAIN-SUFFIX,buffer.com
-  - DOMAIN-SUFFIX,bufferapp.com
-
-# Canva
-  - DOMAIN-SUFFIX,pixabay.com
-  - DOMAIN-SUFFIX,pexels.com
-  - DOMAIN-SUFFIX,remove.bg
-  - DOMAIN-SUFFIX,smartmockups.com
-  - DOMAIN-SUFFIX,flourish.studio
-  - DOMAIN-SUFFIX,serif.com
-  - DOMAIN-SUFFIX,leonardo.ai
-  - DOMAIN-SUFFIX,zeetings.com
-  - DOMAIN-SUFFIX,canva.site
-  - DOMAIN-SUFFIX,canva.dev
-  - DOMAIN-SUFFIX,canva.cn
-  - DOMAIN-SUFFIX,canva.com
-
-# Character.AI (Character)
-  - DOMAIN-SUFFIX,character.ai
 
 # > ChatGPT
   - DOMAIN,openai.com.cdn.cloudflare.net
@@ -153,6 +108,9 @@ payload:
   - DOMAIN,mcs-va.ciciai.com
   - DOMAIN-SUFFIX,ciciai.com
   - DOMAIN-SUFFIX,ciciaicdn.com
+# > Trae AI
+  - DOMAIN,trae-api-sg.mchost.guru
+  - DOMAIN-SUFFIX,trae.ai
 # -> 字节系
   - DOMAIN-SUFFIX,bytedapm.com
   - DOMAIN-SUFFIX,byteoversea.com
@@ -182,37 +140,14 @@ payload:
 # > chronicle
   - DOMAIN-SUFFIX,chroniclehq.com
 
-# Clockwise (AI transcription)
-  - DOMAIN-SUFFIX,clockwise.ai
-  - DOMAIN-SUFFIX,getclockwise.com
-
 # > DIA
   - DOMAIN-SUFFIX,diabrowser.engineering
 
 # > Dify AI
   - DOMAIN-SUFFIX,dify.ai
 
-# ElevenLabs (Media Generation)
-  - DOMAIN,api.elevenlabs.io
-  - DOMAIN-SUFFIX,elevenlabs.io
-
-# Enhancv (Resume)
-  - DOMAIN-SUFFIX,enhancv.com
-
-# FeedHive (Social media)
-  - DOMAIN-SUFFIX,feedhive.io
-  - DOMAIN-SUFFIX,feedhive.com
-
-# Fireflies (AI transcription)
-  - DOMAIN-SUFFIX,fireflies.ai
-
-# > genspark
-  - DOMAIN-SUFFIX,genspark.ai
-
 # Google
 # > AI Studio
-  - DOMAIN-SUFFIX,generativeai.google
-  - DOMAIN,makersuite.google.com
   - DOMAIN,ai.google.dev
   - DOMAIN,aistudio.google.com
   - DOMAIN,alkalicore-pa.clients6.google.com
@@ -221,8 +156,6 @@ payload:
   - DOMAIN,stitch.withgoogle.com
   - DOMAIN-SUFFIX,autodraw.com
   - DOMAIN-SUFFIX,ai.google
-  - DOMAIN-SUFFIX,labs.google.com
-  - DOMAIN-SUFFIX,labs.google
 # > DeepMind
   - DOMAIN,deepmind.com
   - DOMAIN,deepmind.google
@@ -259,29 +192,16 @@ payload:
   - DOMAIN-SUFFIX,notebooklm.google.com
 # > Search Labs
   - DOMAIN-SUFFIX,labs.google
+  - DOMAIN-SUFFIX,labs.google.com
   - DOMAIN-KEYWORD,labs.google
-
-# Grammarly (Grammar Checker)
-  - DOMAIN-SUFFIX,grammarly.ai
-  - DOMAIN-SUFFIX,grammarly.com
-
-# Grammarly (Grammar Checker)
-  - DOMAIN-SUFFIX,grammarly.ai
-  - DOMAIN-SUFFIX,grammarly.com
 
 # > JetBrains AI
   - DOMAIN-SUFFIX,grazie.ai
   - DOMAIN-SUFFIX,grazie.aws.intellij.net
   - DOMAIN-SUFFIX,jetbrains.ai
 
-# Kickresume (Resume)
-  - DOMAIN-SUFFIX,kickresume.com
-
 # > lovart
 #   - DOMAIN-SUFFIX,lovart.ai
-
-# Mem (Knowledge management)
-  - DOMAIN-SUFFIX,mem.ai
 
 # > Meta
   - DOMAIN,imagine.meta.com
@@ -341,12 +261,6 @@ payload:
   - DOMAIN,console.mistral.ai
   - DOMAIN-SUFFIX,mistral.a
 
-# Motion (AI scheduling)
-  - DOMAIN-SUFFIX,usemotion.com
-
-# novita
-  - DOMAIN-SUFFIX,novita.ai
-
 # > openrouter
   - DOMAIN-SUFFIX.openrouter.ai
 
@@ -359,6 +273,101 @@ payload:
 # > Poe
   - DOMAIN-SUFFIX,poe.com
   - DOMAIN-SUFFIX,poecdn.net
+
+# > vercel
+  - DOMAIN-SUFFIX,v0.dev
+  - DOMAIN-SUFFIX,vercel.com
+  - DOMAIN-SUFFIX,vercel.sh
+  - DOMAIN-SUFFIX,ethyca.com
+
+# > xAI Grok
+  - DOMAIN,api.x.ai
+  - DOMAIN-SUFFIX,grok.com
+  - DOMAIN-SUFFIX,x.ai
+
+
+# ##### 其他AI应用 ######
+
+# AIVA (Media Generation)
+  - DOMAIN-SUFFIX,aiva.ai
+
+# Any.do (AI task)
+  - DOMAIN-SUFFIX,any.do
+
+# Anyword (Content creation)
+  - DOMAIN-SUFFIX,anyword.com
+
+# Arc Search (Research)
+  - DOMAIN-SUFFIX,arc.net
+
+# Asana (AI task)
+  - DOMAIN-SUFFIX,asana.com
+  - DOMAIN-SUFFIX,asana.biz
+
+# Avoma (AI transcription)
+  - DOMAIN-SUFFIX,avoma.com
+
+# BeeDone (AI task)
+  - DOMAIN-SUFFIX,beedone.co
+
+# Beautiful.ai (Presentations)
+  - DOMAIN-SUFFIX,beautiful.ai
+
+# Buffer (Social media)
+  - DOMAIN-SUFFIX,buffer.com
+  - DOMAIN-SUFFIX,bufferapp.com
+
+# Canva
+  - DOMAIN-SUFFIX,pixabay.com
+  - DOMAIN-SUFFIX,pexels.com
+  - DOMAIN-SUFFIX,remove.bg
+  - DOMAIN-SUFFIX,smartmockups.com
+  - DOMAIN-SUFFIX,flourish.studio
+  - DOMAIN-SUFFIX,serif.com
+  - DOMAIN-SUFFIX,leonardo.ai
+  - DOMAIN-SUFFIX,zeetings.com
+  - DOMAIN-SUFFIX,canva.site
+  - DOMAIN-SUFFIX,canva.dev
+  - DOMAIN-SUFFIX,canva.cn
+  - DOMAIN-SUFFIX,canva.com
+
+
+# Clockwise (AI transcription)
+  - DOMAIN-SUFFIX,clockwise.ai
+  - DOMAIN-SUFFIX,getclockwise.com
+
+# ElevenLabs (Media Generation)
+  - DOMAIN,api.elevenlabs.io
+  - DOMAIN-SUFFIX,elevenlabs.io
+
+# Enhancv (Resume)
+  - DOMAIN-SUFFIX,enhancv.com
+
+# FeedHive (Social media)
+  - DOMAIN-SUFFIX,feedhive.io
+  - DOMAIN-SUFFIX,feedhive.com
+
+# Fireflies (AI transcription)
+  - DOMAIN-SUFFIX,fireflies.ai
+
+# > genspark
+  - DOMAIN-SUFFIX,genspark.ai
+
+# Grammarly (Grammar Checker)
+  - DOMAIN-SUFFIX,grammarly.ai
+  - DOMAIN-SUFFIX,grammarly.com
+
+# Kickresume (Resume)
+  - DOMAIN-SUFFIX,kickresume.com
+
+# Mem (Knowledge management)
+  - DOMAIN-SUFFIX,mem.ai
+
+# Motion (AI scheduling)
+  - DOMAIN-SUFFIX,usemotion.com
+
+# novita
+  - DOMAIN-SUFFIX,novita.ai
 
 # ProWritingAid
   - DOMAIN-SUFFIX,prowritingaid.com
@@ -389,10 +398,6 @@ payload:
 # Tome (Presentations)
   - DOMAIN-SUFFIX,tome.app
 
-# Trae AI
-  - DOMAIN,trae-api-sg.mchost.guru
-  - DOMAIN-SUFFIX,trae.ai
-
 # Wondershare Filmora (Media Generation)
   - DOMAIN-SUFFIX,wondershare.com
 
@@ -401,17 +406,6 @@ payload:
 
 # Writer (Content creation)
   - DOMAIN-SUFFIX,writer.com
-
-# > vercel
-  - DOMAIN-SUFFIX,v0.dev
-  - DOMAIN-SUFFIX,vercel.com
-  - DOMAIN-SUFFIX,vercel.sh
-  - DOMAIN-SUFFIX,ethyca.com
-
-# > xAI Grok
-  - DOMAIN,api.x.ai
-  - DOMAIN-SUFFIX,grok.com
-  - DOMAIN-SUFFIX,x.ai
 
 # Zapier (Automation)
   - DOMAIN-SUFFIX,zapier.com
