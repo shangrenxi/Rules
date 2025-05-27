@@ -3,10 +3,30 @@
 #建议用US地区
 
 payload:
+  - DOMAIN,releases.diabrowser.com
+  - DOMAIN,account.diabrowser.engineering
+  - DOMAIN,dia-blocklists-release.diabrowser.engineering
+  - DOMAIN-SUFFIX,diabrowser.engineering
+  - IP-CIDR,45.76.221.157/32,no-resolve
+  - IP-CIDR,81.168.83.93/32,no-resolve
+  - IP-CIDR,95.111.202.5/32,no-resolve
+  - IP-CIDR,108.59.2.24/32,no-resolve
+  - IP-CIDR,116.203.151.74/32,no-resolve
+  - IP-CIDR,162.159.200.0/24,no-resolve
+#   - IP-CIDR,162.159.200.1/32,no-resolve
+#   - IP-CIDR,162.159.200.123/32,no-resolve
+  - IP-CIDR,193.182.111.0/24,no-resolve
+#   - IP-CIDR,193.182.111.12/32,no-resolve
+#   - IP-CIDR,193.182.111.14/32,no-resolve
+#   - IP-CIDR,193.182.111.143/32,no-resolve
+#   - IP-CIDR,193.182.111.142/32,no-resolve
+#   - IP-CIDR,193.182.111.141/32,no-resolve
+  - IP-CIDR6,2606:4700:f1::123/128,no-resolve
+  - IP-CIDR6,2001:67c:21bc:1e::123/128,no-resolve
+  - IP-CIDR6,2a03:8600::cc/128,no-resolve
+
   - DOMAIN,api.segment.io
   - DOMAIN-SUFFIX,launchdarkly.com
-  - DOMAIN-SUFFIX,diabrowser.engineering
-
 #  -  DOMAIN-SUFFIX,ingest.us.sentry.io
 #  -  DOMAIN,cdn-settings.segment.com
 #  -  DOMAIN-SUFFIX,browser-intake-datadoghq.com
