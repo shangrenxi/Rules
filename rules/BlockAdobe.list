@@ -2198,5 +2198,13 @@ DOMAIN,dprlikm0.4p4bv.adobestats.io
 #DOMAIN,prod.adobegenuine.com
 #DOMAIN,gocart-web-prod-ue1-alb-1461435473.us-east-1.elb.amazonaws.com
 DOMAIN-SUFFIX, prod.cloud.adobe.io
-DOMAIN-SUFFIX, adobestats.io
 DOMAIN-SUFFIX, adobegenuine.com
+
+#AD
+DOMAIN,sstats.adobe.com
+DOMAIN,hbrt.adobe.com
+DOMAIN-SUFFIX,data.adobedc.net
+DOMAIN-SUFFIX,demdex.net
+DOMAIN-SUFFIX,omtrdc.net
+DOMAIN-SUFFIX,112.2o7.net
+DOMAIN-SUFFIX,adobestats.io
