@@ -138,6 +138,7 @@ DOMAIN-SUFFIX,character.ai
 # > chronicle
 DOMAIN-SUFFIX,chroniclehq.com
 
+# > DIA
 DOMAIN,releases.diabrowser.com
 DOMAIN,account.diabrowser.engineering
 DOMAIN,dia-blocklists-release.diabrowser.engineering
