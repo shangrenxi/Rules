@@ -2195,11 +2195,8 @@ DOMAIN,nggjmvrf.td3wc.adobestats.io
 DOMAIN,pgitt5i7.pkxns.adobestats.io
 DOMAIN,dprlikm0.4p4bv.adobestats.io
 
-#DOMAIN,ic.adobe.io
-#DOMAIN,cc-api-data.adobe.io
 #DOMAIN,prod.adobegenuine.com
 #DOMAIN,gocart-web-prod-ue1-alb-1461435473.us-east-1.elb.amazonaws.com
-DOMAIN-SUFFIX, adobe.io
 DOMAIN-SUFFIX, prod.cloud.adobe.io
 DOMAIN-SUFFIX, adobestats.io
 DOMAIN-SUFFIX, adobegenuine.com
