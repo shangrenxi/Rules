@@ -260,7 +260,7 @@ DOMAIN,console.mistral.ai
 DOMAIN-SUFFIX,mistral.a
 
 # > openrouter
-DOMAIN-SUFFIX.openrouter.ai
+DOMAIN-SUFFIX,openrouter.ai
 
 # > Perplexity
 DOMAIN,pplx-res.cloudinary.com
