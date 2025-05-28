@@ -1,4 +1,4 @@
-# Update: 20250527
+# Update: 20250528
 # Use USA IP to enjoy it.
 # The list from
 # sources1: https://kelee.one/Tool/Loon/Rule/AI.list
@@ -7,6 +7,8 @@
 # sources4: https://github.com//blackmatrix7/ios_rule_script/blob/master/rule/Surge/OpenAI/OpenAI.list and like Gemini.list\Claude.list\Copilot.list
 # sources5: github@ddgksf2013
 # sources5: https://github.com/mayonetsuki/global_configuration/blob/main/RouteLists/Services/Companies/OpenAI.list
+
+
 
 # ##### 主流AI应用 ######
 
@@ -28,24 +30,10 @@ DOMAIN-SUFFIX,segment.io
 # DOMAIN-SUFFIX,amazonaws.com
 DOMAIN-SUFFIX,wp.com
 DOMAIN-SUFFIX,sentry.io
-DOMAIN-SUFFIX,stripe.com
 
-# > Adobe AI
-DOMAIN,dc-genai-access-provisioning-api.adobe.io
-DOMAIN,dc-genai-persistence.adobe.io
-DOMAIN,dc-genai-content-platform.adobe.io
-DOMAIN,mds-cdn.infra.adobesensei.io
-DOMAIN,senseimds.adobe.io
-DOMAIN-SUFFIX,sensei.adobe.io
-DOMAIN-SUFFIX,senseicore.adobe.io
-# # Adobe Firefly & Generative AI
-DOMAIN,pre-signed-firefly-prod.s3-accelerate.amazonaws.com
-DOMAIN,pre-signed-firefly-prod.s3.amazonaws.com
-DOMAIN,firefly.adobe.com
-DOMAIN,clio-assets.adobe.com
-DOMAIN,firefly-cliov2.adobe.com
-DOMAIN,firefly-ps.adobe.io
-DOMAIN,firefly-ai.adobe.io
+# > Stripe
+DOMAIN-SUFFIX,stripe.com
+DOMAIN-SUFFIX,stripecdn.com
 
 # > Apple Intelligence
 DOMAIN-SUFFIX,smoot.apple.com
@@ -106,9 +94,6 @@ DOMAIN,vmweb-va.ciciai.com
 DOMAIN,mcs-va.ciciai.com
 DOMAIN-SUFFIX,ciciai.com
 DOMAIN-SUFFIX,ciciaicdn.com
-# > Trae AI
-DOMAIN,trae-api-sg.mchost.guru
-DOMAIN-SUFFIX,trae.ai
 # -> 字节系
 DOMAIN-SUFFIX,bytedapm.com
 DOMAIN-SUFFIX,byteoversea.com
@@ -125,41 +110,12 @@ DOMAIN,gateway.ai.cloudflare.com
 # DOMAIN,static.cloudflareinsights.com
 # DOMAIN-SUFFIX,cloudflare.com
 
-# > Cursor
-DOMAIN-SUFFIX,cursor-cdn.com
-DOMAIN-SUFFIX,cursor.com
-DOMAIN-SUFFIX,cursor.sh
-DOMAIN-SUFFIX,cursorapi.com
-
 # > character
 DOMAIN-SUFFIX,characterai.io
 DOMAIN-SUFFIX,character.ai
 
 # > chronicle
 DOMAIN-SUFFIX,chroniclehq.com
-
-# > DIA
-DOMAIN,releases.diabrowser.com
-DOMAIN,account.diabrowser.engineering
-DOMAIN,dia-blocklists-release.diabrowser.engineering
-DOMAIN-SUFFIX,diabrowser.engineering
-IP-CIDR,45.76.221.157/32,no-resolve
-IP-CIDR,81.168.83.93/32,no-resolve
-IP-CIDR,95.111.202.5/32,no-resolve
-IP-CIDR,108.59.2.24/32,no-resolve
-IP-CIDR,116.203.151.74/32,no-resolve
-IP-CIDR,162.159.200.0/24,no-resolve
-# IP-CIDR,162.159.200.1/32,no-resolve
-# IP-CIDR,162.159.200.123/32,no-resolve
-IP-CIDR,193.182.111.0/24,no-resolve
-# IP-CIDR,193.182.111.12/32,no-resolve
-# IP-CIDR,193.182.111.14/32,no-resolve
-# IP-CIDR,193.182.111.143/32,no-resolve
-# IP-CIDR,193.182.111.142/32,no-resolve
-# IP-CIDR,193.182.111.141/32,no-resolve
-IP-CIDR6,2606:4700:f1::123/128,no-resolve
-IP-CIDR6,2001:67c:21bc:1e::123/128,no-resolve
-IP-CIDR6,2a03:8600::cc/128,no-resolve
 
 # > Dify AI
 DOMAIN-SUFFIX,dify.ai
@@ -213,14 +169,6 @@ DOMAIN-SUFFIX,labs.google
 DOMAIN-SUFFIX,labs.google.com
 DOMAIN-KEYWORD,labs.google
 
-# > JetBrains AI
-DOMAIN-SUFFIX,grazie.ai
-DOMAIN-SUFFIX,grazie.aws.intellij.net
-DOMAIN-SUFFIX,jetbrains.ai
-
-# > lovart
-# DOMAIN-SUFFIX,lovart.ai
-
 # > Meta
 DOMAIN,imagine.meta.com
 DOMAIN-SUFFIX,ai.meta.com
@@ -271,16 +219,10 @@ DOMAIN-SUFFIX,microsoftcloudsummit.com
 DOMAIN,edgeservices.bing.com
 DOMAIN-SUFFIX,cortana.ai
 
-# > Midjourney
-DOMAIN-SUFFIX,midjourney.com
-
 # > Mistral AI
 DOMAIN,chat.mistral.ai
 DOMAIN,console.mistral.ai
-DOMAIN-SUFFIX,mistral.a
-
-# > openrouter
-DOMAIN-SUFFIX,openrouter.ai
+DOMAIN-SUFFIX,mistral.ai
 
 # > Perplexity
 DOMAIN,pplx-res.cloudinary.com
@@ -292,16 +234,123 @@ DOMAIN-SUFFIX,pplx.ai
 DOMAIN-SUFFIX,poe.com
 DOMAIN-SUFFIX,poecdn.net
 
+# > xAI Grok
+DOMAIN,api.x.ai
+DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,x.ai
+
+
+
+# ##### 设计创意类 ######
+
+# > Adobe AI
+DOMAIN,dc-genai-access-provisioning-api.adobe.io
+DOMAIN,dc-genai-persistence.adobe.io
+DOMAIN,dc-genai-content-platform.adobe.io
+DOMAIN,mds-cdn.infra.adobesensei.io
+DOMAIN,senseimds.adobe.io
+DOMAIN-SUFFIX,sensei.adobe.io
+DOMAIN-SUFFIX,senseicore.adobe.io
+# # Adobe Firefly & Generative AI
+DOMAIN,pre-signed-firefly-prod.s3-accelerate.amazonaws.com
+DOMAIN,pre-signed-firefly-prod.s3.amazonaws.com
+DOMAIN,firefly.adobe.com
+DOMAIN,clio-assets.adobe.com
+DOMAIN,firefly-cliov2.adobe.com
+DOMAIN,firefly-ps.adobe.io
+DOMAIN,firefly-ai.adobe.io
+
+# Canva
+DOMAIN-SUFFIX,canva.site
+DOMAIN-SUFFIX,canva.dev
+# DOMAIN-SUFFIX,canva.cn
+DOMAIN-SUFFIX,canva.com
+DOMAIN-SUFFIX,zeetings.com
+DOMAIN-SUFFIX,smartmockups.com
+
+# > lovart
+# DOMAIN-SUFFIX,lovart.ai
+
+# > leonardo
+DOMAIN-SUFFIX,leonardo.ai
+
+# > Midjourney
+DOMAIN-SUFFIX,midjourney.com
+
+
+
+# ##### 开发编程类 ######
+
+# > Trae AI
+DOMAIN,trae-api-sg.mchost.guru
+DOMAIN-SUFFIX,trae.ai
+
+# > Cursor
+DOMAIN-SUFFIX,cursor-cdn.com
+DOMAIN-SUFFIX,cursor.com
+DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,cursorapi.com
+
+# > Huggingface
+DOMAIN-SUFFIX,huggingface.co
+
+# > JetBrains AI
+DOMAIN-SUFFIX,grazie.ai
+DOMAIN-SUFFIX,grazie.aws.intellij.net
+DOMAIN-SUFFIX,jetbrains.ai
+
 # > vercel
 DOMAIN-SUFFIX,v0.dev
 DOMAIN-SUFFIX,vercel.com
 DOMAIN-SUFFIX,vercel.sh
 DOMAIN-SUFFIX,ethyca.com
 
-# > xAI Grok
-DOMAIN,api.x.ai
-DOMAIN-SUFFIX,grok.com
-DOMAIN-SUFFIX,x.ai
+# windsurf
+DOMAIN-SUFFIX,windsurf.com
+DOMAIN-SUFFIX,codeium.com
+
+# Zed 编辑器
+DOMAIN-SUFFIX,zed.dev
+
+
+# ##### API服务商 ######
+
+# > openrouter
+DOMAIN-SUFFIX,openrouter.ai
+
+
+# ##### 浏览器 ######
+
+# > Arc
+DOMAIN-SUFFIX,arc.net
+
+# > DIA
+DOMAIN,releases.diabrowser.com
+DOMAIN,account.diabrowser.engineering
+DOMAIN,dia-blocklists-release.diabrowser.engineering
+DOMAIN-SUFFIX,diabrowser.engineering
+IP-CIDR,45.76.221.157/32,no-resolve
+IP-CIDR,81.168.83.93/32,no-resolve
+IP-CIDR,95.111.202.5/32,no-resolve
+IP-CIDR,108.59.2.24/32,no-resolve
+IP-CIDR,116.203.151.74/32,no-resolve
+IP-CIDR,162.159.200.0/24,no-resolve
+# IP-CIDR,162.159.200.1/32,no-resolve
+# IP-CIDR,162.159.200.123/32,no-resolve
+IP-CIDR,193.182.111.0/24,no-resolve
+# IP-CIDR,193.182.111.12/32,no-resolve
+# IP-CIDR,193.182.111.14/32,no-resolve
+# IP-CIDR,193.182.111.143/32,no-resolve
+# IP-CIDR,193.182.111.142/32,no-resolve
+# IP-CIDR,193.182.111.141/32,no-resolve
+IP-CIDR6,2606:4700:f1::123/128,no-resolve
+IP-CIDR6,2001:67c:21bc:1e::123/128,no-resolve
+IP-CIDR6,2a03:8600::cc/128,no-resolve
+
+# > Surf
+DOMAIN-SUFFIX,deta.space
+DOMAIN-SUFFIX,deta.surf
+
 
 
 # ##### 其他AI应用 ######
@@ -314,9 +363,6 @@ DOMAIN-SUFFIX,any.do
 
 # Anyword (Content creation)
 DOMAIN-SUFFIX,anyword.com
-
-# Arc Search (Research)
-DOMAIN-SUFFIX,arc.net
 
 # Asana (AI task)
 DOMAIN-SUFFIX,asana.com
@@ -334,21 +380,6 @@ DOMAIN-SUFFIX,beautiful.ai
 # Buffer (Social media)
 DOMAIN-SUFFIX,buffer.com
 DOMAIN-SUFFIX,bufferapp.com
-
-# Canva
-DOMAIN-SUFFIX,pixabay.com
-DOMAIN-SUFFIX,pexels.com
-DOMAIN-SUFFIX,remove.bg
-DOMAIN-SUFFIX,smartmockups.com
-DOMAIN-SUFFIX,flourish.studio
-DOMAIN-SUFFIX,serif.com
-DOMAIN-SUFFIX,leonardo.ai
-DOMAIN-SUFFIX,zeetings.com
-DOMAIN-SUFFIX,canva.site
-DOMAIN-SUFFIX,canva.dev
-DOMAIN-SUFFIX,canva.cn
-DOMAIN-SUFFIX,canva.com
-
 
 # Clockwise (AI transcription)
 DOMAIN-SUFFIX,clockwise.ai
@@ -429,6 +460,7 @@ DOMAIN-SUFFIX,writer.com
 DOMAIN-SUFFIX,zapier.com
 
 # others
+DOMAIN-SUFFIX,workos.com
 DOMAIN-SUFFIX,ai.com
 DOMAIN-SUFFIX,you.com
 DOMAIN-SUFFIX,openart.ai
