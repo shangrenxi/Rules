@@ -1,4 +1,4 @@
-# Update: 20250528
+# Update: 20250609
 # Use USA IP to enjoy it.
 # The list from
 # sources1: https://kelee.one/Tool/Loon/Rule/AI.list
@@ -33,6 +33,7 @@ DOMAIN-SUFFIX,sentry.io
 
 # > Stripe
 DOMAIN-SUFFIX,stripe.com
+DOMAIN-SUFFIX,stripe.network
 DOMAIN-SUFFIX,stripecdn.com
 
 # > Apple Intelligence
