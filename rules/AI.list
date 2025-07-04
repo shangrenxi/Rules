@@ -1,4 +1,4 @@
-# Update: 20250609
+# Update: 20250704
 # Use USA IP to enjoy it.
 # The list from
 # sources1: https://kelee.one/Tool/Loon/Rule/AI.list
@@ -37,12 +37,12 @@ DOMAIN-SUFFIX,stripe.network
 DOMAIN-SUFFIX,stripecdn.com
 
 # > Apple Intelligence
-DOMAIN-SUFFIX,smoot.apple.com
 DOMAIN,apple-relay.apple.com
 DOMAIN,apple-relay.cloudflare.com
 DOMAIN,apple-relay.fastly-edge.com
 DOMAIN,cp4.cloudflare.com
 DOMAIN,guzzoni.apple.com
+DOMAIN-SUFFIX,smoot.apple.com
 
 # > Anthropic Claude
 DOMAIN,console.anthropic.com
@@ -105,11 +105,6 @@ DOMAIN-SUFFIX,oceanapi-i18n.com
 DOMAIN-SUFFIX,pipopay.com
 DOMAIN-SUFFIX,ttwstatic.com
 DOMAIN-SUFFIX,byteintlapi.com
-
-# > Cloudflare AI Gateway
-DOMAIN,gateway.ai.cloudflare.com
-# DOMAIN,static.cloudflareinsights.com
-# DOMAIN-SUFFIX,cloudflare.com
 
 # > character
 DOMAIN-SUFFIX,characterai.io
@@ -294,6 +289,7 @@ DOMAIN-SUFFIX,cursorapi.com
 
 # > Huggingface
 DOMAIN-SUFFIX,huggingface.co
+DOMAIN-SUFFIX,hf.co
 
 # > JetBrains AI
 DOMAIN-SUFFIX,grazie.ai
@@ -315,6 +311,11 @@ DOMAIN-SUFFIX,zed.dev
 
 
 # ##### API服务商 ######
+
+# > Cloudflare AI Gateway
+DOMAIN,gateway.ai.cloudflare.com
+# DOMAIN,static.cloudflareinsights.com
+# DOMAIN-SUFFIX,cloudflare.com
 
 # > openrouter
 DOMAIN-SUFFIX,openrouter.ai
