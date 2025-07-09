@@ -1,10 +1,14 @@
+# Figma分流规则
+# Update: 20250709
+
 payload:
-  #Figma相关规则,不建议使用关键词匹配,会有很多误杀,自用
 
 #figma
-#  - DOMAIN,static.figma.com
+#  - DOMAIN,static.figma.com //静态资源
+#  - DOMAIN,s3-alpha.figma.com //用户内容
+#  - DOMAIN,s3-alpha-sig.figma.com //文件存储
+  - DOMAIN-SUFFIX,figmausercontent.com
   - DOMAIN-SUFFIX,figma.com
-#  - IP-CIDR,13.226.228.47,no-resolve
 
 #figma插件
   - DOMAIN-SUFFIX,code.jquery.com
@@ -22,6 +26,7 @@ payload:
   - DOMAIN-SUFFIX,wp.com
   - DOMAIN-SUFFIX,gravatar.com
   - DOMAIN-SUFFIX,fontawesome.com
+  - DOMAIN-SUFFIX,statsigapi.net
 
 #AWS服务
   - DOMAIN-SUFFIX,fs3.amazonaws.com
@@ -30,6 +35,3 @@ payload:
 
 #语音服务
   - DOMAIN-SUFFIX,agora.io
-
-#其他
-  - DOMAIN-SUFFIX,statsigapi.net
