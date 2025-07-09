@@ -29,3 +29,6 @@ DOMAIN-SUFFIX,r2m01.amazontrust.com
 
 #语音服务
 DOMAIN-SUFFIX,agora.io
+
+#其他
+DOMAIN-SUFFIX,statsigapi.net
