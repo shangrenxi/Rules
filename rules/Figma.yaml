@@ -9,6 +9,7 @@ payload:
 #  - DOMAIN,s3-alpha-sig.figma.com //文件存储
   - DOMAIN-SUFFIX,figmausercontent.com
   - DOMAIN-SUFFIX,figma.com
+  - DOMAIN-SUFFIX,figma.site
 
 #figma插件
   - DOMAIN-SUFFIX,code.jquery.com
