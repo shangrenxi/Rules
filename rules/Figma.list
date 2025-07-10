@@ -1,13 +1,15 @@
 # Figma分流规则
-# Update: 20250709
+# Update: 20250711
 
 #figma
 #DOMAIN,static.figma.com //静态资源
 #DOMAIN,s3-alpha.figma.com //用户内容
 #DOMAIN,s3-alpha-sig.figma.com //文件存储
-DOMAIN-SUFFIX,figmausercontent.com
 DOMAIN-SUFFIX,figma.com
 DOMAIN-SUFFIX,figma.site
+DOMAIN-SUFFIX,figma.net
+DOMAIN-SUFFIX,figmacdn.net
+DOMAIN-SUFFIX,figmausercontent.com
 
 #figma插件
 DOMAIN-SUFFIX,code.jquery.com
@@ -19,19 +21,25 @@ DOMAIN-SUFFIX,zendesk.com
 #第三方服务
 DOMAIN-SUFFIX,clearbit.com
 DOMAIN-SUFFIX,clearbitjs.com
-DOMAIN-SUFFIX,api.segment.io
+# DOMAIN-SUFFIX,api.segment.io
 DOMAIN-SUFFIX,segment.com
 DOMAIN-SUFFIX,segment.io
-DOMAIN-SUFFIX,wp.com
+# DOMAIN-SUFFIX,wp.com
 DOMAIN-SUFFIX,gravatar.com
 DOMAIN-SUFFIX,fontawesome.com
 DOMAIN-SUFFIX,statsigapi.net
+
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,launchdarkly.com
+DOMAIN-SUFFIX,sprig.com
 
 #AWS服务
 DOMAIN-SUFFIX,fs3.amazonaws.com
 DOMAIN-SUFFIX,r2m01.amazontrust.com
 DOMAIN-WILDCARD,figma*.amazonaws.com
-#DOMAIN-KEYWORD,amazonaws
+# DOMAIN,figma-comment-attachments-development.s3-accelerate.amazonaws.com
+# DOMAIN-KEYWORD,amazonaws
 
 #语音服务
 DOMAIN-SUFFIX,agora.io
