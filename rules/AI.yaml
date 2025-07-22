@@ -1,7 +1,7 @@
-# Update: 20250704
+# Update: 20250722
 # Use USA IP to enjoy it.
 # The list from
-# sources1: https://kelee.one/Tool/Loon/Rule/AI.list
+# sources1: https://kelee.one/Tool/Loon/Lsr/AI.lsr
 # sources2: https://github.com/ConnersHua/RuleGo/blob/master/Surge/Ruleset/Extra/AI.list
 # sources3: https://ruleset.skk.moe/List/non_ip/ai.conf
 # sources4: https://github.com//blackmatrix7/ios_rule_script/blob/master/rule/Surge/OpenAI/OpenAI.list and like Gemini.list\Claude.list\Copilot.list
@@ -52,7 +52,6 @@ payload:
   - DOMAIN-SUFFIX,claudeusercontent.com
   - IP-CIDR,160.79.104.0/23,no-resolve
   - IP-CIDR6,2607:6bc0::/48,no-resolve
-  - IP-ASN,AS399358
 
 # > ChatGPT
   - DOMAIN,openai.com.cdn.cloudflare.net
@@ -77,6 +76,7 @@ payload:
   - DOMAIN-WILDCARD,openaicom-api-*.azurefd.net
   - IP-CIDR,24.199.123.28/32,no-resolve
   - IP-CIDR,64.23.132.171/32,no-resolve
+  - IP-ASN,20473,no-resolve
   - DOMAIN-KEYWORD,openaiapi
   - DOMAIN-KEYWORD,openaicom
 
