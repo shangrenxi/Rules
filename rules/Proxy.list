@@ -104,6 +104,7 @@ DOMAIN-SUFFIX,ideogram.ai
 #ify.tv
 DOMAIN-SUFFIX,iyf.tv
 DOMAIN-WILDCARD,s*.tfboy*.com
+DOMAIN-WILDCARD,s*-e1.tfb*.com
 DOMAIN-WILDCARD,s*.etc*.xyz
 DOMAIN-WILDCARD,s*.cloud*.vip
 DOMAIN-WILDCARD,s*-e1.bitwayeat.com
