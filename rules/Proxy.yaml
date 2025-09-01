@@ -95,3 +95,14 @@ payload:
 
 
 ############ 常规内容 ############
+############ 影视内容 ############
+#ify.tv
+  - DOMAIN-SUFFIX,iyf.tv
+  - DOMAIN-WILDCARD,s*.tfboy*.com
+  - DOMAIN-WILDCARD,s*.etc*.xyz
+  - DOMAIN-WILDCARD,s*.cloud*.vip
+  - DOMAIN-WILDCARD,s*-e1.bitwayeat.com
+  - DOMAIN-WILDCARD,s*-e1.bytwogeneral.com
+  - DOMAIN-WILDCARD,s*-e1.timeprecei.com
+  - DOMAIN-WILDCARD,s*-e1.waytogone.com
+  - DOMAIN-WILDCARD,s*-e1.deniest.com
