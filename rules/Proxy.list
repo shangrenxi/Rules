@@ -103,10 +103,10 @@ DOMAIN-SUFFIX,ideogram.ai
 
 #ify.tv
 DOMAIN-SUFFIX,iyf.tv
-DOMAIN-WILDCARD,s*.tfboy*.com
+DOMAIN-WILDCARD,s*-e1.tfboy*.com
 DOMAIN-WILDCARD,s*-e1.tfb*.com
-DOMAIN-WILDCARD,s*.etc*.xyz
-DOMAIN-WILDCARD,s*.cloud*.vip
+DOMAIN-WILDCARD,s*-e1.etc*.xyz
+DOMAIN-WILDCARD,s*-e1.cloud*.vip
 DOMAIN-WILDCARD,s*-e1.bitwayeat.com
 DOMAIN-WILDCARD,s*-e1.bytwogeneral.com
 DOMAIN-WILDCARD,s*-e1.timeprecei.com
