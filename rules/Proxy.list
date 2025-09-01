@@ -3,6 +3,7 @@
 #USER-AGENT,?abc*
 #DOMAIN,www.exp.com
 #DOMAIN-SUFFIX,exp.com
+#DOMAIN-WILDCARD, *.exp.com
 #IP-CIDR,1.1.1.1,no-resolve
 #IP-CIDR6,2a0b:b580::/48,no-resolve
 
@@ -99,3 +100,14 @@ IP-CIDR,152.136.205.53/32,no-resolve
 #ideogram.ai
 DOMAIN,ideogram.ai
 DOMAIN-SUFFIX,ideogram.ai
+
+#ify.tv
+DOMAIN-SUFFIX,iyf.tv
+DOMAIN-WILDCARD,s*.tfboy*.com
+DOMAIN-WILDCARD,s*.etc*.xyz
+DOMAIN-WILDCARD,s*.cloud*.vip
+DOMAIN-WILDCARD,s*-e1.bitwayeat.com
+DOMAIN-WILDCARD,s*-e1.bytwogeneral.com
+DOMAIN-WILDCARD,s*-e1.timeprecei.com
+DOMAIN-WILDCARD,s*-e1.waytogone.com
+DOMAIN-WILDCARD,s*-e1.deniest.com
