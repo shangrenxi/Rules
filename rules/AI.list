@@ -123,7 +123,9 @@ DOMAIN,aistudio.google.com
 DOMAIN,alkalicore-pa.clients6.google.com
 DOMAIN,alkalimakersuite-pa.clients6.google.com
 DOMAIN,jules.google.com
-DOMAIN,stitch.withgoogle.com
+DOMAIN-SUFFIX,withgoogle.com
+DOMAIN,opal.withgoogle.com
+DOMAIN-SUFFIX,withgoogle.com
 DOMAIN-SUFFIX,autodraw.com
 DOMAIN-SUFFIX,ai.google
 # > DeepMind
