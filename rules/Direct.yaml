@@ -28,6 +28,9 @@ payload:
 #南瓜电影
   - DOMAIN-SUFFIX,vcinema.cn
 
+#247看
+  - DOMAIN-SUFFIX,247kan.com
+
 #蓝湖
   - DOMAIN-SUFFIX,lanhuapp.com
   
