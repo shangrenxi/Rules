@@ -1,11 +1,11 @@
-# Update: 20250722
+# Update: 20251009
 # Use USA IP to enjoy it.
 # The list from
 # sources1: https://kelee.one/Tool/Loon/Lsr/AI.lsr
 # sources2: https://github.com/ConnersHua/RuleGo/blob/master/Surge/Ruleset/Extra/AI.list
-# sources3: https://ruleset.skk.moe/List/non_ip/ai.conf
+# sources3: https://ruleset.skk.moe/List/non_ip/ai.conf from https://github.com/SukkaW/Surge/blob/master/Source/non_ip/ai.conf
 # sources4: https://github.com//blackmatrix7/ios_rule_script/blob/master/rule/Surge/OpenAI/OpenAI.list and like Gemini.list\Claude.list\Copilot.list
-# sources5: github@ddgksf2013
+# sources5: github@ddgksf2013 from https://gist.github.com/ddgksf2013/cb4121e8b5c5d865cc949cb8120320c4
 # sources5: https://github.com/mayonetsuki/global_configuration/blob/main/RouteLists/Services/Companies/OpenAI.list
 
 payload:
@@ -42,6 +42,7 @@ payload:
   - DOMAIN,apple-relay.fastly-edge.com
   - DOMAIN,cp4.cloudflare.com
   - DOMAIN,guzzoni.apple.com
+  - DOMAIN,gspe1-ssl.ls.apple.com
   - DOMAIN-SUFFIX,smoot.apple.com
 
 # > Anthropic Claude
@@ -64,6 +65,8 @@ payload:
   - DOMAIN,api-iam.intercom.io
   - DOMAIN,o33249.ingest.sentry.io
   - DOMAIN,openaiapi-site.azureedge.net
+#sora
+  - DOMAIN,sora.chatgpt.com
 # -> website
   - DOMAIN-SUFFIX,chat.com
   - DOMAIN-SUFFIX,chatgpt.com
@@ -125,9 +128,9 @@ payload:
   - DOMAIN,jules.google.com
   - DOMAIN,stitch.withgoogle.com
   - DOMAIN,opal.withgoogle.com
-  - DOMAIN-SUFFIX,withgoogle.com
-  - DOMAIN-SUFFIX,autodraw.com
-  - DOMAIN-SUFFIX,ai.google
+  - DOMAIN,learnyourway.withgoogle.com
+  - DOMAIN,stax.withgoogle.com
+  - DOMAIN,labs.google.com
 # > DeepMind
   - DOMAIN,deepmind.com
   - DOMAIN,deepmind.google
@@ -139,6 +142,7 @@ payload:
 # > Gemini
   - DOMAIN,bard.google.com
   - DOMAIN,gemini.google.com
+  - DOMAIN,gemini.google
   - DOMAIN,aida.googleapis.com
   - DOMAIN,geller-pa.googleapis.com
   - DOMAIN,generativeai.google
@@ -163,9 +167,14 @@ payload:
   - DOMAIN-KEYWORD,notebooklm.google
   - DOMAIN-SUFFIX,notebooklm.google.com
 # > Search Labs
+  - DOMAIN,labs.google
   - DOMAIN-SUFFIX,labs.google
   - DOMAIN-SUFFIX,labs.google.com
+  - DOMAIN-SUFFIX,withgoogle.com
+  - DOMAIN-SUFFIX,ai.google
+  - DOMAIN-SUFFIX,autodraw.com
   - DOMAIN-KEYWORD,labs.google
+
 
 # > Meta
   - DOMAIN,imagine.meta.com
@@ -294,6 +303,7 @@ payload:
   - DOMAIN-SUFFIX,hf.co
 
 # > JetBrains AI
+  - DOMAIN,api.jetbrains.ai
   - DOMAIN-SUFFIX,grazie.ai
   - DOMAIN-SUFFIX,grazie.aws.intellij.net
   - DOMAIN-SUFFIX,jetbrains.ai
