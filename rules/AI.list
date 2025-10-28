@@ -1,5 +1,5 @@
-# Update: 20251009
-# Use USA IP to enjoy it.
+# Update: 20251028
+# please use US IP to access and use
 # The list from
 # sources1: https://kelee.one/Tool/Loon/Lsr/AI.lsr
 # sources2: https://github.com/ConnersHua/RuleGo/blob/master/Surge/Ruleset/Extra/AI.list
@@ -7,6 +7,7 @@
 # sources4: https://github.com//blackmatrix7/ios_rule_script/blob/master/rule/Surge/OpenAI/OpenAI.list and like Gemini.list\Claude.list\Copilot.list
 # sources5: github@ddgksf2013 from https://gist.github.com/ddgksf2013/cb4121e8b5c5d865cc949cb8120320c4
 # sources5: https://github.com/mayonetsuki/global_configuration/blob/main/RouteLists/Services/Companies/OpenAI.list
+# sources6:  https://support.apple.com/zh-cn/101555
 
 
 
@@ -97,6 +98,7 @@ DOMAIN-SUFFIX,coze.com
 DOMAIN,vmweb-va.ciciai.com
 DOMAIN,mcs-va.ciciai.com
 DOMAIN-SUFFIX,ciciai.com
+DOMAIN-SUFFIX,cici.com
 DOMAIN-SUFFIX,ciciaicdn.com
 # -> 字节系
 DOMAIN-SUFFIX,bytedapm.com
@@ -108,6 +110,8 @@ DOMAIN-SUFFIX,oceanapi-i18n.com
 DOMAIN-SUFFIX,pipopay.com
 DOMAIN-SUFFIX,ttwstatic.com
 DOMAIN-SUFFIX,byteintlapi.com
+DOMAIN-SUFFIX,dola.com
+DOMAIN-SUFFIX,abtest-sg.byteoversea.com
 
 # > character
 DOMAIN-SUFFIX,characterai.io
@@ -149,6 +153,8 @@ DOMAIN,generativeai.google
 DOMAIN,generativelanguage.googleapis.com
 DOMAIN,makersuite.google.com
 DOMAIN,proactivebackend-pa.googleapis.com
+DOMAIN,aisandbox-pa.googleapis.com
+DOMAIN,robinfrontend-pa.googleapis.com
 DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
 DOMAIN-SUFFIX,geller-pa.googleapis.com
 DOMAIN-SUFFIX,generativelanguage.googleapis.com
@@ -174,7 +180,6 @@ DOMAIN-SUFFIX,withgoogle.com
 DOMAIN-SUFFIX,ai.google
 DOMAIN-SUFFIX,autodraw.com
 DOMAIN-KEYWORD,labs.google
-
 
 # > Meta
 DOMAIN,imagine.meta.com
@@ -232,10 +237,12 @@ DOMAIN,console.mistral.ai
 DOMAIN-SUFFIX,mistral.ai
 
 # > Perplexity
+DOMAIN,perplexity-ai.cloudflareaccess.com
 DOMAIN,pplx-res.cloudinary.com
 DOMAIN-SUFFIX,perplexity.com
 DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,pplx.ai
+
 
 # > Poe
 DOMAIN-SUFFIX,poe.com
@@ -365,6 +372,10 @@ IP-CIDR6,2a03:8600::cc/128,no-resolve
 DOMAIN-SUFFIX,deta.space
 DOMAIN-SUFFIX,deta.surf
 
+# > strawberry
+DOMAIN,strawberrybucket.xyz
+DOMAIN-SUFFIX,strawberrybrowserapi.xyz
+DOMAIN-SUFFIX,strawberrybucket.xyz
 
 
 # ##### 其他AI应用 ######
