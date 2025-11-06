@@ -1,4 +1,4 @@
-# Update: 20251028
+# Update: 20251106
 # please use US IP to access and use
 # The list from
 # sources1: https://kelee.one/Tool/Loon/Lsr/AI.lsr
@@ -19,32 +19,44 @@ payload:
   - DOMAIN-SUFFIX,algolia.net
   - DOMAIN-SUFFIX,auth0.com
   - DOMAIN-SUFFIX,arkoselabs.com
-  - DOMAIN-SUFFIX,statsigapi.net
   - DOMAIN-SUFFIX,featuregates.org
   - DOMAIN-SUFFIX,identrust.com
   - DOMAIN-SUFFIX,intercom.io
   - DOMAIN-SUFFIX,intercomcdn.com
   - DOMAIN-SUFFIX,launchdarkly.com
-  - DOMAIN,cdn-settings.segment.com
-  - DOMAIN,api.segment.io
+#   - DOMAIN,cdn-settings.segment.com
+#   - DOMAIN,api.segment.io
   - DOMAIN-SUFFIX,segment.io
+  - DOMAIN-SUFFIX,segment.com
+  - DOMAIN-SUFFIX,statsig.com
+  - DOMAIN-SUFFIX,statsigapi.net
 #   - DOMAIN-SUFFIX,amazonaws.com
   - DOMAIN-SUFFIX,wp.com
   - DOMAIN-SUFFIX,sentry.io
+#   - DOMAIN,api.honeycomb.io
+  - DOMAIN-SUFFIX,honeycomb.io
+
 
 # > Stripe
   - DOMAIN-SUFFIX,stripe.com
   - DOMAIN-SUFFIX,stripe.network
   - DOMAIN-SUFFIX,stripecdn.com
 
+
 # > Apple Intelligence
   - DOMAIN,apple-relay.apple.com
   - DOMAIN,apple-relay.cloudflare.com
   - DOMAIN,apple-relay.fastly-edge.com
+  - DOMAIN-SUFFIX,gateway.icloud.com
+  - DOMAIN,cp2.cloudflare.com
   - DOMAIN,cp4.cloudflare.com
+# siri
   - DOMAIN,guzzoni.apple.com
   - DOMAIN,gspe1-ssl.ls.apple.com
+  - DOMAIN-SUFFIX,apps.mzstatic.com
+# siri, search
   - DOMAIN-SUFFIX,smoot.apple.com
+
 
 # > Anthropic Claude
   - DOMAIN,console.anthropic.com
@@ -52,6 +64,7 @@ payload:
   - DOMAIN-SUFFIX,claude.ai
   - DOMAIN-SUFFIX,anthropic.com
   - DOMAIN-SUFFIX,claudeusercontent.com
+  - DOMAIN-WILDCARD,*-cdn.anthropic.com
   - IP-CIDR,160.79.104.0/23,no-resolve
   - IP-CIDR6,2607:6bc0::/48,no-resolve
 
@@ -66,7 +79,7 @@ payload:
   - DOMAIN,api-iam.intercom.io
   - DOMAIN,o33249.ingest.sentry.io
   - DOMAIN,openaiapi-site.azureedge.net
-# sora
+# > sora
   - DOMAIN,sora.chatgpt.com
 # -> website
   - DOMAIN-SUFFIX,chat.com
@@ -147,17 +160,18 @@ payload:
   - DOMAIN,bard.google.com
   - DOMAIN,gemini.google.com
   - DOMAIN,gemini.google
+  - DOMAIN,makersuite.google.com
   - DOMAIN,aida.googleapis.com
   - DOMAIN,geller-pa.googleapis.com
   - DOMAIN,generativeai.google
   - DOMAIN,generativelanguage.googleapis.com
-  - DOMAIN,makersuite.google.com
   - DOMAIN,proactivebackend-pa.googleapis.com
   - DOMAIN,aisandbox-pa.googleapis.com
   - DOMAIN,robinfrontend-pa.googleapis.com
   - DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
   - DOMAIN-SUFFIX,geller-pa.googleapis.com
   - DOMAIN-SUFFIX,generativelanguage.googleapis.com
+  - DOMAIN-SUFFIX,cloudcode-pa.googleapis.com
   - DOMAIN-SUFFIX,apis.google.com
   - DOMAIN-SUFFIX,clients6.google.com
   - DOMAIN-SUFFIX,clients4.google.com
@@ -180,6 +194,7 @@ payload:
   - DOMAIN-SUFFIX,ai.google
   - DOMAIN-SUFFIX,autodraw.com
   - DOMAIN-KEYWORD,labs.google
+
 
 # > Meta
   - DOMAIN,imagine.meta.com
@@ -243,7 +258,6 @@ payload:
   - DOMAIN-SUFFIX,perplexity.ai
   - DOMAIN-SUFFIX,pplx.ai
 
-
 # > Poe
   - DOMAIN-SUFFIX,poe.com
   - DOMAIN-SUFFIX,poecdn.net
@@ -252,7 +266,6 @@ payload:
   - DOMAIN,api.x.ai
   - DOMAIN-SUFFIX,grok.com
   - DOMAIN-SUFFIX,x.ai
-
 
 
 # ##### 设计创意类 ######
@@ -265,7 +278,7 @@ payload:
   - DOMAIN,senseimds.adobe.io
   - DOMAIN-SUFFIX,sensei.adobe.io
   - DOMAIN-SUFFIX,senseicore.adobe.io
-# # Adobe Firefly & Generative AI
+# Adobe Firefly & Generative AI
   - DOMAIN,pre-signed-firefly-prod.s3-accelerate.amazonaws.com
   - DOMAIN,pre-signed-firefly-prod.s3.amazonaws.com
   - DOMAIN,firefly.adobe.com
@@ -290,7 +303,6 @@ payload:
 
 # > Midjourney
   - DOMAIN-SUFFIX,midjourney.com
-
 
 
 # ##### 开发编程类 ######
