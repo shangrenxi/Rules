@@ -10,7 +10,6 @@
 # sources6:  https://support.apple.com/zh-cn/101555
 
 
-
 # ##### 主流AI应用 ######
 
 # > Ai general rules
@@ -36,12 +35,10 @@ DOMAIN-SUFFIX,sentry.io
 # DOMAIN,api.honeycomb.io
 DOMAIN-SUFFIX,honeycomb.io
 
-
 # > Stripe
 DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,stripe.network
 DOMAIN-SUFFIX,stripecdn.com
-
 
 # > Apple Intelligence
 DOMAIN-SUFFIX,apple-relay.apple.com
@@ -56,7 +53,6 @@ DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
 # DOMAIN-SUFFIX,apps.mzstatic.com
 # siri, search
 DOMAIN-SUFFIX,smoot.apple.com
-
 
 # > Anthropic Claude
 DOMAIN,console.anthropic.com
@@ -142,6 +138,10 @@ DOMAIN-SUFFIX,dify.ai
 DOMAIN,aida.googleapis.com
 # > Antigravity
 DOMAIN-SUFFIX,antigravity.google
+DOMAIN-SUFFIX,antigravity-unleash.goog
+DOMAIN-SUFFIX,open-vsx.org
+DOMAIN-SUFFIX,default.exp-tas.com
+DOMAIN-WILDCARD,antigravity-auto-updater-*.us-central*.run.app
 # > AI Studio
 DOMAIN-SUFFIX,ai.google.dev
 DOMAIN-SUFFIX,aistudio.google.com
@@ -175,7 +175,8 @@ DOMAIN-SUFFIX,clients4.google.com
 DOMAIN-SUFFIX,colab.google.com
 DOMAIN-SUFFIX,colab.research.google.com
 DOMAIN-SUFFIX,developerprofiles.google.com
-# DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN,playwright.azureedge.net
 # > Firebase Studio
 DOMAIN-SUFFIX,firebase.studio
 DOMAIN-SUFFIX,studio.firebase.google.com
@@ -192,7 +193,6 @@ DOMAIN-SUFFIX,withgoogle.com
 DOMAIN-SUFFIX,ai.google
 DOMAIN-SUFFIX,autodraw.com
 DOMAIN-KEYWORD,labs.google
-
 
 # > Meta
 DOMAIN,imagine.meta.com
