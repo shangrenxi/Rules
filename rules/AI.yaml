@@ -142,6 +142,10 @@ payload:
   - DOMAIN,aida.googleapis.com
 # > Antigravity
   - DOMAIN-SUFFIX,antigravity.google
+  - DOMAIN-SUFFIX,antigravity-unleash.goog
+  - DOMAIN-SUFFIX,open-vsx.org
+  - DOMAIN-SUFFIX,default.exp-tas.com
+  - DOMAIN-WILDCARD,antigravity-auto-updater-*.us-central*.run.app
 # > AI Studio
   - DOMAIN-SUFFIX,ai.google.dev
   - DOMAIN-SUFFIX,aistudio.google.com
