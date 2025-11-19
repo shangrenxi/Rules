@@ -1,10 +1,10 @@
-# Update: 20251106
-# please use US IP to access and use
+# Update: 20251119
+# please use US   - IP to access and use
 # The list from
 # sources1: https://kelee.one/Tool/Loon/Lsr/AI.lsr
 # sources2: https://github.com/ConnersHua/RuleGo/blob/master/Surge/Ruleset/Extra/AI.list
-# sources3: https://ruleset.skk.moe/List/non_ip/ai.conf from https://github.com/SukkaW/Surge/blob/master/Source/non_ip/ai.conf
-# sources4: https://github.com//blackmatrix7/ios_rule_script/blob/master/rule/Surge/OpenAI/OpenAI.list and like Gemini.list\Claude.list\Copilot.list
+# sources3: https://ruleset.skk.moe/List/non_  - IP/ai.conf from https://github.com/SukkaW/Surge/blob/master/Source/non_  - IP/ai.conf
+# sources4: https://github.com//blackmatrix7/ios_rule_scr  - IPt/blob/master/rule/Surge/OpenAI/OpenAI.list and like Gemini.list\Claude.list\Copilot.list
 # sources5: github@ddgksf2013 from https://gist.github.com/ddgksf2013/cb4121e8b5c5d865cc949cb8120320c4
 # sources5: https://github.com/mayonetsuki/global_configuration/blob/main/RouteLists/Services/Companies/OpenAI.list
 # sources6:  https://support.apple.com/zh-cn/101555
@@ -37,10 +37,10 @@ payload:
   - DOMAIN-SUFFIX,honeycomb.io
 
 
-# > Stripe
-  - DOMAIN-SUFFIX,stripe.com
-  - DOMAIN-SUFFIX,stripe.network
-  - DOMAIN-SUFFIX,stripecdn.com
+# > Str  - IPe
+  - DOMAIN-SUFFIX,str  - IPe.com
+  - DOMAIN-SUFFIX,str  - IPe.network
+  - DOMAIN-SUFFIX,str  - IPecdn.com
 
 
 # > Apple Intelligence
@@ -69,13 +69,14 @@ payload:
   - IP-CIDR6,2607:6bc0::/48,no-resolve
 
 # > ChatGPT
+  - DOMAIN,chatgpt.livekit.cloud
+  - DOMAIN,host.livekit.cloud
   - DOMAIN,openai.com.cdn.cloudflare.net
+  - DOMAIN,openaiapi-site.azureedge.net
   - DOMAIN,openaicomproductionae4b.blob.core.windows.net
   - DOMAIN,production-openaicom-storage.azureedge.net
   - DOMAIN,turn.livekit.cloud
-  - DOMAIN,chatgpt.livekit.cloud
-  - DOMAIN,host.livekit.cloud
-  - DOMAIN-SUFFIX,livekit.cloud
+#   - DOMAIN-SUFFIX,livekit.cloud
   - DOMAIN,api-iam.intercom.io
   - DOMAIN,o33249.ingest.sentry.io
   - DOMAIN,openaiapi-site.azureedge.net
@@ -84,11 +85,11 @@ payload:
 # -> website
   - DOMAIN-SUFFIX,chat.com
   - DOMAIN-SUFFIX,chatgpt.com
-  - DOMAIN-SUFFIX,openai.com
-  - DOMAIN-SUFFIX,sora.com
   - DOMAIN-SUFFIX,oaistatic.com
   - DOMAIN-SUFFIX,oaiusercontent.com
   - DOMAIN-SUFFIX,openaiapi.com
+  - DOMAIN-SUFFIX,openai.com
+  - DOMAIN-SUFFIX,sora.com
   - DOMAIN-WILDCARD,chatgpt-async-webps-prod-*.webpubsub.azure.com
   - DOMAIN-WILDCARD,openaicom-api-*.azurefd.net
   - IP-CIDR,24.199.123.28/32,no-resolve
@@ -108,11 +109,12 @@ payload:
   - DOMAIN,sf-coze-web-cdn.coze.com
   - DOMAIN-SUFFIX,coze.com
 # -> ciciai
-  - DOMAIN,vmweb-va.ciciai.com
-  - DOMAIN,mcs-va.ciciai.com
+#   - DOMAIN,vmweb-va.ciciai.com
+#   - DOMAIN,mcs-va.ciciai.comdola.com
   - DOMAIN-SUFFIX,ciciai.com
   - DOMAIN-SUFFIX,cici.com
   - DOMAIN-SUFFIX,ciciaicdn.com
+  - DOMAIN-SUFFIX,dola.com
 # -> 字节系
   - DOMAIN-SUFFIX,bytedapm.com
   - DOMAIN-SUFFIX,byteoversea.com
@@ -120,10 +122,9 @@ payload:
   - DOMAIN-SUFFIX,itobsnssdk.com
   - DOMAIN-SUFFIX,appsflyersdk.com
   - DOMAIN-SUFFIX,oceanapi-i18n.com
-  - DOMAIN-SUFFIX,pipopay.com
+  - DOMAIN-SUFFIX,p  - IPopay.com
   - DOMAIN-SUFFIX,ttwstatic.com
   - DOMAIN-SUFFIX,byteintlapi.com
-  - DOMAIN-SUFFIX,dola.com
   - DOMAIN-SUFFIX,abtest-sg.byteoversea.com
 
 # > character
@@ -137,55 +138,52 @@ payload:
   - DOMAIN-SUFFIX,dify.ai
 
 # Google
+# > Android Studio
+  - DOMAIN,aida.googleapis.com
+# > Antigravity
+  - DOMAIN-SUFFIX,antigravity.google
 # > AI Studio
-  - DOMAIN,ai.google.dev
-  - DOMAIN,aistudio.google.com
+  - DOMAIN-SUFFIX,ai.google.dev
+  - DOMAIN-SUFFIX,aistudio.google.com
+  - DOMAIN-SUFFIX,makersuite.google.com
   - DOMAIN,alkalicore-pa.clients6.google.com
-  - DOMAIN,alkalimakersuite-pa.clients6.google.com
-  - DOMAIN,jules.google.com
+  - DOMAIN-KEYWORD,alkalimakersuite-pa.clients6.google.com
   - DOMAIN,stitch.withgoogle.com
   - DOMAIN,opal.withgoogle.com
   - DOMAIN,learnyourway.withgoogle.com
   - DOMAIN,stax.withgoogle.com
   - DOMAIN,labs.google.com
 # > DeepMind
-  - DOMAIN,deepmind.com
-  - DOMAIN,deepmind.google
   - DOMAIN-SUFFIX,deepmind.com
   - DOMAIN-SUFFIX,deepmind.google
-# > Developer
-  - DOMAIN-SUFFIX,ai.google.dev
-  - DOMAIN-SUFFIX,aistudio.google.com
 # > Gemini
-  - DOMAIN,bard.google.com
-  - DOMAIN,gemini.google.com
-  - DOMAIN,gemini.google
-  - DOMAIN,makersuite.google.com
-  - DOMAIN,aida.googleapis.com
-  - DOMAIN,geller-pa.googleapis.com
-  - DOMAIN,generativeai.google
-  - DOMAIN,generativelanguage.googleapis.com
-  - DOMAIN,proactivebackend-pa.googleapis.com
+  - DOMAIN-SUFFIX,bard.google.com
+  - DOMAIN-SUFFIX,gemini.google
+  - DOMAIN-SUFFIX,gemini.google.com
   - DOMAIN,aisandbox-pa.googleapis.com
   - DOMAIN,robinfrontend-pa.googleapis.com
-  - DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
-  - DOMAIN-SUFFIX,geller-pa.googleapis.com
+# > Generative Language API
+  - DOMAIN-SUFFIX,generativeai.google
   - DOMAIN-SUFFIX,generativelanguage.googleapis.com
   - DOMAIN-SUFFIX,cloudcode-pa.googleapis.com
+  - DOMAIN-SUFFIX,geller-pa.googleapis.com
+  - DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+# > Developer
   - DOMAIN-SUFFIX,apis.google.com
   - DOMAIN-SUFFIX,clients6.google.com
   - DOMAIN-SUFFIX,clients4.google.com
-  - DOMAIN-SUFFIX,generativeai.google
   - DOMAIN-SUFFIX,colab.google.com
   - DOMAIN-SUFFIX,colab.research.google.com
   - DOMAIN-SUFFIX,developerprofiles.google.com
-  - DOMAIN-SUFFIX,googleusercontent.com
+#   - DOMAIN-SUFFIX,googleusercontent.com
 # > Firebase Studio
   - DOMAIN-SUFFIX,firebase.studio
   - DOMAIN-SUFFIX,studio.firebase.google.com
 # > NotebookLM
-  - DOMAIN-KEYWORD,notebooklm.google
+  - DOMAIN-SUFFIX,notebooklm.google
   - DOMAIN-SUFFIX,notebooklm.google.com
+# > Jules
+  - DOMAIN,jules.google.com
 # > Search Labs
   - DOMAIN,labs.google
   - DOMAIN-SUFFIX,labs.google
@@ -405,7 +403,7 @@ payload:
   - DOMAIN-SUFFIX,asana.com
   - DOMAIN-SUFFIX,asana.biz
 
-# Avoma (AI transcription)
+# Avoma (AI transcr  - IPtion)
   - DOMAIN-SUFFIX,avoma.com
 
 # BeeDone (AI task)
@@ -418,7 +416,7 @@ payload:
   - DOMAIN-SUFFIX,buffer.com
   - DOMAIN-SUFFIX,bufferapp.com
 
-# Clockwise (AI transcription)
+# Clockwise (AI transcr  - IPtion)
   - DOMAIN-SUFFIX,clockwise.ai
   - DOMAIN-SUFFIX,getclockwise.com
 
@@ -433,7 +431,7 @@ payload:
   - DOMAIN-SUFFIX,feedhive.io
   - DOMAIN-SUFFIX,feedhive.com
 
-# Fireflies (AI transcription)
+# Fireflies (AI transcr  - IPtion)
   - DOMAIN-SUFFIX,fireflies.ai
 
 # > genspark
@@ -478,7 +476,7 @@ payload:
 # Teal (Resume)
   - DOMAIN-SUFFIX,tealhq.com
 
-# tl;dv (AI transcription)
+# tl;dv (AI transcr  - IPtion)
   - DOMAIN-SUFFIX,tldv.io
 
 # Tome (Presentations)
