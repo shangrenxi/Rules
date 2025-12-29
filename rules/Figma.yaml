@@ -1,5 +1,6 @@
 # Figma分流规则
-# Update: 20250711
+# Update: 20251229
+# from https://help.figma.com/hc/en-us/articles/19424714305943-Adjust-your-network-settings
 
 payload:
 
@@ -8,7 +9,10 @@ payload:
 #  - DOMAIN,s3-alpha.figma.com //用户内容
 #  - DOMAIN,s3-alpha-sig.figma.com //文件存储
   - DOMAIN-SUFFIX,figma.com
+  - DOMAIN-SUFFIX,makeproxy-c.figma.site
+  - DOMAIN-SUFFIX,makeproxy-m.figma.site
   - DOMAIN-SUFFIX,figma.site
+
   - DOMAIN-SUFFIX,figma.net
   - DOMAIN-SUFFIX,figmacdn.net
   - DOMAIN-SUFFIX,figmausercontent.com
@@ -36,12 +40,21 @@ payload:
   - DOMAIN-SUFFIX,launchdarkly.com
   - DOMAIN-SUFFIX,sprig.com
 
+#安全
+  - DOMAIN,gateway.zscloud.net
+
 #AWS服务
   - DOMAIN-SUFFIX,fs3.amazonaws.com
   - DOMAIN-SUFFIX,r2m01.amazontrust.com
   - DOMAIN-WILDCARD,figma*.amazonaws.com
+  - DOMAIN-WILDCARD,*awswaf.com
 #   - DOMAIN,figma-comment-attachments-development.s3-accelerate.amazonaws.com
 #   - DOMAIN-KEYWORD,amazonaws
+
+#CDN
+#    - DOMAIN,esm.sh
+  - DOMAIN-SUFFIX,esm.sh
+  - DOMAIN-SUFFIX,jsdelivr.net
 
 #语音服务
   - DOMAIN-SUFFIX,agora.io
