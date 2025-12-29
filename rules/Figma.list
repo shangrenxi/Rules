@@ -15,6 +15,9 @@ DOMAIN-SUFFIX,figma.net
 DOMAIN-SUFFIX,figmacdn.net
 DOMAIN-SUFFIX,figmausercontent.com
 
+#font
+DOMAIN,fonts.gstatic.com
+
 #figma插件
 DOMAIN-SUFFIX,code.jquery.com
 
