@@ -1,4 +1,4 @@
-# Update: 20251119
+# Update: 20260106
 # please use US   - IP to access and use
 # The list from
 # sources1: https://kelee.one/Tool/Loon/Lsr/AI.lsr
@@ -6,8 +6,7 @@
 # sources3: https://ruleset.skk.moe/List/non_  - IP/ai.conf from https://github.com/SukkaW/Surge/blob/master/Source/non_  - IP/ai.conf
 # sources4: https://github.com//blackmatrix7/ios_rule_scr  - IPt/blob/master/rule/Surge/OpenAI/OpenAI.list and like Gemini.list\Claude.list\Copilot.list
 # sources5: github@ddgksf2013 from https://gist.github.com/ddgksf2013/cb4121e8b5c5d865cc949cb8120320c4
-# sources5: https://github.com/mayonetsuki/global_configuration/blob/main/RouteLists/Services/Companies/OpenAI.list
-# sources6:  https://support.apple.com/zh-cn/101555
+# sources5: https://support.apple.com/zh-cn/101555
 
 payload:
 
@@ -24,10 +23,6 @@ payload:
   - DOMAIN-SUFFIX,intercom.io
   - DOMAIN-SUFFIX,intercomcdn.com
   - DOMAIN-SUFFIX,launchdarkly.com
-#   - DOMAIN,cdn-settings.segment.com
-#   - DOMAIN,api.segment.io
-  - DOMAIN-SUFFIX,segment.io
-  - DOMAIN-SUFFIX,segment.com
   - DOMAIN-SUFFIX,statsig.com
   - DOMAIN-SUFFIX,statsigapi.net
 #   - DOMAIN-SUFFIX,amazonaws.com
@@ -36,12 +31,17 @@ payload:
 #   - DOMAIN,api.honeycomb.io
   - DOMAIN-SUFFIX,honeycomb.io
 
+# > segment.com
+#   - DOMAIN,cdn-settings.segment.com
+#   - DOMAIN,api.segment.io
+  - DOMAIN-SUFFIX,segment.com
+  - DOMAIN-SUFFIX,segment.io
+  - DOMAIN-SUFFIX,segmentify.com
 
 # > Str  - IPe
   - DOMAIN-SUFFIX,str  - IPe.com
   - DOMAIN-SUFFIX,str  - IPe.network
   - DOMAIN-SUFFIX,str  - IPecdn.com
-
 
 # > Apple Intelligence
   - DOMAIN-SUFFIX,apple-relay.apple.com
@@ -56,7 +56,6 @@ payload:
 #   - DOMAIN-SUFFIX,apps.mzstatic.com
 # siri, search
   - DOMAIN-SUFFIX,smoot.apple.com
-
 
 # > Anthropic Claude
   - DOMAIN,console.anthropic.com
@@ -145,6 +144,8 @@ payload:
   - DOMAIN-SUFFIX,antigravity-unleash.goog
   - DOMAIN-SUFFIX,open-vsx.org
   - DOMAIN-SUFFIX,default.exp-tas.com
+  - DOMAIN, daily-cloudcode-pa.sandbox.googleapis.com
+  - DOMAIN, daily-cloudcode-pa.googleapis.com
   - DOMAIN-WILDCARD,antigravity-auto-updater-*.us-central*.run.app
 # > AI Studio
   - DOMAIN-SUFFIX,ai.google.dev
@@ -168,26 +169,34 @@ payload:
   - DOMAIN,robinfrontend-pa.googleapis.com
 # > Generative Language API
   - DOMAIN-SUFFIX,generativeai.google
-  - DOMAIN-SUFFIX,generativelanguage.googleapis.com
-  - DOMAIN-SUFFIX,cloudcode-pa.googleapis.com
-  - DOMAIN-SUFFIX,geller-pa.googleapis.com
-  - DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+  - DOMAIN,generativelanguage.googleapis.com
+  - DOMAIN,cloudcode-pa.googleapis.com
+  - DOMAIN,geller-pa.googleapis.com
+# google定位服务所在地
+  - DOMAIN,  - IPv4.google.com
+  - DOMAIN,proactivebackend-pa.googleapis.com
+#   - DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+# 误伤太大，先关掉域名后缀匹配
+#   - DOMAIN-SUFFIX,googleapis.com
 # > Developer
-  - DOMAIN-SUFFIX,apis.google.com
-  - DOMAIN-SUFFIX,clients6.google.com
-  - DOMAIN-SUFFIX,clients4.google.com
-  - DOMAIN-SUFFIX,colab.google.com
-  - DOMAIN-SUFFIX,colab.research.google.com
-  - DOMAIN-SUFFIX,developerprofiles.google.com
-#   - DOMAIN-SUFFIX,googleusercontent.com
+  - DOMAIN,apis.google.com
+  - DOMAIN,clients6.google.com
+  - DOMAIN,clients4.google.com
+  - DOMAIN,colab.google.com
+  - DOMAIN,colab.research.google.com
+  - DOMAIN,developerprofiles.google.com
+  - DOMAIN-SUFFIX,googleusercontent.com
+  - DOMAIN,playwright.azureedge.net
 # > Firebase Studio
   - DOMAIN-SUFFIX,firebase.studio
   - DOMAIN-SUFFIX,studio.firebase.google.com
 # > NotebookLM
   - DOMAIN-SUFFIX,notebooklm.google
-  - DOMAIN-SUFFIX,notebooklm.google.com
+  - DOMAIN,notebooklm.google.com
 # > Jules
   - DOMAIN,jules.google.com
+# Vertex AI
+  - DOMAIN,a  - IPlatform.googleapis.com
 # > Search Labs
   - DOMAIN,labs.google
   - DOMAIN-SUFFIX,labs.google
@@ -196,7 +205,6 @@ payload:
   - DOMAIN-SUFFIX,ai.google
   - DOMAIN-SUFFIX,autodraw.com
   - DOMAIN-KEYWORD,labs.google
-
 
 # > Meta
   - DOMAIN,imagine.meta.com
@@ -268,6 +276,7 @@ payload:
   - DOMAIN,api.x.ai
   - DOMAIN-SUFFIX,grok.com
   - DOMAIN-SUFFIX,x.ai
+  - DOMAIN-SUFFIX,featureassets.org
 
 
 # ##### 设计创意类 ######
@@ -337,10 +346,24 @@ payload:
 
 # windsurf
   - DOMAIN-SUFFIX,windsurf.com
+
+# CodeIum
   - DOMAIN-SUFFIX,codeium.com
+  - DOMAIN-SUFFIX,codeiumdata.com
 
 # Zed 编辑器
   - DOMAIN-SUFFIX,zed.dev
+
+# CodeBuddy 编辑器
+  - DOMAIN-SUFFIX,codebuddy.ai
+
+# Kiro 编辑器
+  - DOMAIN-SUFFIX,kiro.dev
+  - DOMAIN-SUFFIX,amazonaws.com
+
+# DevvAI 服务
+  - DOMAIN-SUFFIX, devv.ai
+  - DOMAIN, devv.featurebase.app
 
 
 # ##### API服务商 ######
@@ -353,6 +376,17 @@ payload:
 # > openrouter
   - DOMAIN-SUFFIX,openrouter.ai
 
+# > Together
+  - DOMAIN-SUFFIX,together.ai
+
+# > Hyperbolic
+  - DOMAIN, api.hyperbolic.xyz
+  - DOMAIN-SUFFIX, hyperbolic.ai
+
+# Jina
+  - DOMAIN-SUFFIX,jina.ai
+
+
 
 # ##### 浏览器 ######
 
@@ -360,9 +394,11 @@ payload:
   - DOMAIN-SUFFIX,arc.net
 
 # > DIA
-  - DOMAIN,releases.diabrowser.com
+#   - DOMAIN,releases.diabrowser.com
   - DOMAIN,account.diabrowser.engineering
+  - DOMAIN,ai-service.diabrowser.engineering
   - DOMAIN,dia-blocklists-release.diabrowser.engineering
+  - DOMAIN-SUFFIX,diabrowser.com
   - DOMAIN-SUFFIX,diabrowser.engineering
   - IP-CIDR,45.76.221.157/32,no-resolve
   - IP-CIDR,81.168.83.93/32,no-resolve
@@ -486,6 +522,9 @@ payload:
 # Tome (Presentations)
   - DOMAIN-SUFFIX,tome.app
 
+# TokenFlux
+  - DOMAIN-SUFFIX,tokenflux.ai
+
 # Wondershare Filmora (Media Generation)
   - DOMAIN-SUFFIX,wondershare.com
 
@@ -497,6 +536,12 @@ payload:
 
 # Zapier (Automation)
   - DOMAIN-SUFFIX,zapier.com
+
+# GPUStack
+  - DOMAIN-SUFFIX,gpustack.ai
+
+# VoyageAI
+  - DOMAIN-SUFFIX,voyageai.com
 
 # others
   - DOMAIN-SUFFIX,workos.com
