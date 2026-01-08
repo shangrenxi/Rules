@@ -1,4 +1,4 @@
-# Update: 20260106
+# Update: 20260108
 # please use US IP to access and use
 # The list from
 # sources1: https://kelee.one/Tool/Loon/Lsr/AI.lsr
@@ -143,8 +143,8 @@ DOMAIN-SUFFIX,antigravity.google
 DOMAIN-SUFFIX,antigravity-unleash.goog
 DOMAIN-SUFFIX,open-vsx.org
 DOMAIN-SUFFIX,default.exp-tas.com
-DOMAIN, daily-cloudcode-pa.sandbox.googleapis.com
-DOMAIN, daily-cloudcode-pa.googleapis.com
+DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com
+DOMAIN,daily-cloudcode-pa.googleapis.com
 DOMAIN-WILDCARD,antigravity-auto-updater-*.us-central*.run.app
 # > AI Studio
 DOMAIN-SUFFIX,ai.google.dev
@@ -204,6 +204,10 @@ DOMAIN-SUFFIX,withgoogle.com
 DOMAIN-SUFFIX,ai.google
 DOMAIN-SUFFIX,autodraw.com
 DOMAIN-KEYWORD,labs.google
+
+# > AI Mode
+DOMAIN,optimizationguide-pa.googleapis.com
+DOMAIN-WILDCARD,encrypted-tbn*.gstatic.com
 
 # > Meta
 DOMAIN,imagine.meta.com
