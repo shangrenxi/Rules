@@ -4,6 +4,7 @@
 # https://ruleset.skk.moe/List/non_ip/ai.conf from https://github.com/SukkaW/Surge/blob/master/Source/non_ip/ai.conf
 # https://github.com/ConnersHua/RuleGo/blob/master/Surge/Ruleset/Extra/AI.list
 # https://kelee.one/Tool/Loon/Lsr/AI.lsr
+# https://gist.github.com/ddgksf2013/cb4121e8b5c5d865cc949cb8120320c4
 
 # 来自官方
 # AppleAI: https://support.apple.com/zh-cn/101555
@@ -14,8 +15,6 @@
 # https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/Gemini/Gemini.list
 # https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/Claude/Claude.list
 # https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/Copilot/Copilot.list
-# https://gist.github.com/ddgksf2013/cb4121e8b5c5d865cc949cb8120320c4
-
 
 # ##### 主流AI应用 ######
 
