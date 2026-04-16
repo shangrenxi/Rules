@@ -1,10 +1,11 @@
-# Update: 20260114
+# Update: 20260416
 # please use US IP to access and use
 # 主要更新：
-# https://ruleset.skk.moe/List/non_ip/ai.conf from https://github.com/SukkaW/Surge/blob/master/Source/non_ip/ai.conf
+# https://github.com/SukkaW/Surge/blob/master/Source/non_ip/ai.conf
 # https://github.com/ConnersHua/RuleGo/blob/master/Surge/Ruleset/Extra/AI.list
 # https://kelee.one/Tool/Loon/Lsr/AI.lsr
 # https://gist.github.com/ddgksf2013/cb4121e8b5c5d865cc949cb8120320c4
+# https://github.com/Accademia/Additional_Rule_For_Clash/blob/main/Gemini/Gemini_No_Resolve.yaml
 
 # 来自官方
 # AppleAI: https://support.apple.com/zh-cn/101555
@@ -53,6 +54,7 @@ DOMAIN-SUFFIX,stripecdn.com
 DOMAIN-SUFFIX,apple-relay.apple.com
 DOMAIN-SUFFIX,apple-relay.cloudflare.com
 DOMAIN-SUFFIX,apple-relay.fastly-edge.com
+DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net
 DOMAIN-SUFFIX,gateway.icloud.com
 DOMAIN-SUFFIX,cp2.cloudflare.com
 DOMAIN-SUFFIX,cp4.cloudflare.com
@@ -151,7 +153,9 @@ DOMAIN-SUFFIX,antigravity-unleash.goog
 DOMAIN-SUFFIX,open-vsx.org
 DOMAIN-SUFFIX,default.exp-tas.com
 DOMAIN-SUFFIX,daily-cloudcode-pa.sandbox.googleapis.com
-DOMAIN-SUFFIX,daily-cloudcode-pa.googleapis.com
+#  DOMAIN-SUFFIX,daily-cloudcode-pa.googleapis.com
+#  DOMAIN-SUFFIX,antigravity-pa.googleapis.com
+DOMAIN-SUFFIX,antigravity.googleapis.com
 DOMAIN-WILDCARD,antigravity-auto-updater-*.us-central*.run.app
 # > AI Studio
 DOMAIN-SUFFIX,g.ai
@@ -160,7 +164,6 @@ DOMAIN-SUFFIX,aistudio.google.com
 DOMAIN-SUFFIX,alkalicore-pa.clients6.google.com
 DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com
 DOMAIN-SUFFIX,webchannel-alkalimakersuite-pa.clients6.google.com
-DOMAIN-SUFFIX,ogads-pa.clients6.google.com
 DOMAIN-SUFFIX,waa-pa.clients6.google.com
 
 DOMAIN-SUFFIX,makersuite.google.com
@@ -182,43 +185,48 @@ DOMAIN-SUFFIX,deepmind.google
 # > Gemini
 DOMAIN-SUFFIX,gemini.google
 DOMAIN-SUFFIX,gemini.google.com
-DOMAIN-SUFFIX,aisandbox-pa.googleapis.com
+#  DOMAIN-SUFFIX,aisandbox-pa.googleapis.com
+# HTTP 429修复
+URL-REGEX,https://www\.google\.com/.*continue=https://gemini\.google\.com.+
+
  # Gemini app firewall hosts
-DOMAIN-SUFFIX,www.google-analytics.com
-DOMAIN-SUFFIX,static.doubleclick.net
-DOMAIN-SUFFIX,td.doubleclick.net
-DOMAIN-SUFFIX,lh5.googleusercontent.com
-DOMAIN-SUFFIX,lh3.googleusercontent.com
 DOMAIN-SUFFIX,csp.withgoogle.com
 DOMAIN-SUFFIX,www.googletagmanager.com
-DOMAIN-SUFFIX,googleads.g.doubleclick.net
 DOMAIN-SUFFIX,i.ytimg.com
 DOMAIN-SUFFIX,yt3.ggpht.com
 
 # > Generative Language API
 DOMAIN-SUFFIX,generativeai.google
 DOMAIN-SUFFIX,generativelanguage.googleapis.com
-DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+#  DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
 DOMAIN-SUFFIX,www.googleapis.com
 DOMAIN-SUFFIX,maps.googleapis.com
 DOMAIN-SUFFIX,fonts.googleapis.com
-DOMAIN-SUFFIX,jnn-pa.googleapis.com
-DOMAIN-SUFFIX,streetviewpixels-pa.googleapis.com
+#  DOMAIN-SUFFIX,jnn-pa.googleapis.com
+#  DOMAIN-SUFFIX,streetviewpixels-pa.googleapis.com
 DOMAIN-SUFFIX,content-autofill.googleapis.com
-DOMAIN-SUFFIX,robinfrontend-pa.googleapis.com
-DOMAIN-SUFFIX,cloudcode-pa.googleapis.com
-DOMAIN-SUFFIX,geller-pa.googleapis.com
+#  DOMAIN-SUFFIX,robinfrontend-pa.googleapis.com
+#  DOMAIN-SUFFIX,cloudcode-pa.googleapis.com
+#  DOMAIN-SUFFIX,geller-pa.googleapis.com
+DOMAIN-SUFFIX,speech.googleapis.com
+
+# google登录授权
+DOMAIN-SUFFIX,oauth2.googleapis.com
 
 # Google CDN
 DOMAIN-SUFFIX,www.gstatic.com
 DOMAIN-SUFFIX,fonts.gstatic.com
 DOMAIN-SUFFIX,ssl.gstatic.com
 DOMAIN-SUFFIX,maps.gstatic.com
+#  DOMAIN-SUFFIX,lh5.googleusercontent.com
+#  DOMAIN-SUFFIX,lh3.googleusercontent.com
+#  DOMAIN-SUFFIX,lh3.google.com
+DOMAIN-WILDCARD,lh*.googleusercontent.com
+DOMAIN-WILDCARD,lh*.google.com
 
 # google定位服务所在地
 DOMAIN-SUFFIX,ipv4.google.com
 
-# DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
 # 误伤太大，先关掉域名后缀匹配
 # DOMAIN-SUFFIX,googleapis.com
 
@@ -228,7 +236,7 @@ DOMAIN-SUFFIX,clients4.google.com
 DOMAIN-SUFFIX,colab.google.com
 DOMAIN-SUFFIX,colab.research.google.com
 DOMAIN-SUFFIX,developerprofiles.google.com
-DOMAIN-SUFFIX,googleusercontent.com
+
 DOMAIN-SUFFIX,playwright.azureedge.net
 # > Firebase Studio
 DOMAIN-SUFFIX,firebase.studio
@@ -236,10 +244,11 @@ DOMAIN-SUFFIX,studio.firebase.google.com
 # > NotebookLM
 DOMAIN-SUFFIX,notebooklm.google.com
 DOMAIN-SUFFIX,notebooklm.google
+#  DOMAIN-SUFFIX,notebooklm-pa.googleapis.com
+DOMAIN-SUFFIX,notebooklm.googleapis.com
 # > Jules
 DOMAIN-SUFFIX,jules.google.com
-# Vertex AI
-DOMAIN-SUFFIX,aiplatform.googleapis.com
+
 # > Search Labs
 #  DOMAIN,labs.google
 DOMAIN-SUFFIX,labs.google
@@ -250,12 +259,25 @@ DOMAIN-SUFFIX,autodraw.com
 DOMAIN-KEYWORD,labs.google
 
 # > AI Mode
-DOMAIN-SUFFIX,optimizationguide-pa.googleapis.com
+#  DOMAIN-SUFFIX,optimizationguide-pa.googleapis.com
 #  DOMAIN-SUFFIX,encrypted-tbn0.gstatic.com
 #  DOMAIN-SUFFIX,encrypted-tbn1.gstatic.com
 #  DOMAIN-SUFFIX,encrypted-tbn2.gstatic.com
 #  DOMAIN-SUFFIX,encrypted-tbn3.gstatic.com
 DOMAIN-WILDCARD,encrypted-tbn*.gstatic.com
+
+# 多模态
+DOMAIN-SUFFIX,secretmanager.googleapis.com
+DOMAIN-SUFFIX,aiplatform.googleapis.com
+DOMAIN-SUFFIX,cloudaicompanion.googleapis.com
+DOMAIN-WILDCARD,*-pa.googleapis.com
+
+# > AD
+DOMAIN-SUFFIX,googleads.g.doubleclick.net
+DOMAIN-SUFFIX,www.google-analytics.com
+DOMAIN-SUFFIX,static.doubleclick.net
+DOMAIN-SUFFIX,td.doubleclick.net
+DOMAIN-SUFFIX,ogads-pa.clients6.google.com
 
 # > Meta
 DOMAIN,imagine.meta.com
@@ -328,6 +350,8 @@ DOMAIN,api.x.ai
 DOMAIN-SUFFIX,grok.com
 DOMAIN-SUFFIX,x.ai
 DOMAIN-SUFFIX,featureassets.org
+DOMAIN-SUFFIX,xai.chronosphere.io
+IP-CIDR,17.253.4.125/32
 
 
 # ##### 设计创意类 ######
@@ -358,13 +382,15 @@ DOMAIN-SUFFIX,zeetings.com
 DOMAIN-SUFFIX,smartmockups.com
 
 # > lovart
-# DOMAIN-SUFFIX,lovart.ai
+DOMAIN-SUFFIX,lovart.ai
 
 # > leonardo
 DOMAIN-SUFFIX,leonardo.ai
 
 # > Midjourney
 DOMAIN-SUFFIX,midjourney.com
+
+DOMAIN-SUFFIX,fal.ai
 
 
 # ##### 开发编程类 ######
@@ -378,6 +404,9 @@ DOMAIN-SUFFIX,cursor-cdn.com
 DOMAIN-SUFFIX,cursor.com
 DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,cursorapi.com
+
+# > factory
+DOMAIN-SUFFIX,factory.ai
 
 # > Huggingface
 DOMAIN-SUFFIX,huggingface.co
@@ -410,7 +439,6 @@ DOMAIN-SUFFIX,codebuddy.ai
 
 # Kiro 编辑器
 DOMAIN-SUFFIX,kiro.dev
-DOMAIN-SUFFIX,amazonaws.com
 
 # DevvAI 服务
 DOMAIN-SUFFIX, devv.ai
@@ -506,6 +534,9 @@ DOMAIN-SUFFIX,beautiful.ai
 # Buffer (Social media)
 DOMAIN-SUFFIX,buffer.com
 DOMAIN-SUFFIX,bufferapp.com
+
+# Cerebras
+DOMAIN-SUFFIX,cerebras.ai
 
 # Clockwise (AI transcription)
 DOMAIN-SUFFIX,clockwise.ai
