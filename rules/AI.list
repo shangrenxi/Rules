@@ -221,6 +221,7 @@ DOMAIN-SUFFIX,maps.gstatic.com
 #  DOMAIN-SUFFIX,lh5.googleusercontent.com
 #  DOMAIN-SUFFIX,lh3.googleusercontent.com
 #  DOMAIN-SUFFIX,lh3.google.com
+DOMAIN-WILDCARD,lcontent-*.googleapis.com
 DOMAIN-WILDCARD,lh*.googleusercontent.com
 DOMAIN-WILDCARD,lh*.google.com
 
