@@ -1,4 +1,4 @@
-# Update: 20260416
+# Update: 20260520
 # please use US IP to access and use
 # 主要更新：
 # https://github.com/SukkaW/Surge/blob/master/Source/non_ip/ai.conf
@@ -66,14 +66,34 @@ DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
 DOMAIN-SUFFIX,smoot.apple.com
 
 # > Anthropic Claude
-DOMAIN,console.anthropic.com
-DOMAIN,cdn.usefathom.com
-DOMAIN-SUFFIX,claude.ai
+# claude分流参考：https://ip.net.coffee/claude/site.html 和 NTP分流 https://rawstatic.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-ntp.list
+# 核心域名（DOMAIN-SUFFIX 已覆盖所有 *.anthropic.com 子域名）
 DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,clau.de
+DOMAIN-SUFFIX,claudemcpclient.com
 DOMAIN-SUFFIX,claudeusercontent.com
-DOMAIN-WILDCARD,*-cdn.anthropic.com
-IP-CIDR,160.79.104.0/23,no-resolve
-IP-CIDR6,2607:6bc0::/48,no-resolve
+# CDN 和静态资源
+DOMAIN,servd-anthropic-website.b-cdn.net
+DOMAIN,anthropic.com.cdn.cloudflare.net
+# 认证 / 内容
+DOMAIN,anthropic.auth0.com
+DOMAIN,anthropic-com.ghost.io
+# 监控和遥测
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,statsigapi.net
+DOMAIN,browser-intake-us5-datadoghq.com
+DOMAIN-KEYWORD,datadog
+DOMAIN-KEYWORD,sift
+# 客服 / 第三方 widget
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN,cdn.usefathom.com
+# IP 段 / ASN 兜底
+IP-CIDR,160.79.104.0/21,no-resolve
+IP-CIDR6,2607:6bc0::/32,no-resolve
+IP-ASN,399358,no-resolve
 
 # > ChatGPT
 DOMAIN,chatgpt.livekit.cloud
@@ -132,7 +152,6 @@ DOMAIN-SUFFIX,oceanapi-i18n.com
 DOMAIN-SUFFIX,pipopay.com
 DOMAIN-SUFFIX,ttwstatic.com
 DOMAIN-SUFFIX,byteintlapi.com
-DOMAIN-SUFFIX,abtest-sg.byteoversea.com
 
 # > character
 DOMAIN-SUFFIX,characterai.io
@@ -161,10 +180,10 @@ DOMAIN-WILDCARD,antigravity-auto-updater-*.us-central*.run.app
 DOMAIN-SUFFIX,g.ai
 DOMAIN-SUFFIX,ai.google.dev
 DOMAIN-SUFFIX,aistudio.google.com
-DOMAIN-SUFFIX,alkalicore-pa.clients6.google.com
-DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com
-DOMAIN-SUFFIX,webchannel-alkalimakersuite-pa.clients6.google.com
-DOMAIN-SUFFIX,waa-pa.clients6.google.com
+#  DOMAIN-SUFFIX,alkalicore-pa.clients6.google.com
+#  DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com
+#  DOMAIN-SUFFIX,webchannel-alkalimakersuite-pa.clients6.google.com
+#  DOMAIN-SUFFIX,waa-pa.clients6.google.com
 
 DOMAIN-SUFFIX,makersuite.google.com
 DOMAIN-SUFFIX,apis.google.com
@@ -192,8 +211,7 @@ URL-REGEX,https://www\.google\.com/.*continue=https://gemini\.google\.com.+
  # Gemini app firewall hosts
 DOMAIN-SUFFIX,csp.withgoogle.com
 DOMAIN-SUFFIX,www.googletagmanager.com
-DOMAIN-SUFFIX,i.ytimg.com
-DOMAIN-SUFFIX,yt3.ggpht.com
+
 
 # > Generative Language API
 DOMAIN-SUFFIX,generativeai.google
@@ -214,16 +232,16 @@ DOMAIN-SUFFIX,speech.googleapis.com
 DOMAIN-SUFFIX,oauth2.googleapis.com
 
 # Google CDN
-DOMAIN-SUFFIX,www.gstatic.com
+# DOMAIN-SUFFIX,www.gstatic.com
 DOMAIN-SUFFIX,fonts.gstatic.com
 DOMAIN-SUFFIX,ssl.gstatic.com
 DOMAIN-SUFFIX,maps.gstatic.com
-#  DOMAIN-SUFFIX,lh5.googleusercontent.com
-#  DOMAIN-SUFFIX,lh3.googleusercontent.com
-#  DOMAIN-SUFFIX,lh3.google.com
-DOMAIN-WILDCARD,lcontent-*.googleapis.com
-DOMAIN-WILDCARD,lh*.googleusercontent.com
-DOMAIN-WILDCARD,lh*.google.com
+DOMAIN-SUFFIX,i.ytimg.com
+DOMAIN-SUFFIX,yt3.ggpht.com
+#  DOMAIN-SUFFIX,googleusercontent.com
+#  DOMAIN-SUFFIX,gstatic.com
+#  DOMAIN-SUFFIX,ggpht.com
+
 
 # google定位服务所在地
 DOMAIN-SUFFIX,ipv4.google.com
@@ -238,7 +256,6 @@ DOMAIN-SUFFIX,colab.google.com
 DOMAIN-SUFFIX,colab.research.google.com
 DOMAIN-SUFFIX,developerprofiles.google.com
 
-DOMAIN-SUFFIX,playwright.azureedge.net
 # > Firebase Studio
 DOMAIN-SUFFIX,firebase.studio
 DOMAIN-SUFFIX,studio.firebase.google.com
@@ -259,18 +276,17 @@ DOMAIN-SUFFIX,ai.google
 DOMAIN-SUFFIX,autodraw.com
 DOMAIN-KEYWORD,labs.google
 
-# > AI Mode
-#  DOMAIN-SUFFIX,optimizationguide-pa.googleapis.com
-#  DOMAIN-SUFFIX,encrypted-tbn0.gstatic.com
-#  DOMAIN-SUFFIX,encrypted-tbn1.gstatic.com
-#  DOMAIN-SUFFIX,encrypted-tbn2.gstatic.com
-#  DOMAIN-SUFFIX,encrypted-tbn3.gstatic.com
-DOMAIN-WILDCARD,encrypted-tbn*.gstatic.com
-
 # 多模态
 DOMAIN-SUFFIX,secretmanager.googleapis.com
 DOMAIN-SUFFIX,aiplatform.googleapis.com
 DOMAIN-SUFFIX,cloudaicompanion.googleapis.com
+
+# 通配符匹配
+DOMAIN-WILDCARD,lcontent-*.googleapis.com
+DOMAIN-WILDCARD,lh*.googleusercontent.com
+DOMAIN-WILDCARD,lh*.google.com
+DOMAIN-WILDCARD,encrypted-tbn*.gstatic.com
+DOMAIN-WILDCARD,*-pa.clients*.google.com
 DOMAIN-WILDCARD,*-pa.googleapis.com
 
 # > AD
@@ -278,7 +294,7 @@ DOMAIN-SUFFIX,googleads.g.doubleclick.net
 DOMAIN-SUFFIX,www.google-analytics.com
 DOMAIN-SUFFIX,static.doubleclick.net
 DOMAIN-SUFFIX,td.doubleclick.net
-DOMAIN-SUFFIX,ogads-pa.clients6.google.com
+#  DOMAIN-SUFFIX,ogads-pa.clients6.google.com
 
 # > Meta
 DOMAIN,imagine.meta.com
@@ -305,6 +321,7 @@ DOMAIN-SUFFIX,edgeservices.bing.com
 DOMAIN,api.githubcopilot.com
 DOMAIN-SUFFIX,githubcopilot.com
 # > azure
+DOMAIN-SUFFIX,playwright.azureedge.net
 DOMAIN-SUFFIX,cognitiveservices.azure.com
 DOMAIN-SUFFIX,api.cognitive.microsoft.us
 DOMAIN-SUFFIX,api.cognitive.azure.cn
@@ -633,3 +650,121 @@ DOMAIN-SUFFIX,you.com
 DOMAIN-SUFFIX,openart.ai
 DOMAIN-SUFFIX,groq.com
 DOMAIN-SUFFIX,jasper.ai
+
+# NTP over UDP
+DOMAIN,time.apple.com
+DOMAIN,time.asia.apple.com
+DOMAIN,time.euro.apple.com
+DOMAIN,time.aws.com
+DOMAIN,time.cloudflare.com
+DOMAIN,time.facebook.com
+DOMAIN,time1.facebook.com
+DOMAIN,time2.facebook.com
+DOMAIN,time3.facebook.com
+DOMAIN,time4.facebook.com
+DOMAIN,time5.facebook.com
+DOMAIN,time.google.com
+DOMAIN,time1.google.com
+DOMAIN,time2.google.com
+DOMAIN,time3.google.com
+DOMAIN,time4.google.com
+DOMAIN,ntp.ubuntu.com
+DOMAIN,time.windows.com
+DOMAIN,ut1-wwv.nist.gov
+DOMAIN,ntp-b.nist.gov
+DOMAIN,ntp-d.nist.gov
+DOMAIN,ntp-wwv.nist.gov
+DOMAIN,time.nist.gov
+DOMAIN,time-a-g.nist.gov
+DOMAIN,time-b-g.nist.gov
+DOMAIN,time-c-g.nist.gov
+DOMAIN,time-d-g.nist.gov
+DOMAIN,time-e-g.nist.gov
+DOMAIN,time-a-b.nist.gov
+DOMAIN,time-b-b.nist.gov
+DOMAIN,time-c-b.nist.gov
+DOMAIN,time-d-b.nist.gov
+DOMAIN,time-e-b.nist.gov
+DOMAIN,time-a-wwv.nist.gov
+DOMAIN,time-b-wwv.nist.gov
+DOMAIN,time-c-wwv.nist.gov
+DOMAIN,time-d-wwv.nist.gov
+DOMAIN,time-e-wwv.nist.gov
+DOMAIN,ntp-c.colorado.edu
+DOMAIN,ut1-time.colorado.edu
+DOMAIN,utcnist.colorado.edu
+DOMAIN,utcnist2.colorado.edu
+DOMAIN,utcnist3.colorado.edu
+DOMAIN,ntp0.ntp-servers.net
+DOMAIN,ntp1.ntp-servers.net
+DOMAIN,ntp2.ntp-servers.net
+DOMAIN,ntp3.ntp-servers.net
+DOMAIN,ntp4.ntp-servers.net
+DOMAIN,ntp5.ntp-servers.net
+DOMAIN,ntp6.ntp-servers.net
+DOMAIN,ntp7.ntp-servers.net
+DOMAIN,ntp.time.nl
+DOMAIN,ntp1.time.nl
+DOMAIN,ntp2.time.nl
+DOMAIN,ntppool1.time.nl
+DOMAIN,ntppool2.time.nl
+DOMAIN-SUFFIX,ntp.se
+DOMAIN-SUFFIX,clock.isc.org
+DOMAIN-SUFFIX,ntp.fiord.ru
+DOMAIN-SUFFIX,ntp.nat.ms
+DOMAIN-SUFFIX,ntp.nic.cz
+DOMAIN-SUFFIX,ntp.ripe.net
+DOMAIN-SUFFIX,ntp.ufe.cz
+DOMAIN-SUFFIX,pool.ntp.org
+DOMAIN-SUFFIX,time.nrc.ca
+DOMAIN-SUFFIX,ntp.nict.jp
+DOMAIN-SUFFIX,ntp2.wakwak.com
+DOMAIN-SUFFIX,ntp1.wakwak.com
+DOMAIN-SUFFIX,ntp.tut.ac.jp
+DOMAIN-SUFFIX,ntp0.ring.gr.jp
+DOMAIN-SUFFIX,ntp1.tohoku.ac.jp
+DOMAIN-SUFFIX,ntp.tohoku.ac.jp
+DOMAIN-SUFFIX,ats1.e-timing.ne.jp
+DOMAIN-SUFFIX,ntp1.ring.gr.jp
+DOMAIN-SUFFIX,ntp2.ring.gr.jp
+DOMAIN-SUFFIX,ntp2.tohoku.ac.jp
+DOMAIN-SUFFIX,ntp-tk02.ocn.ad.jp
+DOMAIN-SUFFIX,ntp-os01.ocn.ad.jp
+DOMAIN-SUFFIX,ntp1.plala.or.jp
+DOMAIN-SUFFIX,ntp2.plala.or.jp
+DOMAIN-SUFFIX,ntp.ring.gr.jp
+DOMAIN-SUFFIX,ntp-tk01.ocn.ad.jp
+DOMAIN-SUFFIX,ntp3.v6.mfeed.ad.jp
+DOMAIN-SUFFIX,s2csntp.miz.nao.ac.jp
+DOMAIN-SUFFIX,ntp.t.ring.gr.jp
+DOMAIN-SUFFIX,ntp.dnsbalance.ring.gr.jp
+DOMAIN-SUFFIX,ntp.nc.u-tokyo.ac.jp
+DOMAIN-SUFFIX,ntp2.v6.mfeed.ad.jp
+DOMAIN-SUFFIX,ntp1.v6.mfeed.ad.jp
+DOMAIN-SUFFIX,ntp3.jst.mfeed.ad.jp
+DOMAIN-SUFFIX,ntp2.jst.mfeed.ad.jp
+DOMAIN-SUFFIX,ntp1.jst.mfeed.ad.jp
+DOMAIN-SUFFIX,ntp.jst.mfeed.ad.jp
+DOMAIN,ntp.aliyun.com
+DOMAIN,ntp1.aliyun.com
+DOMAIN,ntp2.aliyun.com
+DOMAIN,ntp3.aliyun.com
+DOMAIN,ntp4.aliyun.com
+DOMAIN,ntp5.aliyun.com
+DOMAIN,ntp6.aliyun.com
+DOMAIN,ntp7.aliyun.com
+DOMAIN,time.amazonaws.cn
+DOMAIN,time.izatcloud.net
+DOMAIN,time.xtracloud.net
+DOMAIN,izattime.qcomgeo2.com
+DOMAIN,xtratime.qcomgeo2.com
+DOMAIN,ntp.tencent.com
+DOMAIN,ntp1.tencent.com
+DOMAIN,ntp2.tencent.com
+DOMAIN,ntp3.tencent.com
+DOMAIN,ntp4.tencent.com
+DOMAIN,ntp5.tencent.com
+DOMAIN-SUFFIX,cn.pool.ntp.org
+DOMAIN-SUFFIX,ntp.neu.edu.cn
+DOMAIN-SUFFIX,ntp.ntsc.ac.cn
+DOMAIN-SUFFIX,ntp.org.cn
