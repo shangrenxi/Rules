@@ -1,6 +1,7 @@
-# Update: 20260520
+# Update: 20260602
 # please use US IP to access and use
 # 主要更新：
+# https://github.com/dler-io/Rules/blob/main/Surge/Surge%203/Provider/AI%20Suite.list
 # https://github.com/SukkaW/Surge/blob/master/Source/non_ip/ai.conf
 # https://github.com/ConnersHua/RuleGo/blob/master/Surge/Ruleset/Extra/AI.list
 # https://kelee.one/Tool/Loon/Lsr/AI.lsr
@@ -20,12 +21,13 @@
 # ##### 主流AI应用 ######
 
 # > Ai general rules
-DOMAIN,api.statsig.com
+# DOMAIN,api.statsig.com
 DOMAIN,browser-intake-datadoghq.com
 DOMAIN-SUFFIX,algolia.net
 DOMAIN-SUFFIX,auth0.com
 DOMAIN-SUFFIX,arkoselabs.com
 DOMAIN-SUFFIX,featuregates.org
+DOMAIN-SUFFIX,featureassets.org
 DOMAIN-SUFFIX,identrust.com
 DOMAIN-SUFFIX,intercom.io
 DOMAIN-SUFFIX,intercomcdn.com
@@ -37,6 +39,11 @@ DOMAIN-SUFFIX,wp.com
 DOMAIN-SUFFIX,sentry.io
 # DOMAIN,api.honeycomb.io
 DOMAIN-SUFFIX,honeycomb.io
+DOMAIN-SUFFIX,ct.sendgrid.net
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN,cdn.usefathom.com
+DOMAIN-SUFFIX,prodregistryv2.org
 
 # > segment.com
 # DOMAIN,cdn-settings.segment.com
@@ -46,6 +53,7 @@ DOMAIN-SUFFIX,segment.io
 DOMAIN-SUFFIX,segmentify.com
 
 # > Stripe
+DOMAIN,js.stripe.com
 DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,stripe.network
 DOMAIN-SUFFIX,stripecdn.com
@@ -81,15 +89,11 @@ DOMAIN,anthropic.com.cdn.cloudflare.net
 DOMAIN,anthropic.auth0.com
 DOMAIN,anthropic-com.ghost.io
 # 监控和遥测
-DOMAIN-SUFFIX,sentry.io
-DOMAIN-SUFFIX,statsigapi.net
+# DOMAIN-SUFFIX,sentry.io
+# DOMAIN-SUFFIX,statsigapi.net
 DOMAIN,browser-intake-us5-datadoghq.com
 DOMAIN-KEYWORD,datadog
 DOMAIN-KEYWORD,sift
-# 客服 / 第三方 widget
-DOMAIN-SUFFIX,intercom.io
-DOMAIN-SUFFIX,intercomcdn.com
-DOMAIN,cdn.usefathom.com
 # IP 段 / ASN 兜底
 IP-CIDR,160.79.104.0/21,no-resolve
 IP-CIDR6,2607:6bc0::/32,no-resolve
@@ -100,15 +104,8 @@ DOMAIN,chatgpt.livekit.cloud
 DOMAIN,host.livekit.cloud
 DOMAIN,openai.com.cdn.cloudflare.net
 DOMAIN,openaiapi-site.azureedge.net
-DOMAIN,openaicomproductionae4b.blob.core.windows.net
-DOMAIN,production-openaicom-storage.azureedge.net
 DOMAIN,turn.livekit.cloud
 # DOMAIN-SUFFIX,livekit.cloud
-DOMAIN,api-iam.intercom.io
-DOMAIN,o33249.ingest.sentry.io
-DOMAIN,openaiapi-site.azureedge.net
-# > sora
-DOMAIN,sora.chatgpt.com
 # -> website
 DOMAIN-SUFFIX,chat.com
 DOMAIN-SUFFIX,chatgpt.com
@@ -117,11 +114,32 @@ DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,openaiapi.com
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,sora.com
+# > Chat GPT API & CDN
+DOMAIN,cdn.openaimerge.com
+DOMAIN,cdn.workos.com
+DOMAIN,challenges.cloudflare.com
+DOMAIN,chat.openai.com.cdn.cloudflare.net
+DOMAIN,forwarder.workos.com
+DOMAIN,humb.apple.com
+DOMAIN,images.workoscdn.com
+DOMAIN,o207216.ingest.sentry.io
+DOMAIN,o33249.ingest.sentry.io
+DOMAIN,openaiapi-site.azureedge.net
 DOMAIN-WILDCARD,chatgpt-async-webps-prod-*.webpubsub.azure.com
-DOMAIN-WILDCARD,openaicom-api-*.azurefd.net
+DOMAIN-WILDCARD,chatgpt-api-*.*.azurefd.net
+DOMAIN-WILDCARD,openaicom-api-*.*.windows.net
+# DOMAIN,openaicomproductionae4b.blob.core.windows.net
+DOMAIN-WILDCARD,openaicom*.azurefd.net
+# DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+DOMAIN,production-openaicom-storage.azureedge.net
+DOMAIN,rum.browser-intake-datadoghq.com
+DOMAIN,setup.workos.com
+DOMAIN,workos.imgix.net
+#兜底
 IP-CIDR,24.199.123.28/32,no-resolve
 IP-CIDR,64.23.132.171/32,no-resolve
 IP-ASN,20473,no-resolve
+DOMAIN-KEYWORD,openai
 DOMAIN-KEYWORD,openaiapi
 DOMAIN-KEYWORD,openaicom
 
@@ -367,7 +385,6 @@ DOMAIN-SUFFIX,poecdn.net
 DOMAIN,api.x.ai
 DOMAIN-SUFFIX,grok.com
 DOMAIN-SUFFIX,x.ai
-DOMAIN-SUFFIX,featureassets.org
 DOMAIN-SUFFIX,xai.chronosphere.io
 IP-CIDR,17.253.4.125/32
 
@@ -416,6 +433,7 @@ DOMAIN-SUFFIX,fal.ai
 # > Trae AI
 DOMAIN,trae-api-sg.mchost.guru
 DOMAIN-SUFFIX,trae.ai
+DOMAIN-SUFFIX,traeapi.us
 
 # > Cursor
 DOMAIN-SUFFIX,cursor-cdn.com
@@ -491,6 +509,7 @@ DOMAIN-SUFFIX,jina.ai
 DOMAIN-SUFFIX,arc.net
 
 # > DIA
+DOMAIN-SUFFIX,diabrowser.engineering
 # DOMAIN,releases.diabrowser.com
 DOMAIN,account.diabrowser.engineering
 DOMAIN,ai-service.diabrowser.engineering
