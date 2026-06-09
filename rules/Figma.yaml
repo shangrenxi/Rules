@@ -74,4 +74,5 @@ payload:
 
 # 信息收集&分析
   - DOMAIN,browser-intake-datadoghq.com
-  - DOMAIN,prodregistryv2.org
+#  - DOMAIN,prodregistryv2.org
+  - DOMAIN-SUFFIX,prodregistryv2.org
