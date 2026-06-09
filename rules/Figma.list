@@ -1,8 +1,9 @@
 # Figma分流规则
-# Update: 20251229
+# Update: 20260609
 # from https://help.figma.com/hc/en-us/articles/19424714305943-Adjust-your-network-settings
+# 使用教程：https://trains-fetch-zwa.craft.me/V0bf5oAg4nIReY
 
-#figma
+# figma
 #DOMAIN,static.figma.com //静态资源
 #DOMAIN,s3-alpha.figma.com //用户内容
 #DOMAIN,s3-alpha-sig.figma.com //文件存储
@@ -11,9 +12,23 @@ DOMAIN-SUFFIX,makeproxy-c.figma.site
 DOMAIN-SUFFIX,makeproxy-m.figma.site
 DOMAIN-SUFFIX,figma.site
 
+# CDN
+ #DOMAIN,esm.sh
+DOMAIN-SUFFIX,esm.sh
+DOMAIN-SUFFIX,jsdelivr.net
+DOMAIN,registry.npmjs.org
+
 DOMAIN-SUFFIX,figma.net
 DOMAIN-SUFFIX,figmacdn.net
 DOMAIN-SUFFIX,figmausercontent.com
+
+# Desk
+DOMAIN,desktop.figmaxcom
+
+# Gov
+DOMAIN-SUFFIX,figma-gov.com
+DOMAIN-SUFFIX,figma-gov.site
+DOMAIN-SUFFIX,makeproxy-c.figma-gov.site
 
 #font
 DOMAIN,fonts.gstatic.com
@@ -25,7 +40,7 @@ DOMAIN-SUFFIX,code.jquery.com
 DOMAIN-SUFFIX,zdassets.com
 DOMAIN-SUFFIX,zendesk.com
 
-#第三方服务
+# 第三方服务
 DOMAIN-SUFFIX,clearbit.com
 DOMAIN-SUFFIX,clearbitjs.com
 # DOMAIN-SUFFIX,api.segment.io
@@ -33,29 +48,28 @@ DOMAIN-SUFFIX,segment.com
 DOMAIN-SUFFIX,segment.io
 # DOMAIN-SUFFIX,wp.com
 DOMAIN-SUFFIX,gravatar.com
-DOMAIN-SUFFIX,fontawesome.com
+# DOMAIN-SUFFIX,fontawesome.com
 DOMAIN-SUFFIX,statsigapi.net
-
 DOMAIN-SUFFIX,intercom.io
 DOMAIN-SUFFIX,intercomcdn.com
 DOMAIN-SUFFIX,launchdarkly.com
+# DOMAIN,api.sprig.com
 DOMAIN-SUFFIX,sprig.com
 
-#安全
+# 安全
 DOMAIN,gateway.zscloud.net
 
-#AWS服务
+# AWS服务
 DOMAIN-SUFFIX,fs3.amazonaws.com
 DOMAIN-SUFFIX,r2m01.amazontrust.com
-DOMAIN-WILDCARD,figma*.amazonaws.com
+DOMAIN-WILDCARD,figma*.s3-*.amazonaws.com
 DOMAIN-WILDCARD,*awswaf.com
 # DOMAIN,figma-comment-attachments-development.s3-accelerate.amazonaws.com
 # DOMAIN-KEYWORD,amazonaws
 
-#CDN
-#  DOMAIN,esm.sh
-DOMAIN-SUFFIX,esm.sh
-DOMAIN-SUFFIX,jsdelivr.net
-
 #语音服务
 DOMAIN-SUFFIX,agora.io
+
+# 信息收集&分析
+DOMAIN,browser-intake-datadoghq.com
+DOMAIN,prodregistryv2.org
