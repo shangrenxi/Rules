@@ -526,6 +526,7 @@ payload:
   - DOMAIN,dia-blocklists-release.diabrowser.engineering
   - DOMAIN-SUFFIX,diabrowser.com
   - DOMAIN-SUFFIX,diabrowser.engineering
+  - DOMAIN-SUFFIX,thebrowser.company
   - IP-CIDR,45.76.221.157/32,no-resolve
   - IP-CIDR,81.168.83.93/32,no-resolve
   - IP-CIDR,95.111.202.5/32,no-resolve
