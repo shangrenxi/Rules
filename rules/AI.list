@@ -1,4 +1,4 @@
-# Update: 20260710
+# Update: 20260827
 # please use US IP to access and use
 # 主要更新：
 # https://github.com/dler-io/Rules/blob/main/Surge/Surge%203/Provider/AI%20Suite.list
@@ -58,16 +58,17 @@ DOMAIN-SUFFIX,stripe.network
 DOMAIN-SUFFIX,stripecdn.com
 
 # > Apple Intelligence
-DOMAIN-SUFFIX,apple-relay.apple.com
-DOMAIN-SUFFIX,apple-relay.cloudflare.com
-DOMAIN-SUFFIX,apple-relay.fastly-edge.com
-DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net
-DOMAIN-SUFFIX,gateway.icloud.com
-DOMAIN-SUFFIX,cp2.cloudflare.com
-DOMAIN-SUFFIX,cp4.cloudflare.com
+DOMAIN,apple-relay.apple.com
+DOMAIN,apple-relay.cloudflare.com
+DOMAIN,apple-relay.fastly-edge.com
+DOMAIN,apple-relay.mask.apple-dns.net
+DOMAIN-SUFFIX,apple-dns.net
+# DOMAIN-SUFFIX,gateway.icloud.com
+DOMAIN,cp2.cloudflare.com
+DOMAIN,cp4.cloudflare.com
 # siri
-DOMAIN-SUFFIX,guzzoni.apple.com
-DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
+DOMAIN,guzzoni.apple.com
+# DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
 # DOMAIN-SUFFIX,apps.mzstatic.com
 # siri, search
 DOMAIN-SUFFIX,smoot.apple.com
@@ -185,6 +186,8 @@ DOMAIN-SUFFIX,chroniclehq.com
 DOMAIN-SUFFIX,dify.ai
 
 # Google
+# > IP location
+DOMAIN-SUFFIX,userlocations.googleapis.com
 # > Android Studio
 DOMAIN-SUFFIX,aida.googleapis.com
 # > Antigravity
