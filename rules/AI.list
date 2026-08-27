@@ -11,6 +11,7 @@
 # 来自官方
 # AppleAI: https://support.apple.com/zh-cn/101555
 # Gemini:  https://support.google.com/a/answer/15627649?hl=en
+# openAI: https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps
 
 # 不常更新
 # https://github.com//blackmatrix7/ios_rule_script/blob/master/rule/Surge/OpenAI/OpenAI.list
@@ -42,6 +43,7 @@ DOMAIN-SUFFIX,statsig.com
 DOMAIN-SUFFIX,statsigapi.net
 # 客服 / 第三方 widget
 DOMAIN-SUFFIX,intercom.io
+# DOMAIN,js.intercomcdn.com
 DOMAIN-SUFFIX,intercomcdn.com
 DOMAIN,cdn.usefathom.com
 # > segment.com
@@ -111,6 +113,7 @@ DOMAIN,turn.livekit.cloud
 DOMAIN-SUFFIX,chat.com
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaistatsig.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,openaiapi.com
 DOMAIN-SUFFIX,openai.com
@@ -118,12 +121,12 @@ DOMAIN-SUFFIX,sora.com
 DOMAIN-SUFFIX,chatgpt.site
 # > Chat GPT API & CDN
 DOMAIN,cdn.openaimerge.com
-DOMAIN,cdn.workos.com
 DOMAIN,challenges.cloudflare.com
 DOMAIN,chat.openai.com.cdn.cloudflare.net
+DOMAIN,cdn.workos.com
 DOMAIN,forwarder.workos.com
-DOMAIN,humb.apple.com
 DOMAIN,images.workoscdn.com
+DOMAIN,humb.apple.com
 DOMAIN,o207216.ingest.sentry.io
 DOMAIN,o33249.ingest.sentry.io
 # DOMAIN,openaiapi-site.azureedge.net
