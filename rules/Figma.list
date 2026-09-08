@@ -55,6 +55,8 @@ DOMAIN-SUFFIX,intercomcdn.com
 DOMAIN-SUFFIX,launchdarkly.com
 # DOMAIN,api.sprig.com
 DOMAIN-SUFFIX,sprig.com
+# DOMAIN,api-apm.instabug.com
+DOMAIN-SUFFIX,instabug.com
 
 # 安全
 DOMAIN,gateway.zscloud.net
