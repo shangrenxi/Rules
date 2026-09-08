@@ -8,17 +8,16 @@
 #DOMAIN,s3-alpha.figma.com //用户内容
 #DOMAIN,s3-alpha-sig.figma.com //文件存储
 DOMAIN-SUFFIX,figma.com
-DOMAIN-SUFFIX,makeproxy-c.figma.site
-DOMAIN-SUFFIX,makeproxy-m.figma.site
+# DOMAIN-SUFFIX,makeproxy-c.figma.site
+# DOMAIN-SUFFIX,makeproxy-m.figma.site
 DOMAIN-SUFFIX,figma.site
+DOMAIN-SUFFIX,figma.net
 
 # CDN
  #DOMAIN,esm.sh
 DOMAIN-SUFFIX,esm.sh
 DOMAIN-SUFFIX,jsdelivr.net
 DOMAIN,registry.npmjs.org
-
-DOMAIN-SUFFIX,figma.net
 DOMAIN-SUFFIX,figmacdn.net
 DOMAIN-SUFFIX,figmausercontent.com
 
@@ -49,14 +48,20 @@ DOMAIN-SUFFIX,segment.io
 # DOMAIN-SUFFIX,wp.com
 DOMAIN-SUFFIX,gravatar.com
 # DOMAIN-SUFFIX,fontawesome.com
-DOMAIN-SUFFIX,statsigapi.net
 DOMAIN-SUFFIX,intercom.io
 DOMAIN-SUFFIX,intercomcdn.com
 DOMAIN-SUFFIX,launchdarkly.com
 # DOMAIN,api.sprig.com
 DOMAIN-SUFFIX,sprig.com
 # DOMAIN,api-apm.instabug.com
+# DOMAIN,api.instabug.com
 DOMAIN-SUFFIX,instabug.com
+DOMAIN-SUFFIX,featureassets.org
+
+# 监控和遥测
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,statsig.com
+DOMAIN-SUFFIX,statsigapi.net
 
 # 安全
 DOMAIN,gateway.zscloud.net
