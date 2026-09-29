@@ -443,7 +443,9 @@ function GM_openInTab(e){return window.open(e)}function GM_addStyle(e){"use stri
   }
   async function addJs(url, opts) {
     const data = await fetchCdnUrl(url, opts);
-    return eval(data);
+    const script = document.createElement("script");
+    script.textContent = data;
+    document.head.appendChild(script);
   }
   async function addCssUrl(e) {
     addCss(await fetchCdnUrl(e));
