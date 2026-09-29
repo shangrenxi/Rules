@@ -149,3 +149,8 @@ DOMAIN-SUFFIX,macapp.org.cn
 
 #songtaste
 DOMAIN-SUFFIX,songtaste.co
+
+# flower
+DOMAIN,api.xmancdn.net
+
+DOMAIN-SUFFIX,fwd.ccwu.cc
