@@ -154,3 +154,6 @@ DOMAIN-SUFFIX,songtaste.co
 DOMAIN,api.xmancdn.net
 
 DOMAIN-SUFFIX,fwd.ccwu.cc
+
+# 反斗限免
+DOMAIN,appstore.apprcn.com
