@@ -1,11 +1,11 @@
-# Update: 20260827
+# Update: 20261110
 # please use US IP to access and use
 # 主要更新：
 # https://github.com/dler-io/Rules/blob/main/Surge/Surge%203/Provider/AI%20Suite.list
 # https://github.com/SukkaW/Surge/blob/master/Source/non_ip/ai.conf
 # https://github.com/ConnersHua/RuleGo/blob/master/Surge/Ruleset/Extra/AI.list
 # https://kelee.one/Tool/Loon/Lsr/AI.lsr
-# https://gist.github.com/ddgksf2013/cb4121e8b5c5d865cc949cb8120320c4
+# https://gist.github.com/ddgksf2013/cb4121e8b5c5d865cc949cb8120320c4  https://ddgksf2013.top/filter/Ai.yaml
 # https://github.com/Accademia/Additional_Rule_For_Clash/blob/main/Gemini/Gemini_No_Resolve.yaml
 
 # 来自官方
@@ -60,20 +60,22 @@ DOMAIN-SUFFIX,stripe.network
 DOMAIN-SUFFIX,stripecdn.com
 
 # > Apple Intelligence
-DOMAIN,apple-relay.apple.com
-DOMAIN,apple-relay.cloudflare.com
-DOMAIN,apple-relay.fastly-edge.com
-DOMAIN,apple-relay.mask.apple-dns.net
-DOMAIN-SUFFIX,apple-dns.net
-# DOMAIN-SUFFIX,gateway.icloud.com
-DOMAIN,cp2.cloudflare.com
-DOMAIN,cp4.cloudflare.com
+DOMAIN-SUFFIX,apple-relay.apple.com
+DOMAIN-SUFFIX,apple-relay.cloudflare.com
+DOMAIN-SUFFIX,apple-relay.fastly-edge.com
+DOMAIN-SUFFIX,apple-relay.akamaized.net
+DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net
+# DOMAIN-SUFFIX,apple-dns.net
+DOMAIN-SUFFIX,gateway.icloud.com
+DOMAIN-SUFFIX,cp2.cloudflare.com
+DOMAIN-SUFFIX,cp4.cloudflare.com
 # siri
-DOMAIN,guzzoni.apple.com
-# DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
+DOMAIN-SUFFIX,guzzoni.apple.com
+DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
 # DOMAIN-SUFFIX,apps.mzstatic.com
 # siri, search
 DOMAIN-SUFFIX,smoot.apple.com
+DOMAIN-SUFFIX,api-siri-prod.apple.com
 
 # > Anthropic Claude
 # claude分流参考：https://ip.net.coffee/claude/site.html 和 NTP分流 https://rawstatic.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-ntp.list
@@ -131,9 +133,10 @@ DOMAIN,o207216.ingest.sentry.io
 DOMAIN,o33249.ingest.sentry.io
 # DOMAIN,openaiapi-site.azureedge.net
 DOMAIN-WILDCARD,chatgpt-async-webps-prod-*.webpubsub.azure.com
-DOMAIN-WILDCARD,chatgpt-api-*.*.azurefd.net
-DOMAIN-WILDCARD,openaicom-api-*.*.windows.net
+DOMAIN-WILDCARD,chatgpt*.azurefd.net
+DOMAIN-WILDCARD,openaicom*.*.windows.net
 # DOMAIN,openaicomproductionae4b.blob.core.windows.net
+DOMAIN-WILDCARD,openaiapi*.azurefd.net
 DOMAIN-WILDCARD,openaicom*.azurefd.net
 # DOMAIN-WILDCARD,*openai*.azureedge.net
 # DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
@@ -146,6 +149,7 @@ DOMAIN,openaicom.imgix.net
 IP-CIDR,24.199.123.28/32,no-resolve
 IP-CIDR,64.23.132.171/32,no-resolve
 IP-ASN,20473,no-resolve
+IP-ASN,399358,no-resolve
 DOMAIN-KEYWORD,openai
 DOMAIN-KEYWORD,openaiapi
 DOMAIN-KEYWORD,openaicom
@@ -310,6 +314,9 @@ DOMAIN-SUFFIX,secretmanager.googleapis.com
 DOMAIN-SUFFIX,aiplatform.googleapis.com
 DOMAIN-SUFFIX,cloudaicompanion.googleapis.com
 
+# pics
+DOMAIN,pics.new
+
 # 通配符匹配
 DOMAIN-WILDCARD,lcontent-*.googleapis.com
 DOMAIN-WILDCARD,lh*.googleusercontent.com
@@ -319,17 +326,29 @@ DOMAIN-WILDCARD,*-pa.clients*.google.com
 DOMAIN-WILDCARD,*-pa.googleapis.com
 
 # > AD
-DOMAIN-SUFFIX,googleads.g.doubleclick.net
-DOMAIN-SUFFIX,www.google-analytics.com
-DOMAIN-SUFFIX,static.doubleclick.net
-DOMAIN-SUFFIX,td.doubleclick.net
+# DOMAIN-SUFFIX,googleads.g.doubleclick.net
+# DOMAIN-SUFFIX,www.google-analytics.com
+# DOMAIN-SUFFIX,static.doubleclick.net
+# DOMAIN-SUFFIX,td.doubleclick.net
 # DOMAIN-SUFFIX,ogads-pa.clients6.google.com
 
 # > Meta
-DOMAIN,imagine.meta.com
+# DOMAIN,imagine.meta.com
 DOMAIN-SUFFIX,ai.meta.com
+DOMAIN-SUFFIX,meta.com
+DOMAIN-SUFFIX,atmeta.com
 DOMAIN-SUFFIX,meta.ai
 DOMAIN-SUFFIX,llama.com
+DOMAIN-SUFFIX,llamameta.net
+
+# > Muse
+DOMAIN-SUFFIX,muse.ai
+DOMAIN,production.museai.com
+DOMAIN,connect.facebook.net
+DOMAIN,meta-ohttp-config-prod.fastly-edge.com
+DOMAIN,meta-ohttp-relay-prod.fastly-edge.com
+DOMAIN-SUFFIX,facebook.com
+DOMAIN-SUFFIX,fbcdn.net
 
 # Microsoft
 # > Copilot
@@ -450,10 +469,23 @@ DOMAIN-SUFFIX,trae.ai
 DOMAIN-SUFFIX,traeapi.us
 
 # > Cursor
+# https://cursor.com/docs/account/regions
+# https://cursor.com/docs/enterprise/network-configuration
+DOMAIN,anysphere-binaries.s3.us-east-1.amazonaws.com
 DOMAIN-SUFFIX,cursor-cdn.com
 DOMAIN-SUFFIX,cursor.com
 DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,cursorapi.com
+DOMAIN-SUFFIX,cursorvm.com
+
+# > Cursor shared sign-in
+# https://cursor.com/help/troubleshooting/sign-in-domains
+DOMAIN,accounts.spacex.ai
+DOMAIN,accounts.x.ai
+DOMAIN,auth.grok.com
+DOMAIN,auth.grokipedia.com
+DOMAIN,auth.grokusercontent.com
+DOMAIN,auth.x.ai
 
 # > factory
 DOMAIN-SUFFIX,factory.ai
@@ -686,44 +718,50 @@ DOMAIN-SUFFIX,groq.com
 DOMAIN-SUFFIX,jasper.ai
 
 # NTP over UDP
-DOMAIN,time.apple.com
-DOMAIN,time.asia.apple.com
-DOMAIN,time.euro.apple.com
+DOMAIN-WILDCARD,time*.apple.com
+DOMAIN-WILDCARD,time*.facebook.com
+DOMAIN-WILDCARD,time*.google.com
+DOMAIN-WILDCARD,time*.nist.gov
+DOMAIN-WILDCARD,ntp*.aliyun.com
+DOMAIN-WILDCARD,ntp*.tencent.com
+# DOMAIN,time.apple.com
+# DOMAIN,time.asia.apple.com
+# DOMAIN,time.euro.apple.com
 DOMAIN,time.aws.com
 DOMAIN,time.cloudflare.com
-DOMAIN,time.facebook.com
-DOMAIN,time1.facebook.com
-DOMAIN,time2.facebook.com
-DOMAIN,time3.facebook.com
-DOMAIN,time4.facebook.com
-DOMAIN,time5.facebook.com
-DOMAIN,time.google.com
-DOMAIN,time1.google.com
-DOMAIN,time2.google.com
-DOMAIN,time3.google.com
-DOMAIN,time4.google.com
+# DOMAIN,time.facebook.com
+# DOMAIN,time1.facebook.com
+# DOMAIN,time2.facebook.com
+# DOMAIN,time3.facebook.com
+# DOMAIN,time4.facebook.com
+# DOMAIN,time5.facebook.com
+# DOMAIN,time.google.com
+# DOMAIN,time1.google.com
+# DOMAIN,time2.google.com
+# DOMAIN,time3.google.com
+# DOMAIN,time4.google.com
 DOMAIN,ntp.ubuntu.com
 DOMAIN,time.windows.com
 DOMAIN,ut1-wwv.nist.gov
 DOMAIN,ntp-b.nist.gov
 DOMAIN,ntp-d.nist.gov
 DOMAIN,ntp-wwv.nist.gov
-DOMAIN,time.nist.gov
-DOMAIN,time-a-g.nist.gov
-DOMAIN,time-b-g.nist.gov
-DOMAIN,time-c-g.nist.gov
-DOMAIN,time-d-g.nist.gov
-DOMAIN,time-e-g.nist.gov
-DOMAIN,time-a-b.nist.gov
-DOMAIN,time-b-b.nist.gov
-DOMAIN,time-c-b.nist.gov
-DOMAIN,time-d-b.nist.gov
-DOMAIN,time-e-b.nist.gov
-DOMAIN,time-a-wwv.nist.gov
-DOMAIN,time-b-wwv.nist.gov
-DOMAIN,time-c-wwv.nist.gov
-DOMAIN,time-d-wwv.nist.gov
-DOMAIN,time-e-wwv.nist.gov
+# DOMAIN,time.nist.gov
+# DOMAIN,time-a-g.nist.gov
+# DOMAIN,time-b-g.nist.gov
+# DOMAIN,time-c-g.nist.gov
+# DOMAIN,time-d-g.nist.gov
+# DOMAIN,time-e-g.nist.gov
+# DOMAIN,time-a-b.nist.gov
+# DOMAIN,time-b-b.nist.gov
+# DOMAIN,time-c-b.nist.gov
+# DOMAIN,time-d-b.nist.gov
+# DOMAIN,time-e-b.nist.gov
+# DOMAIN,time-a-wwv.nist.gov
+# DOMAIN,time-b-wwv.nist.gov
+# DOMAIN,time-c-wwv.nist.gov
+# DOMAIN,time-d-wwv.nist.gov
+# DOMAIN,time-e-wwv.nist.gov
 DOMAIN,ntp-c.colorado.edu
 DOMAIN,ut1-time.colorado.edu
 DOMAIN,utcnist.colorado.edu
@@ -779,25 +817,25 @@ DOMAIN-SUFFIX,ntp3.jst.mfeed.ad.jp
 DOMAIN-SUFFIX,ntp2.jst.mfeed.ad.jp
 DOMAIN-SUFFIX,ntp1.jst.mfeed.ad.jp
 DOMAIN-SUFFIX,ntp.jst.mfeed.ad.jp
-DOMAIN,ntp.aliyun.com
-DOMAIN,ntp1.aliyun.com
-DOMAIN,ntp2.aliyun.com
-DOMAIN,ntp3.aliyun.com
-DOMAIN,ntp4.aliyun.com
-DOMAIN,ntp5.aliyun.com
-DOMAIN,ntp6.aliyun.com
-DOMAIN,ntp7.aliyun.com
+# DOMAIN,ntp.aliyun.com
+# DOMAIN,ntp1.aliyun.com
+# DOMAIN,ntp2.aliyun.com
+# DOMAIN,ntp3.aliyun.com
+# DOMAIN,ntp4.aliyun.com
+# DOMAIN,ntp5.aliyun.com
+# DOMAIN,ntp6.aliyun.com
+# DOMAIN,ntp7.aliyun.com
 DOMAIN,time.amazonaws.cn
 DOMAIN,time.izatcloud.net
 DOMAIN,time.xtracloud.net
 DOMAIN,izattime.qcomgeo2.com
 DOMAIN,xtratime.qcomgeo2.com
-DOMAIN,ntp.tencent.com
-DOMAIN,ntp1.tencent.com
-DOMAIN,ntp2.tencent.com
-DOMAIN,ntp3.tencent.com
-DOMAIN,ntp4.tencent.com
-DOMAIN,ntp5.tencent.com
+# DOMAIN,ntp.tencent.com
+# DOMAIN,ntp1.tencent.com
+# DOMAIN,ntp2.tencent.com
+# DOMAIN,ntp3.tencent.com
+# DOMAIN,ntp4.tencent.com
+# DOMAIN,ntp5.tencent.com
 DOMAIN-SUFFIX,cn.pool.ntp.org
 DOMAIN-SUFFIX,ntp.neu.edu.cn
 DOMAIN-SUFFIX,ntp.ntsc.ac.cn
